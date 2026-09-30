@@ -160,19 +160,19 @@
   --lh-text-sm: 1.5;
   --lh-text-xs: 1.4;
 
-  /* ── 2. BRAND COLOR SYSTEM (#38d059 - DV HOMES Emerald Green & Black) ── */
-  --brand-primary: #38d059;
-  --brand-primary-hover: #2eb84d;
-  --brand-primary-active: #269e42;
-  --brand-primary-light: #54d971;
-  --brand-tint-05: rgba(56, 208, 89, 0.05);
-  --brand-tint-08: rgba(56, 208, 89, 0.08);
-  --brand-tint-10: rgba(56, 208, 89, 0.10);
-  --brand-tint-15: rgba(56, 208, 89, 0.15);
-  --brand-tint-20: rgba(56, 208, 89, 0.20);
-  --brand-tint-25: rgba(56, 208, 89, 0.25);
-  --brand-border: rgba(56, 208, 89, 0.40);
-  --brand-border-subtle: rgba(56, 208, 89, 0.25);
+  /* ── 2. BRAND COLOR SYSTEM (#6bff8b - DV HOMES Brand Green & Black) ── */
+  --brand-primary: #6bff8b;
+  --brand-primary-hover: #58e677;
+  --brand-primary-active: #47ce63;
+  --brand-primary-light: #89ffA5;
+  --brand-tint-05: rgba(107, 255, 139, 0.05);
+  --brand-tint-08: rgba(107, 255, 139, 0.08);
+  --brand-tint-10: rgba(107, 255, 139, 0.10);
+  --brand-tint-15: rgba(107, 255, 139, 0.15);
+  --brand-tint-20: rgba(107, 255, 139, 0.20);
+  --brand-tint-25: rgba(107, 255, 139, 0.25);
+  --brand-border: rgba(107, 255, 139, 0.40);
+  --brand-border-subtle: rgba(107, 255, 139, 0.25);
 
   /* Legacy & Compatibility Aliases */
   --brand-500: var(--brand-primary);
@@ -181,8 +181,8 @@
   --gold: var(--brand-primary);
   --gold-dark: var(--brand-primary-hover);
   --gold-light: var(--brand-primary-light);
-  --gold-gradient: linear-gradient(135deg, #38d059 0%, #2eb84d 100%);
-  --gold-gradient-hover: linear-gradient(135deg, #54d971 0%, #38d059 100%);
+  --gold-gradient: linear-gradient(135deg, #6bff8b 0%, #58e677 100%);
+  --gold-gradient-hover: linear-gradient(135deg, #89ffA5 0%, #6bff8b 100%);
 
   /* WhatsApp Brand Tokens */
   --brand-whatsapp: #25D366;
@@ -916,9 +916,9 @@ button:focus {
   border-radius: var(--radius-none);
 }
 
-/* Primary Button (#38d059 Emerald Green Background with Black Text) */
+/* Primary Button (#6bff8b Brand Green Background with Black Text) */
 .btn-primary {
-  background: #38d059 !important;
+  background: #6bff8b !important;
   color: #060606 !important;
   font-weight: 600 !important;
   border: 1px solid rgba(6, 6, 6, 0.15) !important;
@@ -937,7 +937,7 @@ button:focus {
 }
 
 .btn-primary:hover {
-  background: #2eb84d !important;
+  background: #58e677 !important;
   border-color: rgba(6, 6, 6, 0.25) !important;
   color: #060606 !important;
   box-shadow: none !important;

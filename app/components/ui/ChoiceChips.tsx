@@ -58,18 +58,18 @@ export default function ChoiceChips({
           const isActive = option.value === selectedValue;
           
           const bgNormal = isDark ? "rgba(255, 255, 255, 0.04)" : "#F3F4F6";
-          const bgActive = isDark ? "rgba(122, 158, 0, 0.22)" : "rgba(122, 158, 0, 0.16)";
+          const bgActive = isDark ? "rgba(107, 255, 139, 0.16)" : "rgba(107, 255, 139, 0.14)";
           const bgHover = isDark
-            ? isActive ? "rgba(122, 158, 0, 0.28)" : "rgba(255, 255, 255, 0.08)"
-            : isActive ? "rgba(122, 158, 0, 0.24)" : "#E5E7EB";
+            ? isActive ? "rgba(107, 255, 139, 0.22)" : "rgba(255, 255, 255, 0.08)"
+            : isActive ? "rgba(107, 255, 139, 0.20)" : "#E5E7EB";
 
           const borderNormal = isDark
-            ? isActive ? "#7A9E00" : "rgba(255, 255, 255, 0.14)"
-            : isActive ? "#7A9E00" : "rgba(23, 23, 22, 0.12)";
+            ? isActive ? "#6bff8b" : "rgba(255, 255, 255, 0.14)"
+            : isActive ? "#6bff8b" : "rgba(23, 23, 22, 0.12)";
 
           const textNormal = isDark
-            ? isActive ? "#99C700" : "rgba(255, 255, 255, 0.85)"
-            : isActive ? "#5C7800" : "#374151";
+            ? isActive ? "#6bff8b" : "rgba(255, 255, 255, 0.85)"
+            : isActive ? "#2ba645" : "#374151";
 
           return (
             <motion.button
@@ -131,7 +131,7 @@ export default function ChoiceChips({
                   flexShrink: 0,
                 }}
               >
-                <CheckIcon size={14} color={isDark ? "#99C700" : "#5C7800"} strokeWidth={2.5} />
+                <CheckIcon size={14} color={isDark ? "#6bff8b" : "#2ba645"} strokeWidth={2.5} />
               </motion.span>
               <span>{option.label}</span>
             </motion.button>
