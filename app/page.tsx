@@ -618,7 +618,7 @@ export default function HomePage() {
                 <div className="why-parthu-item-icon" style={{ background: "var(--brand-tint-10)", color: "var(--brand-primary)", borderRadius: "12px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <CompassIcon size={26} color="var(--brand-primary)" strokeWidth={2} />
                 </div>
-                <div style={{ fontWeight: "300", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
+                <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Customised Interior Solutions
                 </div>
               </div>
@@ -628,7 +628,7 @@ export default function HomePage() {
                 <div className="why-parthu-item-icon" style={{ background: "var(--brand-tint-10)", color: "var(--brand-primary)", borderRadius: "12px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <ShieldCheckIcon size={26} color="var(--brand-primary)" strokeWidth={2} />
                 </div>
-                <div style={{ fontWeight: "300", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
+                <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   End-to-End Execution
                 </div>
               </div>
@@ -638,7 +638,7 @@ export default function HomePage() {
                 <div className="why-parthu-item-icon" style={{ background: "var(--brand-tint-10)", color: "var(--brand-primary)", borderRadius: "12px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <DiamondIcon size={26} color="var(--brand-primary)" strokeWidth={2} />
                 </div>
-                <div style={{ fontWeight: "300", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
+                <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Quality Materials
                 </div>
               </div>
@@ -648,7 +648,7 @@ export default function HomePage() {
                 <div className="why-parthu-item-icon" style={{ background: "var(--brand-tint-10)", color: "var(--brand-primary)", borderRadius: "12px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <RulerIcon size={26} color="var(--brand-primary)" strokeWidth={2} />
                 </div>
-                <div style={{ fontWeight: "300", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
+                <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Smart Space Planning
                 </div>
               </div>
@@ -658,7 +658,7 @@ export default function HomePage() {
                 <div className="why-parthu-item-icon" style={{ background: "var(--brand-tint-10)", color: "var(--brand-primary)", borderRadius: "12px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <HomeIcon size={26} color="var(--brand-primary)" strokeWidth={2} />
                 </div>
-                <div style={{ fontWeight: "300", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
+                <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Modern &amp; Functional Design
                 </div>
               </div>
@@ -668,7 +668,7 @@ export default function HomePage() {
                 <div className="why-parthu-item-icon" style={{ background: "var(--brand-tint-10)", color: "var(--brand-primary)", borderRadius: "12px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <ToolIcon size={26} color="var(--brand-primary)" strokeWidth={2} />
                 </div>
-                <div style={{ fontWeight: "300", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
+                <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Professional Project Management
                 </div>
               </div>

@@ -2289,7 +2289,7 @@ main {
 .why-parthu-item-label {
   font-family: var(--font-body);
   font-size: var(--fs-16) !important;
-  font-weight: 300 !important;
+  font-weight: 600 !important;
   color: var(--text-dark-primary);
   line-height: 1.35;
   max-width: 190px;
