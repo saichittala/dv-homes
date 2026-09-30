@@ -18,7 +18,7 @@ export default function Footer() {
               src="/assets/logoo.png"
               alt="DV HOMES"
               className="footer-logo-img"
-              style={{ maxHeight: "60px", width: "auto", objectFit: "contain", marginBottom: "16px" }}
+              style={{ height: "80px", maxHeight: "88px", width: "auto", objectFit: "contain", marginBottom: "20px" }}
             />
             <p style={{ color: "var(--brand-primary)", fontWeight: "600", fontSize: "0.95rem", marginBottom: "12px" }}>
               Clear Planning • Quality Execution • Responsible Communication
