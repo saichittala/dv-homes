@@ -49,33 +49,33 @@ export default function LocationsHubPage() {
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema]} />
 
       {/* Hero Section */}
-      <section style={{ padding: "100px 24px 40px 24px", textAlign: "center" }}>
-        <div style={{ maxWidth: "840px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "6px 16px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "16px" }}>
+      <section style={{ padding: "160px 32px 80px 32px", textAlign: "center" }}>
+        <div style={{ maxWidth: "880px", margin: "0 auto" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
             <MapPinIcon size={16} color="#38d059" />
             <span>HYDERABAD SERVICE AREAS</span>
           </div>
-          <h1 style={{ fontSize: "clamp(1.75rem, 3.6vw, 2.4rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "16px", color: "#FFFFFF" }}>
+          <h1 style={{ fontSize: "clamp(2rem, 4.2vw, 2.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "20px", color: "#FFFFFF" }}>
             Interior Design Across Hyderabad
           </h1>
-          <p style={{ fontSize: "1.02rem", color: "#e0e0e0", lineHeight: "1.6", maxWidth: "680px", margin: "0 auto 24px auto" }}>
+          <p style={{ fontSize: "1.08rem", color: "#e0e0e0", lineHeight: "1.65", maxWidth: "720px", margin: "0 auto 32px auto" }}>
             DV Homes delivers bespoke residential interior design &amp; factory-controlled execution for high-rise apartments, gated villas, and luxury estates across all major Hyderabad enclaves.
           </p>
         </div>
       </section>
 
       {/* Zones Grid */}
-      <section style={{ padding: "40px 24px 60px 24px" }}>
+      <section style={{ padding: "60px 32px 100px 32px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           {zones.map((zone) => {
             const locationsInZone = locationsData.filter((loc) => loc.zone === zone);
             if (locationsInZone.length === 0) return null;
 
             return (
-              <div key={zone} style={{ marginBottom: "48px" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
-                  <div style={{ width: "4px", height: "20px", background: "#38d059", borderRadius: "2px" }} />
-                  <h2 style={{ fontSize: "1.35rem", fontWeight: "700", color: "#FFFFFF", margin: 0 }}>
+              <div key={zone} style={{ marginBottom: "64px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "28px" }}>
+                  <div style={{ width: "4px", height: "24px", background: "#38d059", borderRadius: "2px" }} />
+                  <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", margin: 0 }}>
                     {zone}
                   </h2>
                 </div>
@@ -91,8 +91,8 @@ export default function LocationsHubPage() {
                         style={{
                           background: "transparent",
                           border: "1px solid rgba(255, 255, 255, 0.12)",
-                          borderRadius: "16px",
-                          padding: "24px 20px",
+                          borderRadius: "18px",
+                          padding: "32px 28px",
                           height: "100%",
                           transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                           display: "flex",
@@ -101,25 +101,25 @@ export default function LocationsHubPage() {
                         }}
                       >
                         <div>
-                          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "10px" }}>
-                            <h3 style={{ fontSize: "1.15rem", fontWeight: "600", color: "#FFFFFF", margin: 0 }}>
+                          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "14px" }}>
+                            <h3 style={{ fontSize: "1.2rem", fontWeight: "600", color: "#FFFFFF", margin: 0 }}>
                               {loc.name}
                             </h3>
                             <ChevronRightIcon size={18} color="#38d059" />
                           </div>
-                          <p style={{ fontSize: "0.88rem", color: "#b0b0b0", lineHeight: "1.5", marginBottom: "16px" }}>
+                          <p style={{ fontSize: "0.9rem", color: "#b0b0b0", lineHeight: "1.55", marginBottom: "20px" }}>
                             {loc.heroSubheadline}
                           </p>
-                          <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+                          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                             {loc.propertyTypes.slice(0, 2).map((pt, idx) => (
-                              <span key={idx} style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", color: "#d0d0d0", fontSize: "0.75rem", padding: "4px 8px", borderRadius: "6px" }}>
+                              <span key={idx} style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", color: "#d0d0d0", fontSize: "0.78rem", padding: "4px 10px", borderRadius: "6px" }}>
                                 {pt}
                               </span>
                             ))}
                           </div>
                         </div>
 
-                        <div style={{ marginTop: "20px", paddingTop: "14px", borderTop: "1px solid rgba(255,255,255,0.06)", display: "flex", alignItems: "center", gap: "8px", fontSize: "0.82rem", color: "#38d059", fontWeight: "600" }}>
+                        <div style={{ marginTop: "24px", paddingTop: "16px", borderTop: "1px solid rgba(255,255,255,0.06)", display: "flex", alignItems: "center", gap: "8px", fontSize: "0.85rem", color: "#38d059", fontWeight: "600" }}>
                           <span>View {loc.name} Interiors</span>
                           <ChevronRightIcon size={14} color="#38d059" />
                         </div>
@@ -134,13 +134,13 @@ export default function LocationsHubPage() {
       </section>
 
       {/* Trust & Guarantee Banner */}
-      <section style={{ padding: "60px 24px" }}>
+      <section style={{ padding: "80px 32px 100px 32px" }}>
         <div style={{ maxWidth: "960px", margin: "0 auto", textAlign: "center" }}>
-          <ShieldCheckIcon size={36} color="#38d059" style={{ marginBottom: "14px" }} />
-          <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "10px" }}>
+          <ShieldCheckIcon size={40} color="#38d059" style={{ marginBottom: "18px" }} />
+          <h2 style={{ fontSize: "1.6rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "14px" }}>
             Direct Factory Execution from Kokapet
           </h2>
-          <p style={{ fontSize: "0.95rem", color: "#cccccc", lineHeight: "1.6", maxWidth: "720px", margin: "0 auto 20px auto" }}>
+          <p style={{ fontSize: "1.02rem", color: "#cccccc", lineHeight: "1.65", maxWidth: "720px", margin: "0 auto 28px auto" }}>
             Regardless of your home location in Hyderabad, our centralized Kokapet facility handles precision CNC woodworking, PUR hotmelt edge-banding, and quality audits before site assembly.
           </p>
           <Link
@@ -153,14 +153,14 @@ export default function LocationsHubPage() {
               background: "#38d059",
               color: "#000000",
               fontWeight: "700",
-              padding: "12px 28px",
+              padding: "16px 36px",
               borderRadius: "9999px",
               textDecoration: "none",
-              fontSize: "0.9rem"
+              fontSize: "0.95rem"
             }}
           >
             <span>Book a Design Consultation</span>
-            <ChevronRightIcon size={16} color="#000000" />
+            <ChevronRightIcon size={18} color="#000000" />
           </Link>
         </div>
       </section>

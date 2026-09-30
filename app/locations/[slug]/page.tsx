@@ -116,39 +116,39 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])]} />
 
       {/* Hero */}
-      <section style={{ position: "relative", padding: "100px 24px 60px 24px", overflow: "hidden" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "6px 16px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "16px" }}>
+      <section style={{ position: "relative", padding: "160px 32px 90px 32px", overflow: "hidden" }}>
+        <div style={{ maxWidth: "1040px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "24px" }}>
             <MapPinIcon size={16} color="#38d059" />
             <span>INTERIOR DESIGN IN {location.name.toUpperCase()}, HYDERABAD</span>
           </div>
 
-          <h1 style={{ fontSize: "clamp(1.75rem, 3.8vw, 2.5rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.15", marginBottom: "16px", color: "#FFFFFF" }}>
+          <h1 style={{ fontSize: "clamp(2rem, 4.2vw, 2.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "20px", color: "#FFFFFF" }}>
             {location.heroHeadline}
           </h1>
 
-          <p style={{ fontSize: "1.05rem", color: "#e0e0e0", lineHeight: "1.6", maxWidth: "780px", marginBottom: "28px" }}>
+          <p style={{ fontSize: "1.1rem", color: "#e0e0e0", lineHeight: "1.65", maxWidth: "800px", marginBottom: "36px" }}>
             {location.heroSubheadline}
           </p>
 
-          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
+          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap", alignItems: "center" }}>
             <Link
               href="/contact"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: "8px",
+                gap: "10px",
                 background: "#38d059",
                 color: "#000000",
                 fontWeight: "700",
-                padding: "14px 32px",
+                padding: "16px 36px",
                 borderRadius: "9999px",
                 textDecoration: "none",
-                fontSize: "0.95rem"
+                fontSize: "0.98rem"
               }}
             >
               <span>Book a Consultation</span>
-              <ChevronRightIcon size={16} color="#000000" />
+              <ChevronRightIcon size={18} color="#000000" />
             </Link>
 
             <a
@@ -156,18 +156,18 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: "8px",
+                gap: "10px",
                 background: "transparent",
                 color: "#FFFFFF",
                 fontWeight: "600",
-                padding: "14px 24px",
+                padding: "16px 28px",
                 borderRadius: "9999px",
                 textDecoration: "none",
-                border: "1px solid rgba(255, 255, 255, 0.15)",
-                fontSize: "0.95rem"
+                border: "1px solid rgba(255, 255, 255, 0.18)",
+                fontSize: "0.98rem"
               }}
             >
-              <PhoneIcon size={16} color="#38d059" />
+              <PhoneIcon size={18} color="#38d059" />
               <span>+91 99168 62442</span>
             </a>
           </div>
@@ -175,37 +175,37 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
       </section>
 
       {/* Main Content & Local Relevance */}
-      <section style={{ padding: "40px 24px 60px 24px" }}>
-        <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "40px", alignItems: "flex-start" }}>
+      <section style={{ padding: "80px 32px 100px 32px" }}>
+        <div style={{ maxWidth: "1160px", margin: "0 auto" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "56px", alignItems: "flex-start" }}>
             
             {/* Left Column */}
             <div>
-              <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "16px" }}>
+              <h2 style={{ fontSize: "1.6rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "20px", lineHeight: "1.3" }}>
                 Residential Interiors for Refined Homes in {location.name}
               </h2>
-              <p style={{ fontSize: "0.98rem", color: "#cccccc", lineHeight: "1.65", marginBottom: "24px" }}>
+              <p style={{ fontSize: "1.02rem", color: "#cccccc", lineHeight: "1.7", marginBottom: "32px" }}>
                 {location.intro}
               </p>
 
-              <h3 style={{ fontSize: "1.15rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "14px" }}>
+              <h3 style={{ fontSize: "1.2rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "18px" }}>
                 Property Types We Commonly Serve in {location.name}:
               </h3>
-              <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "28px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "36px" }}>
                 {location.propertyTypes.map((pt, idx) => (
-                  <div key={idx} style={{ display: "flex", alignItems: "center", gap: "10px", background: "transparent", padding: "10px 14px", borderRadius: "10px", border: "1px solid rgba(255,255,255,0.12)" }}>
-                    <CheckIcon size={16} color="#38d059" />
-                    <span style={{ fontSize: "0.92rem", color: "#e0e0e0", fontWeight: "500" }}>{pt}</span>
+                  <div key={idx} style={{ display: "flex", alignItems: "center", gap: "12px", background: "transparent", padding: "14px 18px", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.12)" }}>
+                    <CheckIcon size={18} color="#38d059" />
+                    <span style={{ fontSize: "0.95rem", color: "#e0e0e0", fontWeight: "500" }}>{pt}</span>
                   </div>
                 ))}
               </div>
 
               {location.localDesignConsiderations.length > 0 && (
                 <>
-                  <h3 style={{ fontSize: "1.15rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "14px" }}>
+                  <h3 style={{ fontSize: "1.2rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "18px" }}>
                     Local Design &amp; Architectural Considerations:
                   </h3>
-                  <ul style={{ paddingLeft: "18px", color: "#cccccc", lineHeight: "1.65", fontSize: "0.92rem", display: "flex", flexDirection: "column", gap: "8px" }}>
+                  <ul style={{ paddingLeft: "20px", color: "#cccccc", lineHeight: "1.7", fontSize: "0.95rem", display: "flex", flexDirection: "column", gap: "12px" }}>
                     {location.localDesignConsiderations.map((item, idx) => (
                       <li key={idx}>{item}</li>
                     ))}
@@ -215,24 +215,24 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
             </div>
 
             {/* Right Column: Key Highlights Box */}
-            <div style={{ background: "transparent", border: "1px solid rgba(255, 255, 255, 0.12)", borderRadius: "20px", padding: "28px 24px" }}>
-              <h3 style={{ fontSize: "1.25rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "16px" }}>
+            <div style={{ background: "transparent", border: "1px solid rgba(255, 255, 255, 0.12)", borderRadius: "24px", padding: "36px 32px" }}>
+              <h3 style={{ fontSize: "1.35rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "24px" }}>
                 Why DV Homes in {location.name}?
               </h3>
 
-              <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
                 {location.keyHighlights.map((kh, idx) => (
-                  <div key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                    <div style={{ background: "rgba(56, 208, 89, 0.15)", borderRadius: "8px", padding: "6px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      <SparklesIcon size={16} color="#38d059" />
+                  <div key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "14px" }}>
+                    <div style={{ background: "rgba(56, 208, 89, 0.15)", borderRadius: "10px", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <SparklesIcon size={18} color="#38d059" />
                     </div>
-                    <span style={{ fontSize: "0.9rem", color: "#e0e0e0", lineHeight: "1.5" }}>{kh}</span>
+                    <span style={{ fontSize: "0.95rem", color: "#e0e0e0", lineHeight: "1.6" }}>{kh}</span>
                   </div>
                 ))}
               </div>
 
-              <div style={{ marginTop: "24px", paddingTop: "20px", borderTop: "1px solid rgba(255,255,255,0.08)", textAlign: "center" }}>
-                <p style={{ fontSize: "0.85rem", color: "#b0b0b0", marginBottom: "14px" }}>
+              <div style={{ marginTop: "32px", paddingTop: "24px", borderTop: "1px solid rgba(255,255,255,0.08)", textAlign: "center" }}>
+                <p style={{ fontSize: "0.88rem", color: "#b0b0b0", marginBottom: "18px" }}>
                   Factory-controlled woodwork manufactured at our Kokapet facility.
                 </p>
                 <Link
@@ -244,10 +244,10 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                     background: "#38d059",
                     color: "#000000",
                     fontWeight: "700",
-                    padding: "12px",
-                    borderRadius: "10px",
+                    padding: "14px",
+                    borderRadius: "12px",
                     textDecoration: "none",
-                    fontSize: "0.9rem"
+                    fontSize: "0.95rem"
                   }}
                 >
                   Request Floorplan Review
@@ -259,25 +259,31 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
       </section>
 
       {/* Relevant Services Grid */}
-      <section style={{ padding: "50px 24px" }}>
-        <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "10px", textAlign: "center" }}>
+      <section style={{ padding: "80px 32px 100px 32px" }}>
+        <div style={{ maxWidth: "1160px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "1.6rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "14px", textAlign: "center" }}>
             Services Offered in {location.name}
           </h2>
-          <p style={{ fontSize: "0.95rem", color: "#b0b0b0", textAlign: "center", marginBottom: "32px" }}>
+          <p style={{ fontSize: "1.02rem", color: "#b0b0b0", textAlign: "center", marginBottom: "48px" }}>
             Comprehensive interior solutions tailored to your floorplan requirements.
           </p>
 
           <div className="grid-3x2-equal">
             {servicesData.slice(0, 6).map((srv) => (
               <Link key={srv.id} href={`/services/${srv.id}`} style={{ textDecoration: "none" }}>
-                <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "14px", padding: "18px", transition: "all 0.3s ease" }}>
-                  <h3 style={{ fontSize: "1.05rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "6px" }}>
-                    {srv.title}
-                  </h3>
-                  <p style={{ fontSize: "0.82rem", color: "#a0a0a0", lineHeight: "1.4", margin: 0 }}>
-                    {srv.tagline}
-                  </p>
+                <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "18px", padding: "28px 24px", height: "100%", transition: "all 0.3s ease", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                  <div>
+                    <h3 style={{ fontSize: "1.15rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "10px", lineHeight: "1.3" }}>
+                      {srv.title}
+                    </h3>
+                    <p style={{ fontSize: "0.88rem", color: "#a0a0a0", lineHeight: "1.5", margin: 0 }}>
+                      {srv.tagline}
+                    </p>
+                  </div>
+                  <div style={{ marginTop: "20px", display: "flex", alignItems: "center", gap: "6px", fontSize: "0.82rem", color: "#38d059", fontWeight: "600" }}>
+                    <span>Learn More</span>
+                    <ChevronRightIcon size={14} color="#38d059" />
+                  </div>
                 </div>
               </Link>
             ))}
@@ -287,19 +293,19 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
 
       {/* Local FAQs */}
       {location.faqs.length > 0 && (
-        <section style={{ padding: "50px 24px" }}>
-          <div style={{ maxWidth: "840px", margin: "0 auto" }}>
-            <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "24px", textAlign: "center" }}>
+        <section style={{ padding: "80px 32px 100px 32px" }}>
+          <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "36px", textAlign: "center" }}>
               Frequently Asked Questions - {location.name} Interiors
             </h2>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
               {location.faqs.map((faq, idx) => (
-                <div key={idx} style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "14px", padding: "20px 22px" }}>
-                  <h3 style={{ fontSize: "1.05rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "8px" }}>
+                <div key={idx} style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "18px", padding: "28px 32px" }}>
+                  <h3 style={{ fontSize: "1.15rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "12px" }}>
                     {faq.question}
                   </h3>
-                  <p style={{ fontSize: "0.92rem", color: "#cccccc", lineHeight: "1.6", margin: 0 }}>
+                  <p style={{ fontSize: "0.98rem", color: "#cccccc", lineHeight: "1.65", margin: 0 }}>
                     {faq.answer}
                   </p>
                 </div>
@@ -311,24 +317,24 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
 
       {/* Nearby Location Links */}
       {nearbyLocations.length > 0 && (
-        <section style={{ padding: "40px 24px 60px 24px" }}>
-          <div style={{ maxWidth: "1100px", margin: "0 auto", textAlign: "center" }}>
-            <h3 style={{ fontSize: "1.1rem", fontWeight: "600", color: "#e0e0e0", marginBottom: "16px" }}>
+        <section style={{ padding: "60px 32px 100px 32px" }}>
+          <div style={{ maxWidth: "1160px", margin: "0 auto", textAlign: "center" }}>
+            <h3 style={{ fontSize: "1.15rem", fontWeight: "600", color: "#e0e0e0", marginBottom: "24px" }}>
               Explore Interior Design Services in Nearby Areas:
             </h3>
-            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "10px" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "14px" }}>
               {nearbyLocations.map((nl) => (
                 <Link
                   key={nl.slug}
                   href={`/locations/${nl.slug}`}
                   style={{
                     background: "transparent",
-                    border: "1px solid rgba(255,255,255,0.12)",
+                    border: "1px solid rgba(255,255,255,0.14)",
                     color: "#38d059",
-                    padding: "6px 16px",
+                    padding: "8px 20px",
                     borderRadius: "9999px",
                     textDecoration: "none",
-                    fontSize: "0.85rem",
+                    fontSize: "0.88rem",
                     fontWeight: "500"
                   }}
                 >

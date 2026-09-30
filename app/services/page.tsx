@@ -47,23 +47,23 @@ export default function ServicesPage() {
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema]} />
 
       {/* Hero Banner */}
-      <section style={{ padding: "100px 24px 40px 24px", textAlign: "center" }}>
-        <div style={{ maxWidth: "840px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "6px 16px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "16px" }}>
+      <section style={{ padding: "160px 32px 80px 32px", textAlign: "center" }}>
+        <div style={{ maxWidth: "880px", margin: "0 auto" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
             <SparklesIcon size={16} color="#38d059" />
             <span>INTERIOR SERVICES</span>
           </div>
-          <h1 style={{ fontSize: "clamp(1.75rem, 3.6vw, 2.4rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "16px", color: "#FFFFFF" }}>
+          <h1 style={{ fontSize: "clamp(2rem, 4.2vw, 2.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "20px", color: "#FFFFFF" }}>
             Our Interior Design Services
           </h1>
-          <p style={{ fontSize: "1.02rem", color: "#e0e0e0", lineHeight: "1.6", maxWidth: "680px", margin: "0 auto" }}>
+          <p style={{ fontSize: "1.08rem", color: "#e0e0e0", lineHeight: "1.65", maxWidth: "720px", margin: "0 auto" }}>
             Bespoke spatial design, German modular engineering, and direct factory execution tailored for your home.
           </p>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section style={{ padding: "40px 24px 60px 24px" }}>
+      <section style={{ padding: "60px 32px 100px 32px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div className="grid-3x2-equal">
             {servicesData.map((service) => (
@@ -76,7 +76,7 @@ export default function ServicesPage() {
                   style={{
                     background: "transparent",
                     border: "1px solid rgba(255, 255, 255, 0.12)",
-                    borderRadius: "18px",
+                    borderRadius: "20px",
                     overflow: "hidden",
                     height: "100%",
                     display: "flex",
@@ -85,24 +85,24 @@ export default function ServicesPage() {
                     transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)"
                   }}
                 >
-                  <div style={{ position: "relative", height: "200px", overflow: "hidden" }}>
+                  <div style={{ position: "relative", height: "220px", overflow: "hidden" }}>
                     <ImageWithSkeleton src={service.mainImage} alt={service.title} />
                   </div>
 
-                  <div style={{ padding: "24px", flex: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                  <div style={{ padding: "28px 24px", flex: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                     <div>
-                      <div style={{ fontSize: "0.78rem", color: "#38d059", fontWeight: "600", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "6px" }}>
+                      <div style={{ fontSize: "0.8rem", color: "#38d059", fontWeight: "600", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "8px" }}>
                         {service.category}
                       </div>
-                      <h2 style={{ fontSize: "1.25rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "8px" }}>
+                      <h2 style={{ fontSize: "1.3rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "10px", lineHeight: "1.3" }}>
                         {service.title}
                       </h2>
-                      <p style={{ fontSize: "0.88rem", color: "#b0b0b0", lineHeight: "1.5", margin: 0 }}>
+                      <p style={{ fontSize: "0.9rem", color: "#b0b0b0", lineHeight: "1.55", margin: 0 }}>
                         {service.tagline}
                       </p>
                     </div>
 
-                    <div style={{ marginTop: "20px", display: "flex", alignItems: "center", gap: "6px", fontSize: "0.85rem", color: "#38d059", fontWeight: "600" }}>
+                    <div style={{ marginTop: "24px", display: "flex", alignItems: "center", gap: "6px", fontSize: "0.85rem", color: "#38d059", fontWeight: "600" }}>
                       <span>Explore Service Details</span>
                       <ChevronRightIcon size={14} color="#38d059" />
                     </div>
@@ -115,12 +115,12 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section style={{ padding: "60px 24px", textAlign: "center" }}>
+      <section style={{ padding: "80px 32px 100px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "12px" }}>
+          <h2 style={{ fontSize: "1.6rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "14px" }}>
             Free Home Interior Planning Session
           </h2>
-          <p style={{ fontSize: "0.98rem", color: "#cccccc", lineHeight: "1.6", marginBottom: "24px" }}>
+          <p style={{ fontSize: "1.02rem", color: "#cccccc", lineHeight: "1.65", marginBottom: "28px" }}>
             Get expert guidance, material specs, and stage-wise budget planning for your space with DV HOMES.
           </p>
           <Link
@@ -132,14 +132,14 @@ export default function ServicesPage() {
               background: "#38d059",
               color: "#000000",
               fontWeight: "700",
-              padding: "14px 32px",
+              padding: "16px 36px",
               borderRadius: "9999px",
               textDecoration: "none",
               fontSize: "0.95rem"
             }}
           >
             <span>Book Free Planning Session</span>
-            <ChevronRightIcon size={16} color="#000000" />
+            <ChevronRightIcon size={18} color="#000000" />
           </Link>
         </div>
       </section>

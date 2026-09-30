@@ -46,51 +46,53 @@ export default function ProjectsPage() {
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema]} />
 
       {/* Hero */}
-      <section style={{ padding: "100px 24px 40px 24px", textAlign: "center" }}>
-        <div style={{ maxWidth: "840px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "6px 16px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "16px" }}>
+      <section style={{ padding: "160px 32px 80px 32px", textAlign: "center" }}>
+        <div style={{ maxWidth: "880px", margin: "0 auto" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
             <SparklesIcon size={16} color="#38d059" />
             <span>PROJECT PORTFOLIO</span>
           </div>
-          <h1 style={{ fontSize: "clamp(1.75rem, 3.6vw, 2.4rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "16px", color: "#FFFFFF" }}>
+          <h1 style={{ fontSize: "clamp(2rem, 4.2vw, 2.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "20px", color: "#FFFFFF" }}>
             Real Homes, Exceptional Execution
           </h1>
-          <p style={{ fontSize: "1.02rem", color: "#e0e0e0", lineHeight: "1.6", maxWidth: "680px", margin: "0 auto" }}>
+          <p style={{ fontSize: "1.08rem", color: "#e0e0e0", lineHeight: "1.65", maxWidth: "720px", margin: "0 auto" }}>
             Explore our curated showcase of turnkey residential interior projects executed across Hyderabad's premier neighborhoods.
           </p>
         </div>
       </section>
 
       {/* Projects Grid */}
-      <section style={{ padding: "40px 24px 60px 24px" }}>
+      <section style={{ padding: "60px 32px 100px 32px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div className="grid-3x2-equal">
             {projectsData.map((project) => (
               <Link key={project.id} href={`/projects/${project.id}`} style={{ textDecoration: "none" }}>
-                <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "18px", overflow: "hidden", transition: "all 0.3s ease" }}>
-                  <div style={{ position: "relative", height: "220px", overflow: "hidden" }}>
+                <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "20px", overflow: "hidden", transition: "all 0.3s ease", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                  <div style={{ position: "relative", height: "240px", overflow: "hidden" }}>
                     <img
                       src={project.mainImage}
                       alt={`${project.title} - ${project.location} Interior Design by DV Homes`}
                       style={{ width: "100%", height: "100%", objectFit: "cover" }}
                       loading="lazy"
                     />
-                    <div style={{ position: "absolute", bottom: "14px", left: "14px", background: "rgba(0,0,0,0.75)", backdropFilter: "blur(8px)", color: "#38d059", padding: "4px 10px", borderRadius: "6px", fontSize: "0.78rem", fontWeight: "600", display: "flex", alignItems: "center", gap: "6px" }}>
+                    <div style={{ position: "absolute", bottom: "16px", left: "16px", background: "rgba(0,0,0,0.75)", backdropFilter: "blur(8px)", color: "#38d059", padding: "6px 12px", borderRadius: "6px", fontSize: "0.78rem", fontWeight: "600", display: "flex", alignItems: "center", gap: "6px" }}>
                       <MapPinIcon size={14} color="#38d059" />
                       <span>{project.location}</span>
                     </div>
                   </div>
 
-                  <div style={{ padding: "24px" }}>
-                    <div style={{ fontSize: "0.78rem", color: "#38d059", fontWeight: "600", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "6px" }}>
-                      {project.projectType} • {project.designStyle}
+                  <div style={{ padding: "28px 24px", flex: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                    <div>
+                      <div style={{ fontSize: "0.8rem", color: "#38d059", fontWeight: "600", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "8px" }}>
+                        {project.projectType} • {project.designStyle}
+                      </div>
+                      <h2 style={{ fontSize: "1.3rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "12px", lineHeight: "1.3" }}>
+                        {project.title}
+                      </h2>
+                      <p style={{ fontSize: "0.9rem", color: "#b0b0b0", lineHeight: "1.55", marginBottom: "20px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                        {project.concept}
+                      </p>
                     </div>
-                    <h2 style={{ fontSize: "1.25rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "10px", lineHeight: "1.3" }}>
-                      {project.title}
-                    </h2>
-                    <p style={{ fontSize: "0.88rem", color: "#b0b0b0", lineHeight: "1.5", marginBottom: "16px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
-                      {project.concept}
-                    </p>
 
                     <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.85rem", color: "#38d059", fontWeight: "600" }}>
                       <span>View Case Study &amp; Gallery</span>
