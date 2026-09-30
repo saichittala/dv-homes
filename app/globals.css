@@ -1067,9 +1067,9 @@ button:focus {
 }
 
 .featured-icon-brand {
-  background: var(--brand-tint-15);
-  border: none !important;
-  color: var(--brand-primary);
+  background: rgba(15, 138, 51, 0.08);
+  border: 1px solid rgba(15, 138, 51, 0.20) !important;
+  color: var(--brand-primary-lightmode, #0f8a33);
 }
 
 /* ==============================================================================
