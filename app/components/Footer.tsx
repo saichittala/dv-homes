@@ -15,10 +15,10 @@ export default function Footer() {
           {/* Column 1: Brand Info */}
           <div>
             <img
-              src="/assets/dv-logoo.png"
+              src="/assets/logoo.png"
               alt="DV HOMES"
               className="footer-logo-img"
-              style={{ maxHeight: "50px", width: "auto", objectFit: "contain", marginBottom: "16px" }}
+              style={{ maxHeight: "60px", width: "auto", objectFit: "contain", marginBottom: "16px" }}
             />
             <p style={{ color: "var(--brand-primary)", fontWeight: "600", fontSize: "0.95rem", marginBottom: "12px" }}>
               Clear Planning • Quality Execution • Responsible Communication

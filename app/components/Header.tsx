@@ -191,10 +191,10 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
               {/* Brand Logo */}
               <Link href="/" className="nav-logo">
                 <img
-                  src="/assets/dv-logo-new.png"
+                  src="/assets/logoo.png"
                   alt="DV HOMES"
                   className="nav-logo-img"
-                  style={{ maxHeight: "48px", objectFit: "contain" }}
+                  style={{ height: "60px", maxHeight: "64px", objectFit: "contain" }}
                 />
               </Link>
 
