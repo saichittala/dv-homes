@@ -12,6 +12,7 @@ import ScrollBeforeAfterSection from "./components/ScrollBeforeAfterSection";
 import FaqAccordion from "./components/FaqAccordion";
 import ImageWithSkeleton from "./components/ImageWithSkeleton";
 import ChoiceChips, { ChoiceOption } from "./components/ui/ChoiceChips";
+import ScrollBlurFadeIn from "./components/ui/ScrollBlurFadeIn";
 import { submitLeadToGoogleSheet, openWhatsAppLeadChat } from "./lib/leadSubmission";
 import { ParallaxScroll, ParallaxImage } from "./components/ui/parallax-scroll";
 import {
@@ -698,64 +699,66 @@ export default function HomePage() {
             ================================================================= */}
         <section id="services" className="featured-services-section">
           <div className="container">
-            <div className="featured-services-top-bar">
-              <h2 className="featured-services-heading">Featured Services</h2>
-              <div className="featured-services-nav-btns">
-                <button
-                  onClick={scrollServicesLeft}
-                  className="featured-services-nav-btn"
-                  aria-label="Previous Services"
-                >
-                  <ChevronLeftIcon size={20} />
-                </button>
-                <button
-                  onClick={scrollServicesRight}
-                  className="featured-services-nav-btn"
-                  aria-label="Next Services"
-                >
-                  <ChevronRightIcon size={20} />
-                </button>
+            <ScrollBlurFadeIn>
+              <div className="featured-services-top-bar">
+                <h2 className="featured-services-heading">Featured Services</h2>
+                <div className="featured-services-nav-btns">
+                  <button
+                    onClick={scrollServicesLeft}
+                    className="featured-services-nav-btn"
+                    aria-label="Previous Services"
+                  >
+                    <ChevronLeftIcon size={20} />
+                  </button>
+                  <button
+                    onClick={scrollServicesRight}
+                    className="featured-services-nav-btn"
+                    aria-label="Next Services"
+                  >
+                    <ChevronRightIcon size={20} />
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div className="featured-services-progress-track">
+              <div className="featured-services-progress-track">
+                <div
+                  className="featured-services-progress-fill"
+                  style={{ width: `${servicesScrollProgress}%` }}
+                />
+              </div>
+
               <div
-                className="featured-services-progress-fill"
-                style={{ width: `${servicesScrollProgress}%` }}
-              />
-            </div>
-
-            <div
-              ref={servicesSliderRef}
-              onScroll={handleServicesScroll}
-              className="featured-services-slider-container"
-            >
-              {featuredServices.map((service) => (
-                <Link
-                  key={service.num}
-                  href={`/services/${service.id}`}
-                  className="featured-service-card-item"
-                  style={{ textDecoration: "none" }}
-                >
-                  <div className="featured-service-num">{service.num}</div>
-                  <div className="featured-service-img-wrapper">
-                    <ImageWithSkeleton src={service.image} alt={service.title} />
-                  </div>
-                  <div className="featured-service-white-box">
-                    <div>
-                      <h3 className="featured-service-title">{service.title}</h3>
-                      <p className="featured-service-desc">{service.desc}</p>
+                ref={servicesSliderRef}
+                onScroll={handleServicesScroll}
+                className="featured-services-slider-container"
+              >
+                {featuredServices.map((service) => (
+                  <Link
+                    key={service.num}
+                    href={`/services/${service.id}`}
+                    className="featured-service-card-item"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <div className="featured-service-num">{service.num}</div>
+                    <div className="featured-service-img-wrapper">
+                      <ImageWithSkeleton src={service.image} alt={service.title} />
                     </div>
-                    <div
-                      className="featured-service-arrow-btn"
-                      aria-label={`Explore ${service.title}`}
-                    >
-                      <ArrowRightIcon size={18} />
+                    <div className="featured-service-white-box">
+                      <div>
+                        <h3 className="featured-service-title">{service.title}</h3>
+                        <p className="featured-service-desc">{service.desc}</p>
+                      </div>
+                      <div
+                        className="featured-service-arrow-btn"
+                        aria-label={`Explore ${service.title}`}
+                      >
+                        <ArrowRightIcon size={18} />
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+                  </Link>
+                ))}
+              </div>
+            </ScrollBlurFadeIn>
           </div>
         </section>
 
@@ -764,37 +767,39 @@ export default function HomePage() {
             ================================================================= */}
         <section id="projects" className="projects-section">
           <div className="container">
-            <div className="section-header section-header--left section-header--mb">
-              <h2 className="projects-section-title">Latest Projects</h2>
-            </div>
-
-            {/* Projects Grid */}
-            <div className="projects-cards-grid">
-              {(showAllProjects ? projects : projects.slice(0, 4)).map((project) => (
-                <div key={project.id} className="project-card-item">
-                  <div className="project-card-img-wrapper">
-                    <ImageWithSkeleton src={project.image} alt={project.name} />
-                  </div>
-                  <div className="project-card-white-box">
-                    <h3 className="project-card-title">{project.name}</h3>
-                    <p className="project-card-location">{project.location}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* View All Projects / Show Less Button */}
-            {projects.length > 4 && (
-              <div className="projects-cta-wrap">
-                <button
-                  type="button"
-                  onClick={() => setShowAllProjects(!showAllProjects)}
-                  className="btn btn-secondary btn-lg"
-                >
-                  {showAllProjects ? "Show Less Projects" : "View All Projects"}
-                </button>
+            <ScrollBlurFadeIn>
+              <div className="section-header section-header--left section-header--mb">
+                <h2 className="projects-section-title">Latest Projects</h2>
               </div>
-            )}
+
+              {/* Projects Grid */}
+              <div className="projects-cards-grid">
+                {(showAllProjects ? projects : projects.slice(0, 4)).map((project) => (
+                  <div key={project.id} className="project-card-item">
+                    <div className="project-card-img-wrapper">
+                      <ImageWithSkeleton src={project.image} alt={project.name} />
+                    </div>
+                    <div className="project-card-white-box">
+                      <h3 className="project-card-title">{project.name}</h3>
+                      <p className="project-card-location">{project.location}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* View All Projects / Show Less Button */}
+              {projects.length > 4 && (
+                <div className="projects-cta-wrap">
+                  <button
+                    type="button"
+                    onClick={() => setShowAllProjects(!showAllProjects)}
+                    className="btn btn-secondary btn-lg"
+                  >
+                    {showAllProjects ? "Show Less Projects" : "View All Projects"}
+                  </button>
+                </div>
+              )}
+            </ScrollBlurFadeIn>
           </div>
         </section>
 
@@ -810,70 +815,72 @@ export default function HomePage() {
             ================================================================= */}
         <section id="process" className="section-py">
           <div className="container">
-            <div
-              className="section-header section-header--left section-header--mb"
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "flex-end",
-                gap: "40px",
-                flexWrap: "wrap",
-                marginBottom: "48px"
-              }}
-            >
-              <div style={{ flex: "1 1 450px", minWidth: "280px" }}>
-                <div className="section-eyebrow" style={{ display: "inline-block", marginBottom: "12px" }}>WHAT MAKES US DIFFERENT?</div>
-                <h2 className="display-md" style={{ margin: 0 }}>Our Approach &amp; 4-Step Process</h2>
-              </div>
-              <div style={{ flex: "1 1 480px", minWidth: "280px" }}>
-                <p style={{ margin: 0, color: "rgba(255, 255, 255, 0.75)", fontSize: "1.05rem", lineHeight: "1.6" }}>
-                  We don’t believe in a one-size-fits-all approach. Every project begins with understanding your requirements and vision. We carefully analyse the available space and develop customised solutions that balance aesthetics, functionality and budget.
-                </p>
-              </div>
-            </div>
-
-            <div className="process-steps-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "24px" }}>
-              <div className="process-step-item">
-                <div className="process-circle-badge">
-                  <span className="process-step-number">01</span>
+            <ScrollBlurFadeIn>
+              <div
+                className="section-header section-header--left section-header--mb"
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  gap: "40px",
+                  flexWrap: "wrap",
+                  marginBottom: "48px"
+                }}
+              >
+                <div style={{ flex: "1 1 450px", minWidth: "280px" }}>
+                  <div className="section-eyebrow" style={{ display: "inline-block", marginBottom: "12px" }}>WHAT MAKES US DIFFERENT?</div>
+                  <h2 className="display-md" style={{ margin: 0 }}>Our Approach &amp; 4-Step Process</h2>
                 </div>
-                <h3 className="process-step-title">Consultation &amp; Vision</h3>
-                <p className="process-step-desc">
-                  Understanding your requirements, lifestyle, design preferences and budget.
-                </p>
+                <div style={{ flex: "1 1 480px", minWidth: "280px" }}>
+                  <p style={{ margin: 0, color: "rgba(255, 255, 255, 0.75)", fontSize: "1.05rem", lineHeight: "1.6" }}>
+                    We don’t believe in a one-size-fits-all approach. Every project begins with understanding your requirements and vision. We carefully analyse the available space and develop customised solutions that balance aesthetics, functionality and budget.
+                  </p>
+                </div>
               </div>
 
-              <div className="process-step-item">
-                <div className="process-circle-badge">
-                  <span className="process-step-number">02</span>
+              <div className="process-steps-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "24px" }}>
+                <div className="process-step-item">
+                  <div className="process-circle-badge">
+                    <span className="process-step-number">01</span>
+                  </div>
+                  <h3 className="process-step-title">Consultation &amp; Vision</h3>
+                  <p className="process-step-desc">
+                    Understanding your requirements, lifestyle, design preferences and budget.
+                  </p>
                 </div>
-                <h3 className="process-step-title">Space &amp; 3D Design</h3>
-                <p className="process-step-desc">
-                  Creating practical layouts and customised 3D design concepts tailored to your space.
-                </p>
-              </div>
 
-              <div className="process-step-item">
-                <div className="process-circle-badge">
-                  <span className="process-step-number">03</span>
+                <div className="process-step-item">
+                  <div className="process-circle-badge">
+                    <span className="process-step-number">02</span>
+                  </div>
+                  <h3 className="process-step-title">Space &amp; 3D Design</h3>
+                  <p className="process-step-desc">
+                    Creating practical layouts and customised 3D design concepts tailored to your space.
+                  </p>
                 </div>
-                <h3 className="process-step-title">Material Selection</h3>
-                <p className="process-step-desc">
-                  Selecting premium materials, finishes and hardware engineered for quality and durability.
-                </p>
-              </div>
 
-              <div className="process-step-item">
-                <div className="process-circle-badge">
-                  <span className="process-step-number">04</span>
+                <div className="process-step-item">
+                  <div className="process-circle-badge">
+                    <span className="process-step-number">03</span>
+                  </div>
+                  <h3 className="process-step-title">Material Selection</h3>
+                  <p className="process-step-desc">
+                    Selecting premium materials, finishes and hardware engineered for quality and durability.
+                  </p>
                 </div>
-                <h3 className="process-step-title">Execution &amp; Handover</h3>
-                <p className="process-step-desc">
-                  Managing manufacturing, installation and final handover to deliver a ready home.
-                </p>
+
+                <div className="process-step-item">
+                  <div className="process-circle-badge">
+                    <span className="process-step-number">04</span>
+                  </div>
+                  <h3 className="process-step-title">Execution &amp; Handover</h3>
+                  <p className="process-step-desc">
+                    Managing manufacturing, installation and final handover to deliver a ready home.
+                  </p>
+                </div>
               </div>
-            </div>
+            </ScrollBlurFadeIn>
           </div>
         </section>
 
@@ -882,30 +889,32 @@ export default function HomePage() {
             ================================================================= */}
         <section className="section-py" style={{ backgroundColor: "#060606", color: "#FFFFFF" }}>
           <div className="container">
-            <div className="section-header section-header--left section-header--mb">
-              <div className="section-eyebrow" style={{ color: "var(--brand-primary)" }}>QUALITY &amp; MATERIALS</div>
-              <h2 className="display-md" style={{ color: "#FFFFFF" }}>Built with Branded Materials &amp; Quality Checklists</h2>
-              <p style={{ marginTop: "12px", color: "rgba(255, 255, 255, 0.8)", fontSize: "1.05rem", maxWidth: "800px" }}>
-                We disclose brand names, core board thickness, and surface finishes upfront. At DV HOMES, we provide total transparency in material selection, construction standards, and site execution.
-              </p>
-            </div>
+            <ScrollBlurFadeIn>
+              <div className="section-header section-header--left section-header--mb">
+                <div className="section-eyebrow" style={{ color: "var(--brand-primary)" }}>QUALITY &amp; MATERIALS</div>
+                <h2 className="display-md" style={{ color: "#FFFFFF" }}>Built with Branded Materials &amp; Quality Checklists</h2>
+                <p style={{ marginTop: "12px", color: "rgba(255, 255, 255, 0.8)", fontSize: "1.05rem", maxWidth: "800px" }}>
+                  We disclose brand names, core board thickness, and surface finishes upfront. At DV HOMES, we provide total transparency in material selection, construction standards, and site execution.
+                </p>
+              </div>
 
-            <div className="materials-grid-3x2" style={{ marginTop: "32px" }}>
-              {[
-                { name: "Premium Plywood", icon: "🪵", desc: "Durable marine-grade plywood for strength" },
-                { name: "HDHMR Boards", icon: "📐", desc: "High-density moisture-resistant boards" },
-                { name: "Quality Hardware", icon: "🔩", desc: "Reliable soft-close hinges and sliders" },
-                { name: "High-Quality Laminates", icon: "✨", desc: "Scratch & stain resistant surface finishes" },
-                { name: "Acrylic Finishes", icon: "💎", desc: "Glossy, modern high-aesthetic panels" },
-                { name: "Glass & Lighting", icon: "💡", desc: "Fluted glass, profile LED & feature accents" },
-              ].map((item, idx) => (
-                <div key={idx} className="materials-card-clean">
-                  <div style={{ fontSize: "2rem", marginBottom: "10px" }}>{item.icon}</div>
-                  <h3 style={{ fontSize: "1.1rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "6px" }}>{item.name}</h3>
-                  <p style={{ fontSize: "0.88rem", color: "rgba(255, 255, 255, 0.65)", lineHeight: "1.5" }}>{item.desc}</p>
-                </div>
-              ))}
-            </div>
+              <div className="materials-grid-3x2" style={{ marginTop: "32px" }}>
+                {[
+                  { name: "Premium Plywood", icon: "🪵", desc: "Durable marine-grade plywood for strength" },
+                  { name: "HDHMR Boards", icon: "📐", desc: "High-density moisture-resistant boards" },
+                  { name: "Quality Hardware", icon: "🔩", desc: "Reliable soft-close hinges and sliders" },
+                  { name: "High-Quality Laminates", icon: "✨", desc: "Scratch & stain resistant surface finishes" },
+                  { name: "Acrylic Finishes", icon: "💎", desc: "Glossy, modern high-aesthetic panels" },
+                  { name: "Glass & Lighting", icon: "💡", desc: "Fluted glass, profile LED & feature accents" },
+                ].map((item, idx) => (
+                  <div key={idx} className="materials-card-clean">
+                    <div style={{ fontSize: "2rem", marginBottom: "10px" }}>{item.icon}</div>
+                    <h3 style={{ fontSize: "1.1rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "6px" }}>{item.name}</h3>
+                    <p style={{ fontSize: "0.88rem", color: "rgba(255, 255, 255, 0.65)", lineHeight: "1.5" }}>{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </ScrollBlurFadeIn>
           </div>
         </section>
 
@@ -914,81 +923,83 @@ export default function HomePage() {
             ================================================================= */}
         <section id="testimonials" className="section-py">
           <div className="container">
-            <div className="section-header section-header--left section-header--mb">
-              <div className="section-eyebrow">CLIENT TESTIMONIALS</div>
-              <h2 className="display-md">What Our Clients Say</h2>
-            </div>
+            <ScrollBlurFadeIn>
+              <div className="section-header section-header--left section-header--mb">
+                <div className="section-eyebrow">CLIENT TESTIMONIALS</div>
+                <h2 className="display-md">What Our Clients Say</h2>
+              </div>
 
-            <div className="testimonials-grid">
-              <div className="testimonial-card">
-                <div>
-                  <div className="testimonial-stars-row">
-                    {[...Array(5)].map((_, i) => (
-                      <StarIcon key={i} size={18} color="var(--brand-primary)" />
-                    ))}
-                  </div>
-                  <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
-                    “A Smooth and Professional Experience”
-                  </h3>
-                  <p className="testimonial-text">
-                    “DV HOMES understood our requirements clearly and provided customised solutions for our home. The overall design and execution experience was smooth and professional.”
-                  </p>
-                </div>
-                <div className="testimonial-author-block">
-                  <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary)", color: "#FFFFFF" }}>RC</div>
+              <div className="testimonials-grid">
+                <div className="testimonial-card">
                   <div>
-                    <div className="testimonial-author-name">Residential Interior Client</div>
-                    <div className="testimonial-author-role">Hyderabad</div>
+                    <div className="testimonial-stars-row">
+                      {[...Array(5)].map((_, i) => (
+                        <StarIcon key={i} size={18} color="var(--brand-primary)" />
+                      ))}
+                    </div>
+                    <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
+                      “A Smooth and Professional Experience”
+                    </h3>
+                    <p className="testimonial-text">
+                      “DV HOMES understood our requirements clearly and provided customised solutions for our home. The overall design and execution experience was smooth and professional.”
+                    </p>
+                  </div>
+                  <div className="testimonial-author-block">
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary)", color: "#FFFFFF" }}>RC</div>
+                    <div>
+                      <div className="testimonial-author-name">Residential Interior Client</div>
+                      <div className="testimonial-author-role">Hyderabad</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="testimonial-card">
+                  <div>
+                    <div className="testimonial-stars-row">
+                      {[...Array(5)].map((_, i) => (
+                        <StarIcon key={i} size={18} color="var(--brand-primary)" />
+                      ))}
+                    </div>
+                    <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
+                      “Beautiful and Functional Design”
+                    </h3>
+                    <p className="testimonial-text">
+                      “We wanted an interior that looked modern but was also practical for everyday use. The team helped us achieve a beautiful and functional home.”
+                    </p>
+                  </div>
+                  <div className="testimonial-author-block">
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary)", color: "#FFFFFF" }}>HO</div>
+                    <div>
+                      <div className="testimonial-author-name">Homeowner</div>
+                      <div className="testimonial-author-role">Hyderabad</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="testimonial-card">
+                  <div>
+                    <div className="testimonial-stars-row">
+                      {[...Array(5)].map((_, i) => (
+                        <StarIcon key={i} size={18} color="var(--brand-primary)" />
+                      ))}
+                    </div>
+                    <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
+                      “Attention to Every Detail”
+                    </h3>
+                    <p className="testimonial-text">
+                      “From design discussions to the final execution, the team paid attention to our requirements and helped us create a space that feels personalised.”
+                    </p>
+                  </div>
+                  <div className="testimonial-author-block">
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary)", color: "#FFFFFF" }}>RC</div>
+                    <div>
+                      <div className="testimonial-author-name">Residential Client</div>
+                      <div className="testimonial-author-role">Hyderabad</div>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div className="testimonial-card">
-                <div>
-                  <div className="testimonial-stars-row">
-                    {[...Array(5)].map((_, i) => (
-                      <StarIcon key={i} size={18} color="var(--brand-primary)" />
-                    ))}
-                  </div>
-                  <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
-                    “Beautiful and Functional Design”
-                  </h3>
-                  <p className="testimonial-text">
-                    “We wanted an interior that looked modern but was also practical for everyday use. The team helped us achieve a beautiful and functional home.”
-                  </p>
-                </div>
-                <div className="testimonial-author-block">
-                  <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary)", color: "#FFFFFF" }}>HO</div>
-                  <div>
-                    <div className="testimonial-author-name">Homeowner</div>
-                    <div className="testimonial-author-role">Hyderabad</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="testimonial-card">
-                <div>
-                  <div className="testimonial-stars-row">
-                    {[...Array(5)].map((_, i) => (
-                      <StarIcon key={i} size={18} color="var(--brand-primary)" />
-                    ))}
-                  </div>
-                  <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
-                    “Attention to Every Detail”
-                  </h3>
-                  <p className="testimonial-text">
-                    “From design discussions to the final execution, the team paid attention to our requirements and helped us create a space that feels personalised.”
-                  </p>
-                </div>
-                <div className="testimonial-author-block">
-                  <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary)", color: "#FFFFFF" }}>RC</div>
-                  <div>
-                    <div className="testimonial-author-name">Residential Client</div>
-                    <div className="testimonial-author-role">Hyderabad</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </ScrollBlurFadeIn>
           </div>
         </section>
 

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { CheckIcon } from "../Icons";
 
 export interface ChoiceOption {
@@ -45,7 +45,8 @@ export default function ChoiceChips({
         </label>
       )}
 
-      <div
+      <motion.div
+        layout
         style={{
           display: "flex",
           flexWrap: "wrap",
@@ -57,69 +58,86 @@ export default function ChoiceChips({
           const isActive = option.value === selectedValue;
           
           const bgNormal = isDark ? "rgba(255, 255, 255, 0.04)" : "#F3F4F6";
-          const bgActive = isDark ? "rgba(122, 158, 0, 0.18)" : "rgba(122, 158, 0, 0.15)";
+          const bgActive = isDark ? "rgba(122, 158, 0, 0.22)" : "rgba(122, 158, 0, 0.16)";
           const bgHover = isDark
-            ? isActive ? "rgba(122, 158, 0, 0.25)" : "rgba(255, 255, 255, 0.08)"
-            : isActive ? "rgba(122, 158, 0, 0.22)" : "#E5E7EB";
+            ? isActive ? "rgba(122, 158, 0, 0.28)" : "rgba(255, 255, 255, 0.08)"
+            : isActive ? "rgba(122, 158, 0, 0.24)" : "#E5E7EB";
 
           const borderNormal = isDark
             ? isActive ? "#7A9E00" : "rgba(255, 255, 255, 0.14)"
             : isActive ? "#7A9E00" : "rgba(23, 23, 22, 0.12)";
 
-          const borderHover = isDark
-            ? isActive ? "#7A9E00" : "rgba(255, 255, 255, 0.25)"
-            : isActive ? "#7A9E00" : "rgba(23, 23, 22, 0.22)";
-
           const textNormal = isDark
-            ? isActive ? "#7A9E00" : "rgba(255, 255, 255, 0.80)"
-            : isActive ? "#7A9E00" : "#374151";
+            ? isActive ? "#99C700" : "rgba(255, 255, 255, 0.85)"
+            : isActive ? "#5C7800" : "#374151";
 
           return (
-            <button
+            <motion.button
+              layout
               key={option.value}
               type="button"
               onClick={() => onChange(option.value)}
+              animate={{
+                backgroundColor: isActive ? bgActive : bgNormal,
+                borderColor: borderNormal,
+                color: textNormal,
+              }}
+              whileHover={{
+                backgroundColor: bgHover,
+                scale: 1.02,
+              }}
+              whileTap={{ scale: 0.97 }}
+              transition={{
+                duration: 0.35,
+                ease: [0.16, 1, 0.3, 1],
+              }}
               style={{
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: "6px",
                 height: "40px",
                 padding: "0 16px",
                 borderRadius: "9999px",
                 fontSize: "14px",
-                fontWeight: "600",
+                fontWeight: "500",
                 cursor: "pointer",
-                border: `1px solid ${isActive ? borderHover : borderNormal}`,
-                background: isActive ? bgActive : bgNormal,
-                color: textNormal,
+                border: `1px solid ${borderNormal}`,
                 boxShadow: "none",
                 outline: "none",
                 userSelect: "none",
                 boxSizing: "border-box",
                 lineHeight: "1",
-                transition: "background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease",
+                whiteSpace: "nowrap",
+                overflow: "hidden",
               }}
             >
-              <AnimatePresence mode="wait" initial={false}>
-                {isActive && (
-                  <motion.span
-                    key="check"
-                    initial={{ scale: 0.5, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    exit={{ scale: 0.5, opacity: 0 }}
-                    transition={{ duration: 0.15, ease: "easeOut" }}
-                    style={{ display: "inline-flex", alignItems: "center" }}
-                  >
-                    <CheckIcon size={14} color="#7A9E00" strokeWidth={2.5} />
-                  </motion.span>
-                )}
-              </AnimatePresence>
+              <motion.span
+                initial={false}
+                animate={{
+                  width: isActive ? 16 : 0,
+                  opacity: isActive ? 1 : 0,
+                  marginRight: isActive ? 6 : 0,
+                  scale: isActive ? 1 : 0.4,
+                }}
+                transition={{
+                  duration: 0.35,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  overflow: "hidden",
+                  flexShrink: 0,
+                }}
+              >
+                <CheckIcon size={14} color={isDark ? "#99C700" : "#5C7800"} strokeWidth={2.5} />
+              </motion.span>
               <span>{option.label}</span>
-            </button>
+            </motion.button>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 }
