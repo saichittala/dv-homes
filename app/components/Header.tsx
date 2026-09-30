@@ -222,7 +222,7 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
                   onClick={handleOpenConsultation}
                   className="btn btn-primary btn-sm"
                 >
-                  <span>Free Planning Session</span>
+                  <span>Get a Free Quote</span>
                 </button>
 
                 {/* Mobile Hamburger Toggle (Untitled UI Icons) */}
@@ -393,7 +393,7 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
                   boxShadow: "none",
                 }}
               >
-                <span>Free Planning Session</span>
+                <span>Get a Free Quote</span>
               </button>
 
               <div
