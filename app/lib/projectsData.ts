@@ -188,5 +188,72 @@ export const projectsData: ProjectDetail[] = [
     solution: "We designed a hidden walk-in closet behind a seamless fluted glass partition wall, keeping clothes out of sight from the main sleeping area.",
     relatedServiceId: "bedrooms",
     relatedLocationSlug: "madhapur"
+  },
+  {
+    id: "vasavi-nandanavanam-suchitra",
+    title: "Vasavi Nandanavanam Interior Project",
+    location: "Suchitra, Hyderabad",
+    projectType: "3BHK Luxury Apartment",
+    scope: "Full Turnkey Interior Execution",
+    designStyle: "Modern Contemporary Minimalist",
+    completionYear: "2026",
+    mainImage: "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+    gallery: [
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/parthu/hero-living.jpg",
+      "/assets/parthu/modular-kitchen.jpg",
+      "/assets/parthu/bedroom-suite.jpg"
+    ],
+    metaTitle: "Vasavi Nandanavanam Suchitra Interior Design Project | DV Homes",
+    metaDescription: "Turnkey residential interior design project at Vasavi Nandanavanam in Suchitra, Hyderabad. BWP marine plywood woodwork, modular kitchen & TV panelling.",
+    concept: "A contemporary 3BHK home interior at Vasavi Nandanavanam, Suchitra. Features smart space utilization, custom modular kitchen, acrylic wardrobes, and ambient LED cove lighting.",
+    materials: [
+      "100% BWP Marine Plywood",
+      "Anti-Fingerprint High Gloss Acrylic",
+      "Quartz Countertop with Waterfall Edge",
+      "Hafele Soft-Close Hardware"
+    ],
+    keyFeatures: [
+      "Custom living room TV unit with louvered accent panels",
+      "Modular kitchen with pull-out pantry and cutlery organizers",
+      "Master bedroom sliding wardrobe with integrated dressing unit"
+    ],
+    challenge: "Optimizing storage in compact bedroom spaces while ensuring fluid foot traffic.",
+    solution: "Custom-built floor-to-ceiling sliding wardrobes with integrated mirror panels to maximize light and floor space.",
+    relatedServiceId: "apartment-interiors",
+    relatedLocationSlug: "suchitra"
+  },
+  {
+    id: "asbl-springs-pocharam",
+    title: "ASBL Springs 3BHK Interior",
+    location: "Pocharam, Hyderabad",
+    projectType: "3BHK Apartment Interior",
+    scope: "Modular Furniture & Turnkey Execution",
+    designStyle: "Warm Functional Minimalist",
+    completionYear: "2026",
+    mainImage: "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+    gallery: [
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/parthu/modular-kitchen.jpg",
+      "/assets/parthu/puja-room.jpg",
+      "/assets/parthu/dining-interior.jpg"
+    ],
+    metaTitle: "ASBL Springs Pocharam Interior Design Project | DV Homes",
+    metaDescription: "Complete interior design & factory execution at ASBL Springs, Pocharam, Hyderabad. Featuring modular kitchen, wardrobes & CNC pooja mandir.",
+    concept: "Designed for a family at ASBL Springs in Pocharam, this 3BHK project balances warm wood tones, ergonomic kitchen layout, and custom CNC jaali mandir design.",
+    materials: [
+      "BWP Grade Marine Plywood",
+      "Teak Wood Veneer Inlays",
+      "Blum German Soft-Close Tandembox Systems"
+    ],
+    keyFeatures: [
+      "Ergonomic kitchen layout with island counter",
+      "Teak wood pooja mandir with brass bell jaali",
+      "False ceiling design with magnetic track lights"
+    ],
+    challenge: "Delivering a complete turnkey execution within a strict 45-day deadline.",
+    solution: "Off-site precision factory manufacturing at our Kokapet unit, reducing on-site assembly to 10 days.",
+    relatedServiceId: "home-interior-design",
+    relatedLocationSlug: "pocharam"
   }
 ];
