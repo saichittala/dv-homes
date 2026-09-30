@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/1xwbeec16ei6m.css","style"]
+:HL["/_next/static/chunks/0zi0-ry4b9t8p.css","style"]
 :HC["/",""]
 :HL["/assets/logoo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"locations","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"hitec-city","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"woChA56dde3zLTRe5k4iK"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"locations","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"hitec-city","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"vYPdVy_yN1GUP0_qXrUXR"}
