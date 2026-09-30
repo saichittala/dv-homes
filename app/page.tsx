@@ -1220,7 +1220,7 @@ export default function HomePage() {
             <div className="guarantee-badges-grid">
               <div className="value-badge">
                 <div className="value-badge-icon">
-                  <CompassIcon size={24} color="var(--brand-primary)" />
+                  <CompassIcon size={24} color="#ffffff" />
                 </div>
                 <div className="value-badge-title">Custom Designs</div>
                 <div className="value-badge-desc">Tailored for you</div>
@@ -1228,7 +1228,7 @@ export default function HomePage() {
 
               <div className="value-badge">
                 <div className="value-badge-icon">
-                  <DiamondIcon size={24} color="var(--brand-primary)" />
+                  <DiamondIcon size={24} color="#ffffff" />
                 </div>
                 <div className="value-badge-title">Premium Materials</div>
                 <div className="value-badge-desc">Lasting beauty</div>
@@ -1236,7 +1236,7 @@ export default function HomePage() {
 
               <div className="value-badge">
                 <div className="value-badge-icon">
-                  <ToolIcon size={24} color="var(--brand-primary)" />
+                  <ToolIcon size={24} color="#ffffff" />
                 </div>
                 <div className="value-badge-title">Expert Team</div>
                 <div className="value-badge-desc">Professional installation</div>
@@ -1244,7 +1244,7 @@ export default function HomePage() {
 
               <div className="value-badge">
                 <div className="value-badge-icon">
-                  <ClockIcon size={24} color="var(--brand-primary)" />
+                  <ClockIcon size={24} color="#ffffff" />
                 </div>
                 <div className="value-badge-title">On-Time Delivery</div>
                 <div className="value-badge-desc">Every single time</div>

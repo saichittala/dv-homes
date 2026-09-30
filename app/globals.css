@@ -3948,26 +3948,27 @@ main {
   width: 50px;
   height: 50px;
   border-radius: var(--radius-brand-18);
-  background: var(--brand-tint-10);
-  border: 1px solid var(--brand-border-subtle);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 14px;
-  color: var(--brand-primary);
+  color: #ffffff;
 }
 
 .value-badge-title {
-  color: var(--brand-primary);
+  color: #ffffff;
   font-weight: var(--fw-bold);
-  font-size: var(--fs-16);
+  font-size: var(--fs-15);
+  letter-spacing: 0.03em;
   margin-bottom: 4px;
   text-transform: uppercase;
 }
 
 .value-badge-desc {
-  font-size: var(--fs-16);
-  color: var(--text-light-muted);
+  font-size: var(--fs-14);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 @media (max-width: 900px) {
