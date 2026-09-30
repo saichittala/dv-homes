@@ -107,7 +107,7 @@ export default function ServicesClient() {
               onClick={() => setConsultationOpen(true)}
               className="btn btn-primary btn-lg services-cta-btn"
             >
-              <span>Free Planning Session</span>
+              <span>Get a Free Quote</span>
             </button>
           </div>
         </section>

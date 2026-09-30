@@ -686,7 +686,7 @@ export default function HomePage() {
                 onClick={() => setConsultationOpen(true)}
                 className="btn btn-primary btn-md"
               >
-                <span>Get a Free Consultation</span>
+                <span>Get a Free Quote</span>
               </button>
             </div>
           </div>
@@ -1071,7 +1071,7 @@ export default function HomePage() {
                     onClick={() => setConsultationOpen(true)}
                     className="btn btn-primary btn-lg"
                   >
-                    <span>Free Planning Session</span>
+                    <span>Get a Free Quote</span>
                   </button>
                   <a
                     href={`https://wa.me/919916862442?text=${encodeURIComponent("Hi DV HOMES! 👋 I would like to request a Free Home Interior Planning Session.")}`}
@@ -1200,7 +1200,7 @@ export default function HomePage() {
                       className="btn btn-primary btn-lg"
                       style={{ width: "100%", marginTop: "8px" }}
                     >
-                      <span>{homeFormSubmitting ? "Submitting..." : "Request Free Consultation"}</span>
+                      <span>{homeFormSubmitting ? "Submitting..." : "Get a Free Quote"}</span>
                     </button>
                   </form>
                 )}

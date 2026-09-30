@@ -45,7 +45,7 @@ export default function AboutPage() {
                 </p>
                 <div className="about-hero-actions">
                   <button onClick={() => setConsultationOpen(true)} className="btn btn-primary btn-lg">
-                    <span>Free Planning Session</span>
+                    <span>Get a Free Quote</span>
                   </button>
                   <a href="tel:+919916862442" className="btn btn-secondary btn-lg" style={{ gap: "8px" }}>
                     <PhoneIcon size={16} />
@@ -200,7 +200,7 @@ export default function AboutPage() {
                 onClick={() => setConsultationOpen(true)}
                 className="btn btn-primary btn-lg"
               >
-                <span>Free Planning Session</span>
+                <span>Get a Free Quote</span>
               </button>
               <a
                 href={`https://wa.me/919916862442?text=${encodeURIComponent("Hi DV HOMES! 👋 I would like to request a Free Home Interior Planning Session.")}`}

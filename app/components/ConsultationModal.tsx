@@ -219,7 +219,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
                 className="btn btn-primary btn-lg w-full"
                 style={{ width: "100%" }}
               >
-                <span>{isSubmitting ? "Submitting..." : "Book Consultation"}</span>
+                <span>{isSubmitting ? "Submitting..." : "Get a Free Quote"}</span>
               </button>
 
               <div className="modal-privacy-note">

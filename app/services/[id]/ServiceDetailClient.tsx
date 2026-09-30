@@ -199,7 +199,7 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
                 onClick={() => setConsultationOpen(true)}
                 className="btn btn-primary btn-lg services-cta-btn"
               >
-                <span>Free Planning Session</span>
+                <span>Get a Free Quote</span>
               </button>
             </div>
           </div>

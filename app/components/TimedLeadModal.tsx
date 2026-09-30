@@ -228,7 +228,7 @@ export default function TimedLeadModal() {
                 className="btn btn-primary btn-lg"
                 style={{ width: "100%", marginTop: "8px" }}
               >
-                <span>{isSubmitting ? "Submitting Request..." : "Book Consultation"}</span>
+                <span>{isSubmitting ? "Submitting Request..." : "Get a Free Quote"}</span>
               </button>
 
               <div className="modal-privacy-note">
