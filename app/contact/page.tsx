@@ -97,7 +97,7 @@ export default function ContactPage() {
               <div className="contact-info-stack">
                 <div className="contact-info-card">
                   <div className="icon-wrapper">
-                    <MapPinIcon size={24} color="var(--brand-primary, #38d059)" />
+                    <MapPinIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
                   </div>
                   <div>
                     <h3 className="card-title">Location</h3>
@@ -110,7 +110,7 @@ export default function ContactPage() {
 
                 <div className="contact-info-card">
                   <div className="icon-wrapper">
-                    <PhoneIcon size={24} color="var(--brand-primary, #38d059)" />
+                    <PhoneIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
                   </div>
                   <div>
                     <h3 className="card-title">Direct Phone &amp; WhatsApp</h3>
@@ -125,7 +125,7 @@ export default function ContactPage() {
 
                 <div className="contact-info-card">
                   <div className="icon-wrapper">
-                    <MailIcon size={24} color="var(--brand-primary, #38d059)" />
+                    <MailIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
                   </div>
                   <div>
                     <h3 className="card-title">Email Inquiries</h3>
