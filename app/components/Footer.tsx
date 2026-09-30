@@ -20,11 +20,8 @@ export default function Footer() {
               className="footer-logo-img"
               style={{ height: "80px", maxHeight: "88px", width: "auto", objectFit: "contain", marginBottom: "20px" }}
             />
-            <p style={{ color: "var(--brand-primary)", fontWeight: "600", fontSize: "0.95rem", marginBottom: "12px" }}>
-              Clear Planning • Quality Execution • Responsible Communication
-            </p>
-            <p className="footer-desc">
-              Complete end-to-end responsibility from initial design to final handover. Advance layout planning, transparent budgeting, premium materials, and regular site updates to complete your dream home stress-free – DV HOMES.
+            <p style={{ color: "#FFFFFF", fontSize: "0.95rem", fontWeight: "500", lineHeight: "1.6", maxWidth: "320px", marginTop: "12px", opacity: 0.9 }}>
+              Turnkey residential interior design &amp; execution firm in Hyderabad.
             </p>
           </div>
 
