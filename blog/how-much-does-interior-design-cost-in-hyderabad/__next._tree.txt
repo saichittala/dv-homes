@@ -2,4 +2,4 @@
 :HC["/",""]
 :HL["/assets/parthu/hero-living.jpg","image"]
 :HL["/assets/logoo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"how-much-does-interior-design-cost-in-hyderabad","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"fZkB1AUTjARwXk0jn7FkO"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"how-much-does-interior-design-cost-in-hyderabad","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"0XjnbW5MGxBeTwoPJYQpj"}
