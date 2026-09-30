@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/0zd8vdxj33ymm.css","style"]
+:HL["/_next/static/chunks/1xwbeec16ei6m.css","style"]
 :HC["/",""]
 :HL["/assets/parthu/after-room.jpg","image"]
 :HL["/assets/logoo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"turnkey-interiors-vs-direct-contractor-hyderabad","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"NtvOoWhW_S5A3WJEhi-df"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"turnkey-interiors-vs-direct-contractor-hyderabad","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"woChA56dde3zLTRe5k4iK"}
