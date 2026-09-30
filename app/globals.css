@@ -160,11 +160,13 @@
   --lh-text-sm: 1.5;
   --lh-text-xs: 1.4;
 
-  /* ── 2. BRAND COLOR SYSTEM (#6bff8b - DV HOMES Brand Green & Black) ── */
+  /* ── 2. BRAND COLOR SYSTEM (#6bff8b for Dark, #0f8a33 for Light) ── */
   --brand-primary: #6bff8b;
   --brand-primary-hover: #58e677;
   --brand-primary-active: #47ce63;
   --brand-primary-light: #89ffA5;
+  --brand-primary-lightmode: #0f8a33;
+  --brand-primary-lightmode-hover: #0c732b;
   --brand-tint-05: rgba(107, 255, 139, 0.05);
   --brand-tint-08: rgba(107, 255, 139, 0.08);
   --brand-tint-10: rgba(107, 255, 139, 0.10);
@@ -818,19 +820,30 @@ textarea:disabled,
   justify-content: center;
   gap: 6px;
   background: transparent !important;
-  border: 1px solid var(--brand-primary) !important;
+  border: 1px solid var(--brand-primary-lightmode, #0f8a33) !important;
   padding: 4px 12px !important;
   border-radius: var(--radius-pill) !important;
   font-size: 12px !important;
   font-weight: 600 !important;
   line-height: 1.2;
-  color: var(--brand-primary) !important;
+  color: var(--brand-primary-lightmode, #0f8a33) !important;
   letter-spacing: normal !important;
   text-transform: uppercase;
   margin-bottom: 14px;
   box-shadow: none !important;
   transition: var(--transition-fast);
   width: fit-content;
+}
+
+/* Dark Section Eyebrow Override (vibrant neon green #6bff8b on dark backgrounds) */
+.bg-dark .section-eyebrow,
+[data-theme="dark"] .section-eyebrow,
+.who-we-are-section .section-eyebrow,
+.services-hero-banner .section-eyebrow,
+.why-dv-homes-section .section-eyebrow,
+.footer .section-eyebrow {
+  border-color: rgba(107, 255, 139, 0.4) !important;
+  color: #6bff8b !important;
 }
 
 .badge-dot {

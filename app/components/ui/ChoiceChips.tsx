@@ -69,7 +69,7 @@ export default function ChoiceChips({
 
           const textNormal = isDark
             ? isActive ? "#6bff8b" : "rgba(255, 255, 255, 0.85)"
-            : isActive ? "#2ba645" : "#374151";
+            : isActive ? "#0f8a33" : "#374151";
 
           return (
             <motion.button
@@ -132,7 +132,7 @@ export default function ChoiceChips({
                   flexShrink: 0,
                 }}
               >
-                <CheckIcon size={14} color={isDark ? "#6bff8b" : "#2ba645"} strokeWidth={2.5} />
+                <CheckIcon size={14} color={isDark ? "#6bff8b" : "#0f8a33"} strokeWidth={2.5} />
               </motion.span>
               <span>{option.label}</span>
             </motion.button>
