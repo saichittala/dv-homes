@@ -388,57 +388,59 @@ export default function HomePage() {
           </div>
 
           <div className="container hero-cinematic-container">
-            {/* Hero Main Content (Left-Aligned) */}
-            <div className="hero-cinematic-content">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={heroIndex}
-                  initial={{ opacity: 0, filter: "blur(24px)", y: 20 }}
-                  animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-                  exit={{ opacity: 0, filter: "blur(24px)", y: -20 }}
-                  transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                >
-                  <h1 className="hero-cinematic-title">
-                    {heroSlides[heroIndex].title}<br />
-                    <span className="hero-title-accent">{heroSlides[heroIndex].accent}</span>
-                  </h1>
-                </motion.div>
-              </AnimatePresence>
+            <div className="hero-top-bar">
+              {/* Hero Main Content (Left-Aligned) */}
+              <div className="hero-cinematic-content">
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={heroIndex}
+                    initial={{ opacity: 0, filter: "blur(24px)", y: 20 }}
+                    animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                    exit={{ opacity: 0, filter: "blur(24px)", y: -20 }}
+                    transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                  >
+                    <h1 className="hero-cinematic-title">
+                      {heroSlides[heroIndex].title}<br />
+                      <span className="hero-title-accent">{heroSlides[heroIndex].accent}</span>
+                    </h1>
+                  </motion.div>
+                </AnimatePresence>
 
-              <div className="hero-cinematic-actions">
+                <div className="hero-cinematic-actions">
+                  <button
+                    onClick={() => setConsultationOpen(true)}
+                    className="btn btn-primary btn-lg"
+                  >
+                    <span>Get a Free Quote</span>
+                  </button>
+
+                  <a
+                    href="#projects"
+                    className="btn btn-secondary-glass btn-lg"
+                  >
+                    <span>View Latest Projects</span>
+                  </a>
+                </div>
+              </div>
+
+              {/* Slider Navigation Controls (Left/Right Arrow Buttons) */}
+              <div className="hero-slider-controls">
                 <button
-                  onClick={() => setConsultationOpen(true)}
-                  className="btn btn-primary btn-lg"
+                  onClick={prevHeroSlide}
+                  className="hero-slider-btn"
+                  aria-label="Previous Slide"
                 >
-                  <span>Get a Free Quote</span>
+                  <ChevronLeftIcon size={20} color="#FFFFFF" />
                 </button>
-
-                <a
-                  href="#projects"
-                  className="btn btn-secondary-glass btn-lg"
+                <button
+                  onClick={nextHeroSlide}
+                  className="hero-slider-btn"
+                  aria-label="Next Slide"
                 >
-                  <span>View Latest Projects</span>
-                </a>
+                  <ChevronRightIcon size={20} color="#FFFFFF" />
+                </button>
               </div>
             </div>
-          </div>
-
-          {/* Bottom Right Slider Navigation Controls (20px bottom & 20px right) */}
-          <div className="hero-slider-controls">
-            <button
-              onClick={prevHeroSlide}
-              className="hero-slider-btn"
-              aria-label="Previous Slide"
-            >
-              <ChevronLeftIcon size={20} color="#FFFFFF" />
-            </button>
-            <button
-              onClick={nextHeroSlide}
-              className="hero-slider-btn"
-              aria-label="Next Slide"
-            >
-              <ChevronRightIcon size={20} color="#FFFFFF" />
-            </button>
           </div>
         </section>
 
