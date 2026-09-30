@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "tsc --noEmit",
-    "build:static": "node scripts/generate-sitemap.js && mv app/api _api_bak && NEXT_PUBLIC_STATIC_EXPORT=true next build; mv _api_bak app/api",
+    "build:static": "node scripts/generate-sitemap.js && (if [ -d app/api ]; then mv app/api _api_bak; fi) && NEXT_PUBLIC_STATIC_EXPORT=true next build; (if [ -d _api_bak ]; then mv _api_bak app/api; fi)",
     "deploy": "npm run build:static && gh-pages -d out"
   },
   "dependencies": {
