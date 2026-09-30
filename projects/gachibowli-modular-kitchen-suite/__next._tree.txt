@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/0eky27t--3b5w.css","style"]
+:HL["/_next/static/chunks/0thpa8ospi7lf.css","style"]
 :HC["/",""]
 :HL["/assets/parthu/modular-kitchen.jpg","image"]
 :HL["/assets/logoo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"gachibowli-modular-kitchen-suite","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"_Ca0vLMcryjG0_JhNDo7A"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"gachibowli-modular-kitchen-suite","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"homu5Ow8sPBux6nOMSszu"}
