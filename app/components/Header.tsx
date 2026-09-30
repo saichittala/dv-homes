@@ -96,9 +96,7 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "Locations", href: "/locations" },
     { name: "Projects", href: "/projects" },
-    { name: "Blog", href: "/blog" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
@@ -107,9 +105,7 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
     if (link.href === "/about") return pathname === "/about";
     if (link.href === "/contact") return pathname === "/contact";
     if (link.href === "/services") return pathname.startsWith("/services");
-    if (link.href === "/locations") return pathname.startsWith("/locations");
     if (link.href === "/projects") return pathname.startsWith("/projects");
-    if (link.href === "/blog") return pathname.startsWith("/blog");
     if (link.href === "/") return pathname === "/" && (activeSection === "home" || !activeSection);
     return pathname === link.href;
   };
