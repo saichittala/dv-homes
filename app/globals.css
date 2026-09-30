@@ -2527,7 +2527,7 @@ main {
 
 .featured-service-card-item:hover .featured-service-title {
   font-weight: 500 !important;
-  color: #060606 !important;
+  color: var(--brand-primary, #6bff8b) !important;
 }
 
 .featured-service-desc {
@@ -4238,7 +4238,7 @@ main {
 
 .service-card-item:hover .service-card-title {
   font-weight: 500 !important;
-  color: #060606 !important;
+  color: var(--brand-primary, #6bff8b) !important;
 }
 
 @media (max-width: 1024px) {
