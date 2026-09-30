@@ -787,7 +787,7 @@ export default function HomePage() {
                   onClick={() => setShowAllProjects(!showAllProjects)}
                   className="btn btn-secondary btn-lg"
                 >
-                  {showAllProjects ? "Show Less Projects ↑" : "View All Projects →"}
+                  {showAllProjects ? "Show Less Projects" : "View All Projects"}
                 </button>
               </div>
             )}
