@@ -2,4 +2,4 @@
 :HC["/",""]
 :HL["/assets/parthu/hero-living.jpg","image"]
 :HL["/assets/logoo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"financial-district-3bhk-apartment","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"B9dSUdBl1vr9gfsT8ouGl"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"financial-district-3bhk-apartment","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"NtvOoWhW_S5A3WJEhi-df"}
