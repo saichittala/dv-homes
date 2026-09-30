@@ -2491,9 +2491,16 @@ main {
 .featured-service-title {
   font-family: var(--font-body) !important;
   font-size: var(--fs-18);
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   color: var(--text-dark-primary);
   margin-bottom: 8px;
+  transition: font-weight 0.45s cubic-bezier(0.16, 1, 0.3, 1), color 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: font-weight, color;
+}
+
+.featured-service-card-item:hover .featured-service-title {
+  font-weight: 500 !important;
+  color: var(--brand-primary);
 }
 
 .featured-service-desc {
@@ -4194,10 +4201,12 @@ main {
   color: #FFFFFF;
   margin-top: 14px;
   letter-spacing: -0.01em;
-  transition: color var(--duration-fast) var(--ease-apple);
+  transition: font-weight 0.45s cubic-bezier(0.16, 1, 0.3, 1), color 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: font-weight, color;
 }
 
 .service-card-item:hover .service-card-title {
+  font-weight: 500 !important;
   color: var(--brand-primary);
 }
 
