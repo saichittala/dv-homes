@@ -402,14 +402,14 @@ export const metadata: Metadata = {
   title: "${data.title}",
   description: "${data.desc}",
   alternates: {
-    canonical: "https://reelscale.in/${data.slug}",
+    canonical: "https://dvhomes.in/${data.slug}",
   },
   openGraph: {
     title: "${data.title}",
     description: "${data.desc}",
-    url: "https://reelscale.in/${data.slug}",
-    siteName: "ReelScale",
-    images: ["https://reelscale.in/assets/logo.png"],
+    url: "https://dvhomes.in/${data.slug}",
+    siteName: "DV Homes & Interiors",
+    images: ["https://dvhomes.in/assets/logoo.png"],
     type: "website",
   },
 };
@@ -459,37 +459,37 @@ export default function SEOPage() {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://reelscale.in/${data.slug}#webpage",
-        "url": "https://reelscale.in/${data.slug}",
+        "@id": "https://dvhomes.in/${data.slug}#webpage",
+        "url": "https://dvhomes.in/${data.slug}",
         "name": "${data.title}",
         "description": "${data.desc}"
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://reelscale.in/${data.slug}#breadcrumbs",
+        "@id": "https://dvhomes.in/${data.slug}#breadcrumbs",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://reelscale.in"
+            "item": "https://dvhomes.in"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "${data.name}",
-            "item": "https://reelscale.in/${data.slug}"
+            "item": "https://dvhomes.in/${data.slug}"
           }
         ]
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://reelscale.in/${data.slug}#localbusiness",
-        "name": "ReelScale | ${data.name}",
-        "url": "https://reelscale.in/${data.slug}",
-        "logo": "https://reelscale.in/assets/logo.png",
-        "image": "https://reelscale.in/assets/logo.png",
-        "telephone": "+919966239433",
+        "@id": "https://dvhomes.in/${data.slug}#localbusiness",
+        "name": "DV Homes & Interiors | ${data.name}",
+        "url": "https://dvhomes.in/${data.slug}",
+        "logo": "https://dvhomes.in/assets/logoo.png",
+        "image": "https://dvhomes.in/assets/logoo.png",
+        "telephone": "+919916862442",
         "priceRange": "₹₹",
         "address": {
           "@type": "PostalAddress",

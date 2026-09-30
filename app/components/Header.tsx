@@ -278,9 +278,9 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
             >
               <Link href="/" onClick={() => setMobileMenuOpen(false)}>
                 <img
-                  src="/assets/icons/logo.svg"
+                  src="/assets/logoo.png"
                   alt="DV HOMES"
-                  style={{ height: "40px", objectFit: "contain" }}
+                  style={{ height: "36px", objectFit: "contain" }}
                 />
               </Link>
 
