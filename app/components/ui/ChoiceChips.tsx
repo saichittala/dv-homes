@@ -64,8 +64,8 @@ export default function ChoiceChips({
             : isActive ? "rgba(107, 255, 139, 0.20)" : "#E5E7EB";
 
           const borderNormal = isDark
-            ? isActive ? "#6bff8b" : "rgba(255, 255, 255, 0.14)"
-            : isActive ? "#6bff8b" : "rgba(23, 23, 22, 0.12)";
+            ? isActive ? "transparent" : "rgba(255, 255, 255, 0.14)"
+            : isActive ? "transparent" : "rgba(23, 23, 22, 0.12)";
 
           const textNormal = isDark
             ? isActive ? "#6bff8b" : "rgba(255, 255, 255, 0.85)"
@@ -84,6 +84,7 @@ export default function ChoiceChips({
               }}
               whileHover={{
                 backgroundColor: bgHover,
+                borderColor: "transparent",
                 scale: 1.02,
               }}
               whileTap={{ scale: 0.97 }}

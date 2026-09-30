@@ -4409,13 +4409,17 @@ main {
 .services-tab-btn:hover {
   background: var(--brand-tint-08) !important;
   color: var(--brand-primary) !important;
-  border-color: var(--brand-tint-25) !important;
+  border-color: transparent !important;
+  border: 1px solid transparent !important;
+  outline: none !important;
 }
 
 .services-tab-btn.active {
   background: var(--brand-tint-10) !important;
   color: var(--brand-primary) !important;
   border: 1px solid transparent !important;
+  border-color: transparent !important;
+  outline: none !important;
   box-shadow: none !important;
   font-weight: 600;
 }
