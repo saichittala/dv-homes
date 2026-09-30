@@ -204,56 +204,56 @@ export default function HomePage() {
       num: "01",
       title: "Bed Rooms",
       desc: "Turn your bedroom into a peaceful retreat with bespoke designs tailored to your style.",
-      image: "/assets/parthu/bedroom-suite.webp"
+      image: "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp"
     },
     {
       id: "kitchens",
       num: "02",
       title: "Kitchens",
       desc: "Experience the perfect blend of aesthetics and efficiency with a smart, space-optimized modular kitchen.",
-      image: "/assets/main_images/kitchen-modern-black-red.webp"
+      image: "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     },
     {
       id: "living-rooms",
       num: "03",
       title: "Living Rooms",
       desc: "Create a stunning first impression with a living room that balances elegance, comfort, and functionality.",
-      image: "/assets/parthu/hero-living.webp"
+      image: "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp"
     },
     {
       id: "dining-rooms",
       num: "04",
       title: "Dining Rooms",
       desc: "Dine in style with elegant and functional spaces designed for memorable gatherings.",
-      image: "/assets/parthu/dining-interior.webp"
+      image: "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     },
     {
       id: "puja",
       num: "05",
       title: "Puja",
       desc: "Create a serene sanctuary with a pooja room designed for peace and positivity.",
-      image: "/assets/parthu/puja-room.webp"
+      image: "/assets/main_images/luxury-interior-exterior-design-collection-highend-architectural-home-decor-concepts-feat.webp"
     },
     {
       id: "partitions",
       num: "06",
       title: "Partitions",
       desc: "Define spaces effortlessly with stylish, functional partitions that enhance aesthetics and privacy.",
-      image: "/assets/parthu/luxury-wardrobe.webp"
+      image: "/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp"
     },
     {
       id: "study-rooms",
       num: "07",
       title: "Study Rooms",
       desc: "Boost focus and productivity with a study space that blends comfort and inspiration.",
-      image: "/assets/parthu/study-room.webp"
+      image: "/assets/main_images/luxury-home-interior-design-3d-visualization-expensive-finishing-materials-furniture.webp"
     },
     {
       id: "office-spaces",
       num: "08",
       title: "Office Spaces",
       desc: "Design workspaces that fuel creativity, efficiency, and success.",
-      image: "/assets/parthu/viswajeet-villa.webp"
+      image: "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp"
     }
   ];
 

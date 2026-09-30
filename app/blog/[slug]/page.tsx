@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
       authors: [post.author || "Arige Praveenkumar"],
       images: [
         {
-          url: post.ogImage || post.featuredImage || "https://dvhomes.in/assets/parthu/hero-living.jpg",
+          url: post.ogImage || post.featuredImage || "https://dvhomes.in/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
           alt: post.title
         }
       ]
@@ -101,7 +101,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.description,
-    "image": post.featuredImage || "https://dvhomes.in/assets/parthu/hero-living.jpg",
+    "image": post.featuredImage || "https://dvhomes.in/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
     "datePublished": post.publishedDate,
     "dateModified": post.updatedDate || post.publishedDate,
     "author": {

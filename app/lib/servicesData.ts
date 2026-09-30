@@ -26,12 +26,12 @@ export const servicesData: ServiceDetail[] = [
     category: "Turnkey Interiors",
     tagline: "End-to-end residential interior design & execution across Hyderabad",
     description: "Complete home interior design by DV Homes takes full responsibility for your entire living space from raw floorplan to final handover. We combine spatial planning, 3D visualization, factory-controlled manufacturing at Kokapet, electrical ceiling design, custom woodwork, quartz installation, and white-glove site cleaning.",
-    mainImage: "/assets/parthu/hero-living.jpg",
+    mainImage: "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
     gallery: [
-      "/assets/parthu/hero-living.jpg",
-      "/assets/parthu/viswajeet-villa.jpg",
-      "/assets/parthu/bedroom-suite.jpg",
-      "/assets/parthu/modular-kitchen.jpg"
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
+      "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     features: [
       "Dedicated Lead Designer (Arige Praveenkumar) & Site Project Engineer",
@@ -65,12 +65,12 @@ export const servicesData: ServiceDetail[] = [
     category: "Luxury Residences",
     tagline: "Architectural grandeur & rare materials for discerning Hyderabad homes",
     description: "Our luxury interior design studio creates signature living environments for luxury villas, penthouse suites, and high-end residences in Jubilee Hills, Banjara Hills, Kokapet, and Financial District. Featuring Italian marble, natural book-matched veneers, brass PVD accents, and custom upholstered furnishings.",
-    mainImage: "/assets/parthu/rajasekhar-home.jpg",
+    mainImage: "/assets/main_images/interior-design-luxury-living-room.webp",
     gallery: [
-      "/assets/parthu/rajasekhar-home.jpg",
-      "/assets/parthu/hero-living.jpg",
-      "/assets/parthu/viswajeet-villa.jpg",
-      "/assets/parthu/dining-interior.jpg"
+      "/assets/main_images/interior-design-luxury-living-room.webp",
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     features: [
       "Book-Matched Italian Marble & Charcoal Louver Wall Cladding",
@@ -100,12 +100,12 @@ export const servicesData: ServiceDetail[] = [
     category: "Apartments",
     tagline: "Space-maximizing luxury layouts for 2BHK, 3BHK & 4BHK apartments",
     description: "Modern apartment interior design in Hyderabad demands smart spatial planning, high storage efficiency, and elegant lighting. We specialize in transforming high-rise gated community apartments in Madhapur, Gachibowli, Kondapur, Financial District, and Nanakramguda into expansive, serene sanctuaries.",
-    mainImage: "/assets/parthu/bedroom-suite.jpg",
+    mainImage: "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
     gallery: [
-      "/assets/parthu/bedroom-suite.jpg",
-      "/assets/parthu/hero-living.jpg",
-      "/assets/parthu/modular-kitchen.jpg",
-      "/assets/parthu/after-room.jpg"
+      "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp"
     ],
     features: [
       "Custom Floor-to-Ceiling Wardrobes with Loft Storage Extensions",
@@ -135,12 +135,12 @@ export const servicesData: ServiceDetail[] = [
     category: "Villas & Estates",
     tagline: "Expansive spatial planning & architectural harmony for multi-story villas",
     description: "Designing a villa requires a master layout strategy that connects multi-level living areas, grand entrance foyers, private bedrooms, outdoor lounges, and sacred spaces into one harmonious narrative. DV Homes brings deep expertise in villa interiors across Kokapet, Jubilee Hills, and Kompally.",
-    mainImage: "/assets/parthu/viswajeet-villa.jpg",
+    mainImage: "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
     gallery: [
-      "/assets/parthu/viswajeet-villa.jpg",
-      "/assets/parthu/hero-living.jpg",
-      "/assets/parthu/puja-room.jpg",
-      "/assets/parthu/dining-interior.jpg"
+      "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/main_images/luxury-interior-exterior-design-collection-highend-architectural-home-decor-concepts-feat.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     features: [
       "Double-Height Feature Ceiling Panelling & Chandelier Backdrops",
@@ -173,9 +173,9 @@ export const servicesData: ServiceDetail[] = [
     mainImage: "/assets/main_images/kitchen-modern-black-red.webp",
     gallery: [
       "/assets/main_images/kitchen-modern-black-red.webp",
-      "/assets/parthu/modular-kitchen.jpg",
-      "/assets/parthu/kitchen-detail-1.jpg",
-      "/assets/parthu/kitchen-detail-2.jpg"
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     features: [
       "100% Boiling Water Proof (BWP) Marine Plywood Carcass",
@@ -205,12 +205,12 @@ export const servicesData: ServiceDetail[] = [
     category: "Storage",
     tagline: "Custom sliding, hinged & walk-in wardrobe suites crafted for luxury",
     description: "Maximize your bedroom storage with custom wardrobes engineered for organization and style. From floor-to-ceiling glass sliding doors with LED sensor profiles to velvet-lined jewelry drawers, pull-out trouser racks, and concealed safes.",
-    mainImage: "/assets/parthu/bedroom-suite.jpg",
+    mainImage: "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
     gallery: [
-      "/assets/parthu/bedroom-suite.jpg",
-      "/assets/parthu/rajasekhar-home.jpg",
-      "/assets/parthu/study-room.jpg",
-      "/assets/parthu/hero-living.jpg"
+      "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
+      "/assets/main_images/interior-design-luxury-living-room.webp",
+      "/assets/main_images/luxury-home-interior-design-3d-visualization-expensive-finishing-materials-furniture.webp",
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp"
     ],
     features: [
       "Tinted Fluted Glass & Mirror Sliding Door Panels",
@@ -240,12 +240,12 @@ export const servicesData: ServiceDetail[] = [
     category: "Execution",
     tagline: "Single-point responsibility from initial design to final key handover",
     description: "Eliminate the stress of coordinating multiple sub-contractors, electricians, painters, and carpenters. DV Homes turnkey execution handles every single detail with single-point accountability, transparent budgeting, and strict milestone tracking.",
-    mainImage: "/assets/parthu/viswajeet-villa.jpg",
+    mainImage: "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
     gallery: [
-      "/assets/parthu/viswajeet-villa.jpg",
-      "/assets/parthu/hero-living.jpg",
-      "/assets/parthu/after-room.jpg",
-      "/assets/parthu/kitchen-detail-1.jpg"
+      "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     features: [
       "Single Point of Contact - Founder & Project Director",
@@ -277,11 +277,11 @@ export const servicesData: ServiceDetail[] = [
     category: "Bedrooms",
     tagline: "Turn your bedroom into a peaceful sanctuary with bespoke luxury design",
     description: "Your bedroom is your private sanctuary. Our bespoke bedroom interior designs combine quiet luxury, ergonomic spatial planning, and high-end material finishes. From custom upholstered headboards and fluted paneling to velvet-lined wardrobe drawers and integrated mood lighting, every detail is engineered to create a tranquil, spa-like atmosphere.",
-    mainImage: "/assets/parthu/bedroom-suite.jpg",
+    mainImage: "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
     gallery: [
-      "/assets/parthu/bedroom-suite.jpg",
-      "/assets/parthu/rajasekhar-home.jpg",
-      "/assets/parthu/study-room.jpg"
+      "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
+      "/assets/main_images/interior-design-luxury-living-room.webp",
+      "/assets/main_images/luxury-home-interior-design-3d-visualization-expensive-finishing-materials-furniture.webp"
     ],
     features: [
       "Custom Upholstered Velvet & Italian Leather Headboards",
@@ -308,9 +308,9 @@ export const servicesData: ServiceDetail[] = [
     mainImage: "/assets/main_images/kitchen-modern-black-red.webp",
     gallery: [
       "/assets/main_images/kitchen-modern-black-red.webp",
-      "/assets/parthu/modular-kitchen.jpg",
-      "/assets/parthu/kitchen-detail-1.jpg",
-      "/assets/parthu/kitchen-detail-2.jpg"
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     features: [
       "100% Boiling Water Proof (BWP) Marine Plywood Carcass",
@@ -334,12 +334,12 @@ export const servicesData: ServiceDetail[] = [
     category: "Living Rooms",
     tagline: "Grand entertaining spaces crafted with architectural sophistication",
     description: "Create an unforgettable impression with a living room designed around your lifestyle. Featuring custom fluted wood paneling, floating marble TV consoles, acoustic ceiling treatments, and ambient magnetic track lighting.",
-    mainImage: "/assets/parthu/hero-living.jpg",
+    mainImage: "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
     gallery: [
-      "/assets/parthu/hero-living.jpg",
-      "/assets/parthu/viswajeet-villa.jpg",
-      "/assets/parthu/after-room.jpg",
-      "/assets/parthu/dining-interior.jpg"
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
+      "/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     features: [
       "Bespoke Charcoal & Veneer Wall Cladding Paneling",
@@ -363,11 +363,11 @@ export const servicesData: ServiceDetail[] = [
     category: "Dining Rooms",
     tagline: "Dine in style with elegant spaces tailored for gatherings",
     description: "Elevate your dining experience with custom marble tables, upholstered dining chairs, stylish crockery display cabinets, and warm ambient pendant lighting that set the mood for every meal.",
-    mainImage: "/assets/parthu/dining-interior.jpg",
+    mainImage: "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
     gallery: [
-      "/assets/parthu/dining-interior.jpg",
-      "/assets/parthu/kitchen-detail-1.jpg",
-      "/assets/parthu/hero-living.jpg"
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp"
     ],
     features: [
       "Custom Italian Marble & Solid Wood Dining Tables",
@@ -391,11 +391,11 @@ export const servicesData: ServiceDetail[] = [
     category: "Puja",
     tagline: "Serene sacred sanctuaries designed for peace and spiritual warmth",
     description: "Our puja room designs blend sacred tradition with modern aesthetic refinement. From intricate CNC lattice jaali work and brass inlay bells to warm teak wood mandir structures and ambient backlighting.",
-    mainImage: "/assets/parthu/puja-room.jpg",
+    mainImage: "/assets/main_images/luxury-interior-exterior-design-collection-highend-architectural-home-decor-concepts-feat.webp",
     gallery: [
-      "/assets/parthu/puja-room.jpg",
-      "/assets/parthu/after-room.jpg",
-      "/assets/parthu/rajasekhar-home.jpg"
+      "/assets/main_images/luxury-interior-exterior-design-collection-highend-architectural-home-decor-concepts-feat.webp",
+      "/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp",
+      "/assets/main_images/interior-design-luxury-living-room.webp"
     ],
     features: [
       "Precision CNC Jaali Cutting & Brass Bell Inlays",
@@ -419,11 +419,11 @@ export const servicesData: ServiceDetail[] = [
     category: "Partitions",
     tagline: "Effortless architectural dividers enhancing privacy and space flow",
     description: "Define distinct zones within open-plan homes using handcrafted fluted glass partitions, PVD gold stainless steel screens, wooden swivel louvers, and decorative room dividers.",
-    mainImage: "/assets/parthu/after-room.jpg",
+    mainImage: "/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp",
     gallery: [
-      "/assets/parthu/after-room.jpg",
-      "/assets/parthu/hero-living.jpg",
-      "/assets/parthu/dining-interior.jpg"
+      "/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp",
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     features: [
       "PVD Coated Rose Gold & Brass Stainless Steel Frames",
@@ -447,11 +447,11 @@ export const servicesData: ServiceDetail[] = [
     category: "Study Rooms",
     tagline: "Ergonomic workspaces designed to inspire productivity and focus",
     description: "Designed for modern remote work and study, our custom study rooms feature ergonomic desk layouts, integrated bookshelf units, hidden cable management, and glare-free task illumination.",
-    mainImage: "/assets/parthu/study-room.jpg",
+    mainImage: "/assets/main_images/luxury-home-interior-design-3d-visualization-expensive-finishing-materials-furniture.webp",
     gallery: [
-      "/assets/parthu/study-room.jpg",
-      "/assets/parthu/bedroom-suite.jpg",
-      "/assets/parthu/dining-interior.jpg"
+      "/assets/main_images/luxury-home-interior-design-3d-visualization-expensive-finishing-materials-furniture.webp",
+      "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     features: [
       "Custom Floating Writing Desks with Leather Tops",
@@ -475,11 +475,11 @@ export const servicesData: ServiceDetail[] = [
     category: "Office Spaces",
     tagline: "Professional executive office interiors tailored for business success",
     description: "Transform commercial and home office environments into high-performance executive suites. Featuring custom conference tables, acoustic wall treatments, ergonomic workstation grids, and executive lounge seating.",
-    mainImage: "/assets/parthu/hero-living.jpg",
+    mainImage: "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
     gallery: [
-      "/assets/parthu/hero-living.jpg",
-      "/assets/parthu/study-room.jpg",
-      "/assets/parthu/kitchen-detail-2.jpg"
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/main_images/luxury-home-interior-design-3d-visualization-expensive-finishing-materials-furniture.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     features: [
       "Executive Desk Suites with Integrated Credenzas",

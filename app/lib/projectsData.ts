@@ -28,12 +28,12 @@ export const projectsData: ProjectDetail[] = [
     scope: "Full Turnkey Interior Design & Execution",
     designStyle: "Warm Contemporary Minimalist",
     completionYear: "2026",
-    mainImage: "/assets/parthu/viswajeet-villa.jpg",
+    mainImage: "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
     gallery: [
-      "/assets/parthu/viswajeet-villa.jpg",
-      "/assets/parthu/hero-living.jpg",
-      "/assets/parthu/modular-kitchen.jpg",
-      "/assets/parthu/puja-room.jpg"
+      "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-interior-exterior-design-collection-highend-architectural-home-decor-concepts-feat.webp"
     ],
     metaTitle: "Kokapet Luxury Villa Interior Design Project Showcase | DV Homes",
     metaDescription: "Explore this complete turnkey luxury villa interior project in Kokapet, Hyderabad featuring Italian marble, fluted panelling & custom BWP marine plywood woodwork.",
@@ -64,12 +64,12 @@ export const projectsData: ProjectDetail[] = [
     scope: "Complete Residential Interior Execution",
     designStyle: "Modern Urban Luxury",
     completionYear: "2026",
-    mainImage: "/assets/parthu/hero-living.jpg",
+    mainImage: "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
     gallery: [
-      "/assets/parthu/hero-living.jpg",
-      "/assets/parthu/bedroom-suite.jpg",
-      "/assets/parthu/kitchen-detail-1.jpg",
-      "/assets/parthu/dining-interior.jpg"
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     metaTitle: "Financial District 3BHK Apartment Interior Project | DV Homes",
     metaDescription: "Inside a contemporary 3BHK high-rise apartment interior in Financial District, Hyderabad. Custom modular kitchen, master suite & space-maximizing layouts.",
@@ -98,12 +98,12 @@ export const projectsData: ProjectDetail[] = [
     scope: "Architectural Interior Design & Furnishing",
     designStyle: "Timeless Luxury & Art Deco Accents",
     completionYear: "2026",
-    mainImage: "/assets/parthu/rajasekhar-home.jpg",
+    mainImage: "/assets/main_images/interior-design-luxury-living-room.webp",
     gallery: [
-      "/assets/parthu/rajasekhar-home.jpg",
-      "/assets/parthu/dining-interior.jpg",
-      "/assets/parthu/viswajeet-villa.jpg",
-      "/assets/parthu/puja-room.jpg"
+      "/assets/main_images/interior-design-luxury-living-room.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
+      "/assets/main_images/luxury-interior-exterior-design-collection-highend-architectural-home-decor-concepts-feat.webp"
     ],
     metaTitle: "Jubilee Hills Luxury Residence Interior Design Project | DV Homes",
     metaDescription: "Exclusive luxury interior design showcase for a private residence in Jubilee Hills, Hyderabad. Rare veneers, brass accents & bespoke furniture.",
@@ -132,11 +132,11 @@ export const projectsData: ProjectDetail[] = [
     scope: "Modular Kitchen & Dining Interior",
     designStyle: "German Ergonomic Minimalist",
     completionYear: "2026",
-    mainImage: "/assets/parthu/modular-kitchen.jpg",
+    mainImage: "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
     gallery: [
-      "/assets/parthu/modular-kitchen.jpg",
-      "/assets/parthu/kitchen-detail-1.jpg",
-      "/assets/parthu/kitchen-detail-2.jpg"
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     metaTitle: "Gachibowli Modular Kitchen Interior Design Project | DV Homes",
     metaDescription: "Step inside a high-performance German modular kitchen in Gachibowli, Hyderabad built with 100% BWP marine plywood & anti-fingerprint acrylic shutters.",
@@ -165,11 +165,11 @@ export const projectsData: ProjectDetail[] = [
     scope: "Bedroom Interior Design",
     designStyle: "Warm Japandi & Minimalist",
     completionYear: "2026",
-    mainImage: "/assets/parthu/bedroom-suite.jpg",
+    mainImage: "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
     gallery: [
-      "/assets/parthu/bedroom-suite.jpg",
-      "/assets/parthu/study-room.jpg",
-      "/assets/parthu/after-room.jpg"
+      "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
+      "/assets/main_images/luxury-home-interior-design-3d-visualization-expensive-finishing-materials-furniture.webp",
+      "/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp"
     ],
     metaTitle: "Madhapur Minimalist Master Suite Interior Design Project | DV Homes",
     metaDescription: "A calm, spa-like master bedroom interior design in Madhapur, Hyderabad featuring custom upholstered headboard & walk-in wardrobe closet.",
@@ -200,9 +200,9 @@ export const projectsData: ProjectDetail[] = [
     mainImage: "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
     gallery: [
       "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
-      "/assets/parthu/hero-living.jpg",
-      "/assets/parthu/modular-kitchen.jpg",
-      "/assets/parthu/bedroom-suite.jpg"
+      "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp"
     ],
     metaTitle: "Vasavi Nandanavanam Suchitra Interior Design Project | DV Homes",
     metaDescription: "Turnkey residential interior design project at Vasavi Nandanavanam in Suchitra, Hyderabad. BWP marine plywood woodwork, modular kitchen & TV panelling.",
@@ -234,9 +234,9 @@ export const projectsData: ProjectDetail[] = [
     mainImage: "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
     gallery: [
       "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
-      "/assets/parthu/modular-kitchen.jpg",
-      "/assets/parthu/puja-room.jpg",
-      "/assets/parthu/dining-interior.jpg"
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
+      "/assets/main_images/luxury-interior-exterior-design-collection-highend-architectural-home-decor-concepts-feat.webp",
+      "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
     ],
     metaTitle: "ASBL Springs Pocharam Interior Design Project | DV Homes",
     metaDescription: "Complete interior design & factory execution at ASBL Springs, Pocharam, Hyderabad. Featuring modular kitchen, wardrobes & CNC pooja mandir.",

@@ -57,7 +57,7 @@ export default function AboutPage() {
               {/* Right Column Image */}
               <div className="about-hero-img-box">
                 <img
-                  src="/assets/parthu/hero-living.jpg"
+                  src="/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp"
                   alt="DV HOMES Residential Project Hyderabad"
                   className="about-hero-img"
                 />
@@ -73,7 +73,7 @@ export default function AboutPage() {
               {/* Left Column Image */}
               <div className="about-philosophy-img-box">
                 <img
-                  src="/assets/parthu/dining-interior.jpg"
+                  src="/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp"
                   alt="DV HOMES Custom Interior Design"
                   className="about-philosophy-img"
                 />

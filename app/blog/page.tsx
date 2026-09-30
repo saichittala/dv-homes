@@ -74,7 +74,7 @@ export default function BlogListingPage() {
                   <article style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "20px", overflow: "hidden", height: "100%", display: "flex", flexDirection: "column", transition: "all 0.3s ease" }}>
                     <div style={{ position: "relative", height: "220px", overflow: "hidden" }}>
                       <img
-                        src={post.featuredImage || "/assets/parthu/hero-living.jpg"}
+                        src={post.featuredImage || "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp"}
                         alt={post.title}
                         style={{ width: "100%", height: "100%", objectFit: "cover" }}
                         loading="lazy"

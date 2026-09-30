@@ -24,7 +24,7 @@ export const defaultOrganizationSchema = {
       "alternateName": ["DV Homes", "DV Homes Interiors"],
       "url": "https://dvhomes.in",
       "logo": "https://dvhomes.in/logo.png",
-      "image": "https://dvhomes.in/assets/parthu/hero-living.jpg",
+      "image": "https://dvhomes.in/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
       "description": "Turnkey residential interior design and execution firm in Hyderabad, Telangana. Specializing in luxury 2BHK/3BHK apartments, villas, modular kitchens & bespoke woodwork.",
       "telephone": "+91-9916862442",
       "email": "dvhomes.hyderabad@gmail.com",

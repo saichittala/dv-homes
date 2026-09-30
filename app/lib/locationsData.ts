@@ -51,7 +51,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Yes, DV Homes provides complete end-to-end turnkey interior execution—handling woodwork, civil modifications, electrical track lighting, false ceilings, painting, quartz counter installation, and deep cleaning before final handover."
       }
     ],
-    featuredImage: "/assets/parthu/hero-living.jpg",
+    featuredImage: "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
     nearbyAreas: ["HITEC City", "Kondapur", "Gachibowli", "Jubilee Hills", "Kothaguda"]
   },
   {
@@ -85,7 +85,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Yes, we regularly arrange private walkthroughs of active and completed sites in Gachibowli, Financial District, and Kokapet so you can inspect material quality and finishing firsthand."
       }
     ],
-    featuredImage: "/assets/parthu/viswajeet-villa.jpg",
+    featuredImage: "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
     nearbyAreas: ["Financial District", "Nanakramguda", "Kokapet", "Madhapur", "Kondapur"]
   },
   {
@@ -115,7 +115,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Our complete interior solution includes modular kitchen, master & guest wardrobes, TV unit, false ceiling with magnetic track lighting, vanity units, pooja mandir, electrical modifications, painting, and turnkey site installation."
       }
     ],
-    featuredImage: "/assets/parthu/bedroom-suite.jpg",
+    featuredImage: "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
     nearbyAreas: ["Madhapur", "Gachibowli", "Hafeezpet", "Miyapur", "Kothaguda"]
   },
   {
@@ -145,7 +145,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Yes, luxury villa interior design is a core capability of DV Homes. We handle multi-level villas, grand living suites, private home theaters, custom walk-in closets, and master suites with uncompromised material standards."
       }
     ],
-    featuredImage: "/assets/parthu/rajasekhar-home.jpg",
+    featuredImage: "/assets/main_images/interior-design-luxury-living-room.webp",
     nearbyAreas: ["Banjara Hills", "Film Nagar", "Madhapur", "Somajiguda", "Begumpet"]
   },
   {
@@ -175,7 +175,7 @@ export const locationsData: LocationDetail[] = [
         answer: "You can book a direct consultation with our lead designer by calling +91 99168 62442 or via WhatsApp. We conduct on-site floorplan reviews and present initial 3D concepts."
       }
     ],
-    featuredImage: "/assets/parthu/dining-interior.jpg",
+    featuredImage: "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
     nearbyAreas: ["Jubilee Hills", "Somajiguda", "Khairatabad", "Mehdipatnam", "Film Nagar"]
   },
   {
@@ -205,7 +205,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Our state-of-the-art production facility is situated right in Kokapet, Hyderabad. Clients are welcome to visit our factory to inspect raw marine plywood sheets, German edge-banding machinery, and active assembly lines."
       }
     ],
-    featuredImage: "/assets/parthu/modular-kitchen.jpg",
+    featuredImage: "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
     nearbyAreas: ["Financial District", "Gachibowli", "Narsingi", "Gandipet", "Puppalaguda"]
   },
   {
@@ -234,7 +234,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Yes, we handle everything from false ceiling and magnetic track lighting to modular woodwork, electrical work, plumbing, quartz countertops, and site deep cleaning."
       }
     ],
-    featuredImage: "/assets/parthu/study-room.jpg",
+    featuredImage: "/assets/main_images/luxury-home-interior-design-3d-visualization-expensive-finishing-materials-furniture.webp",
     nearbyAreas: ["Financial District", "Gachibowli", "Kokapet", "Khajaguda", "Manikonda"]
   },
   {
@@ -262,7 +262,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Absolutely. We offer an extensive selection of laminates, acrylics, natural veneers, glass panels, quartz countertops, and German hardware combinations tailored to your budget."
       }
     ],
-    featuredImage: "/assets/parthu/after-room.jpg",
+    featuredImage: "/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp",
     nearbyAreas: ["Puppalaguda", "Narsingi", "Khajaguda", "Gachibowli", "Shaikpet"]
   },
   {
@@ -290,7 +290,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Our nearby Kokapet factory ensures fast turnarounds, superior German edge-banding, strict quality audits, and direct project supervision by founder Arige Praveenkumar."
       }
     ],
-    featuredImage: "/assets/parthu/hero-living.jpg",
+    featuredImage: "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
     nearbyAreas: ["Nanakramguda", "Gachibowli", "Kokapet", "Puppalaguda", "Khajaguda"]
   },
   {
@@ -317,7 +317,7 @@ export const locationsData: LocationDetail[] = [
         answer: "We exclusively use top-tier German & international hardware including Hafele, Blum, Hettich, and Grass soft-close fittings."
       }
     ],
-    featuredImage: "/assets/parthu/bedroom-suite.jpg",
+    featuredImage: "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
     nearbyAreas: ["Madhapur", "Kondapur", "Gachibowli", "Raidurg", "Kothaguda"]
   },
   {
@@ -344,7 +344,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Our Kokapet factory handles 85% of fabrication off-site. On-site installation takes just 10-15 days, ensuring clean, fast handovers."
       }
     ],
-    featuredImage: "/assets/parthu/kitchen-detail-1.jpg",
+    featuredImage: "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
     nearbyAreas: ["Kokapet", "Puppalaguda", "Manikonda", "Gandipet", "Financial District"]
   },
   {
@@ -371,7 +371,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Yes, we handle complete home interior renovations—including wall demotion/construction, rewiring, plumbing, false ceilings, modular woodwork, and floor tiling."
       }
     ],
-    featuredImage: "/assets/parthu/puja-room.jpg",
+    featuredImage: "/assets/main_images/luxury-interior-exterior-design-collection-highend-architectural-home-decor-concepts-feat.webp",
     nearbyAreas: ["Sainikpuri", "Malkajgiri", "Begumpet", "Bowenpally", "Kompally"]
   },
   {
@@ -398,7 +398,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Yes, we specialize in multi-level villa interiors—handling living rooms, dining suites, bedrooms, home theaters, bar units, and sacred spaces."
       }
     ],
-    featuredImage: "/assets/parthu/viswajeet-villa.jpg",
+    featuredImage: "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
     nearbyAreas: ["Suchitra", "Alwal", "Bowenpally", "Secunderabad", "Medchal"]
   },
   {
@@ -425,7 +425,7 @@ export const locationsData: LocationDetail[] = [
         answer: "Send us your floorplan via WhatsApp or book a consultation through our website. We will prepare an itemized preliminary budget quote within 24 hours."
       }
     ],
-    featuredImage: "/assets/parthu/hero-living.jpg",
+    featuredImage: "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
     nearbyAreas: ["Mehdipatnam", "Tolichowki", "Rajendranagar", "Bandlaguda", "Shaikpet"]
   }
 ];
