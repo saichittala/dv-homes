@@ -3843,7 +3843,7 @@ main {
 .ba-pill-after {
   left: 18px;
   background: var(--brand-primary) !important;
-  color: #FFFFFF !important;
+  color: #060606 !important;
   border: none !important;
   font-weight: var(--fw-bold);
   box-shadow: none !important;
