@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/12king3ayw5p3.css","style"]
+:HL["/_next/static/chunks/014m6s3p-req9.css","style"]
 :HC["/",""]
 :HL["/assets/parthu/bedroom-suite.jpg","image"]
 :HL["/assets/logoo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"master-bedroom-wardrobe-design-guide-hyderabad","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"4W7eUhEDmgTAPTXpd0wwM"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"master-bedroom-wardrobe-design-guide-hyderabad","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"TrH-UEUZAB-LCp0G_3cLa"}
