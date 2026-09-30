@@ -2,4 +2,4 @@
 :HC["/",""]
 :HL["/assets/parthu/bedroom-suite.jpg","image"]
 :HL["/assets/logoo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"madhapur-minimalist-master-suite","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"hSLs3hnrl7vRtYGJKieUv"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"madhapur-minimalist-master-suite","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"jFUpRmhBl3hbs9va2qfrg"}
