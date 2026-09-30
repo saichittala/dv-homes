@@ -96,91 +96,91 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema]} />
 
       {/* Hero Header */}
-      <section style={{ padding: "120px 24px 60px 24px", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+      <section style={{ padding: "100px 24px 40px 24px" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "6px 16px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "6px 16px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "16px" }}>
             <MapPinIcon size={16} color="#38d059" />
             <span>{project.location.toUpperCase()}</span>
           </div>
 
-          <h1 style={{ fontSize: "clamp(2.2rem, 5vw, 3.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.15", marginBottom: "24px", color: "#FFFFFF" }}>
+          <h1 style={{ fontSize: "clamp(1.75rem, 3.8vw, 2.5rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.15", marginBottom: "20px", color: "#FFFFFF" }}>
             {project.title}
           </h1>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px", background: "rgba(255,255,255,0.03)", padding: "24px", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.08)" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "16px", background: "transparent", padding: "20px", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.12)" }}>
             <div>
-              <div style={{ fontSize: "0.8rem", color: "#a0a0a0", textTransform: "uppercase" }}>Project Type</div>
-              <div style={{ fontSize: "1rem", fontWeight: "600", color: "#FFFFFF", marginTop: "4px" }}>{project.projectType}</div>
+              <div style={{ fontSize: "0.75rem", color: "#a0a0a0", textTransform: "uppercase" }}>Project Type</div>
+              <div style={{ fontSize: "0.95rem", fontWeight: "600", color: "#FFFFFF", marginTop: "4px" }}>{project.projectType}</div>
             </div>
             <div>
-              <div style={{ fontSize: "0.8rem", color: "#a0a0a0", textTransform: "uppercase" }}>Scope</div>
-              <div style={{ fontSize: "1rem", fontWeight: "600", color: "#FFFFFF", marginTop: "4px" }}>{project.scope}</div>
+              <div style={{ fontSize: "0.75rem", color: "#a0a0a0", textTransform: "uppercase" }}>Scope</div>
+              <div style={{ fontSize: "0.95rem", fontWeight: "600", color: "#FFFFFF", marginTop: "4px" }}>{project.scope}</div>
             </div>
             <div>
-              <div style={{ fontSize: "0.8rem", color: "#a0a0a0", textTransform: "uppercase" }}>Design Style</div>
-              <div style={{ fontSize: "1rem", fontWeight: "600", color: "#FFFFFF", marginTop: "4px" }}>{project.designStyle}</div>
+              <div style={{ fontSize: "0.75rem", color: "#a0a0a0", textTransform: "uppercase" }}>Design Style</div>
+              <div style={{ fontSize: "0.95rem", fontWeight: "600", color: "#FFFFFF", marginTop: "4px" }}>{project.designStyle}</div>
             </div>
             <div>
-              <div style={{ fontSize: "0.8rem", color: "#a0a0a0", textTransform: "uppercase" }}>Completion</div>
-              <div style={{ fontSize: "1rem", fontWeight: "600", color: "#FFFFFF", marginTop: "4px" }}>{project.completionYear}</div>
+              <div style={{ fontSize: "0.75rem", color: "#a0a0a0", textTransform: "uppercase" }}>Completion</div>
+              <div style={{ fontSize: "0.95rem", fontWeight: "600", color: "#FFFFFF", marginTop: "4px" }}>{project.completionYear}</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Main Image Showcase */}
-      <section style={{ padding: "40px 24px" }}>
+      <section style={{ padding: "20px 24px" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <div style={{ borderRadius: "24px", overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)" }}>
+          <div style={{ borderRadius: "20px", overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)" }}>
             <img
               src={project.mainImage}
               alt={`${project.title} in ${project.location} - Main Interior View by DV Homes`}
-              style={{ width: "100%", height: "auto", maxHeight: "600px", objectFit: "cover", display: "block" }}
+              style={{ width: "100%", height: "auto", maxHeight: "540px", objectFit: "cover", display: "block" }}
             />
           </div>
         </div>
       </section>
 
       {/* Design Story & Materials */}
-      <section style={{ padding: "60px 24px" }}>
+      <section style={{ padding: "40px 24px 60px 24px" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "48px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "40px" }}>
             <div>
-              <h2 style={{ fontSize: "1.8rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "20px" }}>
+              <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "16px" }}>
                 Design Concept &amp; Story
               </h2>
-              <p style={{ fontSize: "1.05rem", color: "#cccccc", lineHeight: "1.7", marginBottom: "32px" }}>
+              <p style={{ fontSize: "0.98rem", color: "#cccccc", lineHeight: "1.65", marginBottom: "24px" }}>
                 {project.concept}
               </p>
 
-              <h3 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "16px" }}>
+              <h3 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "14px" }}>
                 Project Challenge &amp; Solution
               </h3>
-              <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", padding: "24px", borderRadius: "16px", marginBottom: "24px" }}>
-                <div style={{ fontWeight: "600", color: "#38d059", marginBottom: "8px" }}>Challenge:</div>
-                <p style={{ fontSize: "0.95rem", color: "#e0e0e0", margin: "0 0 16px 0", lineHeight: "1.5" }}>{project.challenge}</p>
-                <div style={{ fontWeight: "600", color: "#38d059", marginBottom: "8px" }}>DV Homes Solution:</div>
-                <p style={{ fontSize: "0.95rem", color: "#e0e0e0", margin: 0, lineHeight: "1.5" }}>{project.solution}</p>
+              <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", padding: "20px 22px", borderRadius: "14px", marginBottom: "20px" }}>
+                <div style={{ fontWeight: "600", color: "#38d059", marginBottom: "6px" }}>Challenge:</div>
+                <p style={{ fontSize: "0.92rem", color: "#e0e0e0", margin: "0 0 12px 0", lineHeight: "1.5" }}>{project.challenge}</p>
+                <div style={{ fontWeight: "600", color: "#38d059", marginBottom: "6px" }}>DV Homes Solution:</div>
+                <p style={{ fontSize: "0.92rem", color: "#e0e0e0", margin: 0, lineHeight: "1.5" }}>{project.solution}</p>
               </div>
             </div>
 
             <div>
-              <h3 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "20px" }}>
+              <h3 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "16px" }}>
                 Materials &amp; Finishes Used
               </h3>
-              <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "36px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "28px" }}>
                 {project.materials.map((mat, idx) => (
-                  <div key={idx} style={{ display: "flex", alignItems: "center", gap: "12px", background: "rgba(255,255,255,0.03)", padding: "14px 18px", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.06)" }}>
-                    <CheckIcon size={18} color="#38d059" />
-                    <span style={{ fontSize: "0.95rem", color: "#e0e0e0" }}>{mat}</span>
+                  <div key={idx} style={{ display: "flex", alignItems: "center", gap: "10px", background: "transparent", padding: "10px 14px", borderRadius: "10px", border: "1px solid rgba(255,255,255,0.12)" }}>
+                    <CheckIcon size={16} color="#38d059" />
+                    <span style={{ fontSize: "0.9rem", color: "#e0e0e0" }}>{mat}</span>
                   </div>
                 ))}
               </div>
 
-              <h3 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "20px" }}>
+              <h3 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "16px" }}>
                 Key Interior Features
               </h3>
-              <ul style={{ paddingLeft: "20px", color: "#cccccc", lineHeight: "1.7", fontSize: "0.95rem", display: "flex", flexDirection: "column", gap: "10px" }}>
+              <ul style={{ paddingLeft: "18px", color: "#cccccc", lineHeight: "1.65", fontSize: "0.9rem", display: "flex", flexDirection: "column", gap: "8px" }}>
                 {project.keyFeatures.map((kf, idx) => (
                   <li key={idx}>{kf}</li>
                 ))}
@@ -191,15 +191,15 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
       </section>
 
       {/* Gallery */}
-      <section style={{ padding: "60px 24px", background: "rgba(255,255,255,0.02)", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+      <section style={{ padding: "40px 24px 60px 24px" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "1.8rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "32px", textAlign: "center" }}>
+          <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "24px", textAlign: "center" }}>
             Project Image Gallery
           </h2>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "20px" }}>
             {project.gallery.map((imgUrl, idx) => (
-              <div key={idx} style={{ borderRadius: "16px", overflow: "hidden", height: "240px", border: "1px solid rgba(255,255,255,0.08)" }}>
+              <div key={idx} style={{ borderRadius: "14px", overflow: "hidden", height: "220px", border: "1px solid rgba(255,255,255,0.12)" }}>
                 <img
                   src={imgUrl}
                   alt={`${project.title} ${project.location} Interior Shot ${idx + 1} - DV Homes`}
@@ -213,26 +213,26 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
       </section>
 
       {/* Internal Link Shortcuts & CTA */}
-      <section style={{ padding: "80px 24px", textAlign: "center" }}>
+      <section style={{ padding: "60px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "2rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "16px" }}>
+          <h2 style={{ fontSize: "1.55rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "12px" }}>
             Want a Similar Finish for Your Home?
           </h2>
-          <p style={{ fontSize: "1.05rem", color: "#cccccc", lineHeight: "1.6", marginBottom: "32px" }}>
+          <p style={{ fontSize: "0.98rem", color: "#cccccc", lineHeight: "1.6", marginBottom: "24px" }}>
             Let Arige Praveenkumar and our turnkey execution team design your space with high-precision factory craftsmanship.
           </p>
 
-          <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link
               href="/contact"
               style={{
                 background: "#38d059",
                 color: "#000000",
                 fontWeight: "700",
-                padding: "16px 36px",
+                padding: "14px 32px",
                 borderRadius: "9999px",
                 textDecoration: "none",
-                fontSize: "1rem"
+                fontSize: "0.95rem"
               }}
             >
               Book Consultation
@@ -241,14 +241,14 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
             <Link
               href={`/locations/${project.relatedLocationSlug}`}
               style={{
-                background: "rgba(255,255,255,0.06)",
+                background: "transparent",
                 color: "#FFFFFF",
                 fontWeight: "600",
-                padding: "16px 28px",
+                padding: "14px 24px",
                 borderRadius: "9999px",
                 textDecoration: "none",
                 border: "1px solid rgba(255,255,255,0.15)",
-                fontSize: "1rem"
+                fontSize: "0.95rem"
               }}
             >
               Interiors in {project.location.split(",")[0]}

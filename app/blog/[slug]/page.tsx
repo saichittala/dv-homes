@@ -142,34 +142,34 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema, articleSchema, ...(faqSchema ? [faqSchema] : [])]} />
 
       {/* Article Header */}
-      <section style={{ padding: "120px 24px 40px 24px", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+      <section style={{ padding: "100px 24px 30px 24px" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <div style={{ display: "flex", gap: "12px", alignItems: "center", marginBottom: "16px", flexWrap: "wrap" }}>
-            <span style={{ background: "rgba(56, 208, 89, 0.15)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "6px", padding: "4px 12px", fontSize: "0.82rem", fontWeight: "600" }}>
+          <div style={{ display: "flex", gap: "10px", alignItems: "center", marginBottom: "14px", flexWrap: "wrap" }}>
+            <span style={{ background: "rgba(56, 208, 89, 0.15)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "6px", padding: "4px 10px", fontSize: "0.78rem", fontWeight: "600" }}>
               {post.category}
             </span>
-            <span style={{ fontSize: "0.85rem", color: "#a0a0a0" }}>
+            <span style={{ fontSize: "0.82rem", color: "#a0a0a0" }}>
               {post.publishedDate} • {readingTime}
             </span>
           </div>
 
-          <h1 style={{ fontSize: "clamp(2.2rem, 5vw, 3.5rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.15", marginBottom: "20px", color: "#FFFFFF" }}>
+          <h1 style={{ fontSize: "clamp(1.75rem, 3.8vw, 2.5rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.15", marginBottom: "16px", color: "#FFFFFF" }}>
             {post.title}
           </h1>
 
-          <p style={{ fontSize: "1.15rem", color: "#e0e0e0", lineHeight: "1.6", marginBottom: "24px" }}>
+          <p style={{ fontSize: "1.05rem", color: "#e0e0e0", lineHeight: "1.6", marginBottom: "20px" }}>
             {post.description}
           </p>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingTop: "16px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-            <div style={{ width: "42px", height: "42px", borderRadius: "50%", background: "#38d059", color: "#000000", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.1rem" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingTop: "14px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+            <div style={{ width: "38px", height: "38px", borderRadius: "50%", background: "#38d059", color: "#000000", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1rem" }}>
               AP
             </div>
             <div>
-              <div style={{ fontSize: "0.95rem", fontWeight: "600", color: "#FFFFFF" }}>
+              <div style={{ fontSize: "0.9rem", fontWeight: "600", color: "#FFFFFF" }}>
                 {post.author || "Arige Praveenkumar"}
               </div>
-              <div style={{ fontSize: "0.82rem", color: "#a0a0a0" }}>
+              <div style={{ fontSize: "0.78rem", color: "#a0a0a0" }}>
                 Principal Designer &amp; Founder, DV Homes
               </div>
             </div>
@@ -179,9 +179,9 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
 
       {/* Featured Banner Image */}
       {post.featuredImage && (
-        <section style={{ padding: "40px 24px 20px 24px" }}>
+        <section style={{ padding: "20px 24px" }}>
           <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-            <div style={{ borderRadius: "20px", overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)", maxHeight: "480px" }}>
+            <div style={{ borderRadius: "18px", overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)", maxHeight: "440px" }}>
               <img
                 src={post.featuredImage}
                 alt={post.title}
@@ -193,18 +193,18 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
       )}
 
       {/* Article Body + Table of Contents */}
-      <section style={{ padding: "40px 24px 80px 24px" }}>
+      <section style={{ padding: "30px 24px 60px 24px" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           
           {/* Table of Contents */}
           {tableOfContents.length > 0 && (
-            <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "16px", padding: "24px 28px", marginBottom: "40px" }}>
-              <h2 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#38d059", marginBottom: "14px" }}>
+            <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "16px", padding: "20px 24px", marginBottom: "36px" }}>
+              <h2 style={{ fontSize: "1.1rem", fontWeight: "700", color: "#38d059", marginBottom: "12px" }}>
                 Table of Contents
               </h2>
-              <ul style={{ paddingLeft: "18px", margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
+              <ul style={{ paddingLeft: "16px", margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
                 {tableOfContents.map((item, idx) => (
-                  <li key={idx} style={{ fontSize: "0.95rem" }}>
+                  <li key={idx} style={{ fontSize: "0.9rem" }}>
                     <a href={`#${item.id}`} style={{ color: "#e0e0e0", textDecoration: "none" }}>
                       {item.text}
                     </a>
@@ -219,25 +219,25 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
             className="blog-content-body"
             dangerouslySetInnerHTML={{ __html: parsedHtml }}
             style={{
-              fontSize: "1.05rem",
-              lineHeight: "1.8",
+              fontSize: "1rem",
+              lineHeight: "1.75",
               color: "#d0d0d0"
             }}
           />
 
           {/* Article FAQs */}
           {post.faq && post.faq.length > 0 && (
-            <div style={{ marginTop: "60px", paddingTop: "40px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-              <h2 style={{ fontSize: "1.6rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "24px" }}>
+            <div style={{ marginTop: "48px", paddingTop: "32px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+              <h2 style={{ fontSize: "1.35rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "20px" }}>
                 Frequently Asked Questions
               </h2>
-              <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 {post.faq.map((f, idx) => (
-                  <div key={idx} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", padding: "20px 24px", borderRadius: "12px" }}>
-                    <h3 style={{ fontSize: "1.1rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "8px" }}>
+                  <div key={idx} style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", padding: "18px 20px", borderRadius: "12px" }}>
+                    <h3 style={{ fontSize: "1.05rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "6px" }}>
                       {f.question}
                     </h3>
-                    <p style={{ fontSize: "0.95rem", color: "#cccccc", lineHeight: "1.6", margin: 0 }}>
+                    <p style={{ fontSize: "0.92rem", color: "#cccccc", lineHeight: "1.55", margin: 0 }}>
                       {f.answer}
                     </p>
                   </div>
@@ -247,11 +247,11 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           )}
 
           {/* Consultation Banner inside Article */}
-          <div style={{ marginTop: "60px", background: "linear-gradient(135deg, rgba(56,208,89,0.12) 0%, rgba(0,0,0,0) 100%)", border: "1px solid rgba(56,208,89,0.3)", borderRadius: "20px", padding: "36px 32px", textAlign: "center" }}>
-            <h3 style={{ fontSize: "1.5rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "12px" }}>
+          <div style={{ marginTop: "48px", background: "transparent", border: "1px solid rgba(56,208,89,0.3)", borderRadius: "18px", padding: "32px 28px", textAlign: "center" }}>
+            <h3 style={{ fontSize: "1.35rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "10px" }}>
               Planning Your Home Interiors in Hyderabad?
             </h3>
-            <p style={{ fontSize: "1rem", color: "#cccccc", lineHeight: "1.6", maxWidth: "600px", margin: "0 auto 24px auto" }}>
+            <p style={{ fontSize: "0.95rem", color: "#cccccc", lineHeight: "1.6", maxWidth: "600px", margin: "0 auto 20px auto" }}>
               Speak directly with Arige Praveenkumar and our design team for floorplan reviews, material guidance, and transparent budget estimates.
             </p>
             <Link
@@ -263,32 +263,32 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                 background: "#38d059",
                 color: "#000000",
                 fontWeight: "700",
-                padding: "14px 32px",
+                padding: "12px 28px",
                 borderRadius: "9999px",
                 textDecoration: "none",
-                fontSize: "0.95rem"
+                fontSize: "0.9rem"
               }}
             >
               <span>Schedule Free Consultation</span>
-              <ChevronRightIcon size={18} color="#000000" />
+              <ChevronRightIcon size={16} color="#000000" />
             </Link>
           </div>
 
           {/* Related Articles */}
           {relatedPosts.length > 0 && (
-            <div style={{ marginTop: "80px", paddingTop: "40px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-              <h2 style={{ fontSize: "1.5rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "24px" }}>
+            <div style={{ marginTop: "60px", paddingTop: "32px" }}>
+              <h2 style={{ fontSize: "1.35rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "20px" }}>
                 Related Guides
               </h2>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "20px" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px" }}>
                 {relatedPosts.map((rel) => (
                   <Link key={rel.id} href={`/blog/${rel.slug}`} style={{ textDecoration: "none" }}>
-                    <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "14px", padding: "20px", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                    <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "14px", padding: "18px", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                       <div>
-                        <div style={{ fontSize: "0.78rem", color: "#38d059", fontWeight: "600", marginBottom: "6px" }}>{rel.category}</div>
-                        <h3 style={{ fontSize: "1.05rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "8px", lineHeight: "1.3" }}>{rel.title}</h3>
+                        <div style={{ fontSize: "0.75rem", color: "#38d059", fontWeight: "600", marginBottom: "4px" }}>{rel.category}</div>
+                        <h3 style={{ fontSize: "1rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "6px", lineHeight: "1.3" }}>{rel.title}</h3>
                       </div>
-                      <div style={{ fontSize: "0.85rem", color: "#38d059", fontWeight: "600", marginTop: "12px", display: "flex", alignItems: "center", gap: "4px" }}>
+                      <div style={{ fontSize: "0.82rem", color: "#38d059", fontWeight: "600", marginTop: "10px", display: "flex", alignItems: "center", gap: "4px" }}>
                         <span>Read Guide</span>
                         <ChevronRightIcon size={14} color="#38d059" />
                       </div>
