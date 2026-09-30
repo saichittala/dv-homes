@@ -1,5 +1,5 @@
 :HL["/_next/static/chunks/1_spk0c9x4des.css","style"]
 :HC["/",""]
-:HL["/assets/parthu/hero-living.jpg","image"]
+:HL["/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp","image"]
 :HL["/assets/logoo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"financial-district-3bhk-apartment","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"kfsFSQwt0vFtlSOOOtBFr"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"financial-district-3bhk-apartment","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"0yCXhamDPoFMuQfA9ofE7"}
