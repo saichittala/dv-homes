@@ -1,11 +1,6 @@
 import React from "react";
-import Metadata from "next";
-import Link from "next/link";
-import Footer from "../components/Footer";
 import JsonLd, { defaultOrganizationSchema } from "../components/JsonLd";
-import { servicesData } from "../lib/servicesData";
-import ImageWithSkeleton from "../components/ImageWithSkeleton";
-import { SparklesIcon, ChevronRightIcon } from "../components/Icons";
+import ServicesClient from "./ServicesClient";
 
 export const metadata = {
   title: "Residential Interior Design Services in Hyderabad | DV Homes",
@@ -43,108 +38,9 @@ export default function ServicesPage() {
   };
 
   return (
-    <main style={{ background: "#060606", color: "#FFFFFF", minHeight: "100vh" }}>
+    <>
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema]} />
-
-      {/* Hero Banner */}
-      <section style={{ padding: "160px 32px 80px 32px", textAlign: "center" }}>
-        <div style={{ maxWidth: "880px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
-            <SparklesIcon size={16} color="#38d059" />
-            <span>INTERIOR SERVICES</span>
-          </div>
-          <h1 style={{ fontSize: "clamp(2rem, 4.2vw, 2.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "20px", color: "#FFFFFF" }}>
-            Our Interior Design Services
-          </h1>
-          <p style={{ fontSize: "1.08rem", color: "#e0e0e0", lineHeight: "1.65", maxWidth: "720px", margin: "0 auto" }}>
-            Bespoke spatial design, German modular engineering, and direct factory execution tailored for your home.
-          </p>
-        </div>
-      </section>
-
-      {/* Services Grid */}
-      <section style={{ padding: "60px 32px 100px 32px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <div className="grid-3x2-equal">
-            {servicesData.map((service) => (
-              <Link
-                key={service.id}
-                href={`/services/${service.id}`}
-                style={{ textDecoration: "none" }}
-              >
-                <div
-                  style={{
-                    background: "transparent",
-                    border: "1px solid rgba(255, 255, 255, 0.12)",
-                    borderRadius: "20px",
-                    overflow: "hidden",
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "space-between",
-                    transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)"
-                  }}
-                >
-                  <div style={{ position: "relative", height: "220px", overflow: "hidden" }}>
-                    <ImageWithSkeleton src={service.mainImage} alt={service.title} />
-                  </div>
-
-                  <div style={{ padding: "28px 24px", flex: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-                    <div>
-                      <div style={{ fontSize: "0.8rem", color: "#38d059", fontWeight: "600", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "8px" }}>
-                        {service.category}
-                      </div>
-                      <h2 style={{ fontSize: "1.3rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "10px", lineHeight: "1.3" }}>
-                        {service.title}
-                      </h2>
-                      <p style={{ fontSize: "0.9rem", color: "#b0b0b0", lineHeight: "1.55", margin: 0 }}>
-                        {service.tagline}
-                      </p>
-                    </div>
-
-                    <div style={{ marginTop: "24px", display: "flex", alignItems: "center", gap: "6px", fontSize: "0.85rem", color: "#38d059", fontWeight: "600" }}>
-                      <span>Explore Service Details</span>
-                      <ChevronRightIcon size={14} color="#38d059" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section style={{ padding: "80px 32px 100px 32px", textAlign: "center" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "14px" }}>
-            Free Home Interior Planning Session
-          </h2>
-          <p style={{ fontSize: "1.02rem", color: "#cccccc", lineHeight: "1.65", marginBottom: "28px" }}>
-            Get expert guidance, material specs, and stage-wise budget planning for your space with DV HOMES.
-          </p>
-          <Link
-            href="/contact"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "8px",
-              background: "#38d059",
-              color: "#000000",
-              fontWeight: "700",
-              padding: "16px 36px",
-              borderRadius: "9999px",
-              textDecoration: "none",
-              fontSize: "0.95rem"
-            }}
-          >
-            <span>Book Free Planning Session</span>
-            <ChevronRightIcon size={18} color="#000000" />
-          </Link>
-        </div>
-      </section>
-
-      <Footer />
-    </main>
+      <ServicesClient />
+    </>
   );
 }
