@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/1mufesvact-5f.css","style"]
+:HL["/_next/static/chunks/0rv7nhquxsz1u.css","style"]
 :HC["/",""]
 :HL["/assets/logoo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"locations","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"financial-district","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"aJuGf3_aicxiJu3WmqyRr"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"locations","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"financial-district","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"5se_boQy71Aj0Ri9XaQFR"}
