@@ -509,12 +509,7 @@ export default function HomePage() {
           />
 
           <div className="container" style={{ position: "relative", zIndex: 1 }}>
-            {/* Super Eyebrow Badge */}
-            <div className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "6px 16px", borderRadius: "9999px", background: "transparent", border: "1px solid var(--brand-border, rgba(122, 158, 0, 0.3))", marginBottom: "20px" }}>
-              <span style={{ fontSize: "12px", fontWeight: "600", color: "var(--brand-primary)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
-                About DV HOMES
-              </span>
-            </div>
+
 
             <div className="who-we-are-grid">
               {/* Left Column: Brand Story & High-Conversion Glass Cards */}
@@ -832,7 +827,7 @@ export default function HomePage() {
                 }}
               >
                 <div style={{ flex: "1 1 450px", minWidth: "280px" }}>
-                  <div className="section-eyebrow" style={{ display: "inline-block", marginBottom: "12px" }}>WHAT MAKES US DIFFERENT?</div>
+
                   <h2 className="display-md" style={{ margin: 0 }}>Our Approach &amp; 4-Step Process</h2>
                 </div>
                 <div style={{ flex: "1 1 480px", minWidth: "280px" }}>
@@ -894,7 +889,7 @@ export default function HomePage() {
           <div className="container">
             <ScrollBlurFadeIn>
               <div className="section-header section-header--left section-header--mb">
-                <div className="section-eyebrow" style={{ color: "var(--brand-primary)" }}>QUALITY &amp; MATERIALS</div>
+
                 <h2 className="display-md" style={{ color: "#FFFFFF" }}>Built with Branded Materials &amp; Quality Checklists</h2>
                 <p style={{ marginTop: "12px", color: "rgba(255, 255, 255, 0.8)", fontSize: "1.05rem", maxWidth: "800px" }}>
                   We disclose brand names, core board thickness, and surface finishes upfront. At DV HOMES, we provide total transparency in material selection, construction standards, and site execution.
@@ -928,7 +923,7 @@ export default function HomePage() {
           <div className="container">
             <ScrollBlurFadeIn>
               <div className="section-header section-header--left section-header--mb">
-                <div className="section-eyebrow">CLIENT TESTIMONIALS</div>
+
                 <h2 className="display-md">What Our Clients Say</h2>
               </div>
 
@@ -1045,7 +1040,7 @@ export default function HomePage() {
         <section className="section-py">
           <div className="container">
             <div className="section-header">
-              <div className="section-eyebrow">FREQUENTLY ASKED QUESTIONS</div>
+
               <h2 className="display-md">Got Questions? We Have Answers.</h2>
             </div>
 
@@ -1060,7 +1055,7 @@ export default function HomePage() {
           <div className="container">
             <div className="cta-dark-grid">
               <div>
-                <div className="section-eyebrow">STRESS-FREE HOME INTERIORS</div>
+
 
                 <h2 className="cta-hero-title">
                   Your Dream Home Starts<br />
