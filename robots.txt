@@ -1,4 +1,28 @@
+# DV Homes & Interiors Robots.txt
 User-agent: *
 Allow: /
 
-Sitemap: https://reelscale.in/sitemap.xml
+# Explicit AI Search Engine Crawler Directives (ChatGPT Search, Perplexity, Claude)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow admin or dynamic internal endpoints if any
+Disallow: /_next/
+Disallow: /api/
+
+Sitemap: https://dvhomes.in/sitemap.xml
