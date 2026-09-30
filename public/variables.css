@@ -131,24 +131,24 @@
   --soft-white: #FFFFFF;
 
   /* ── 4. FOREGROUND & TYPOGRAPHY COLORS ── */
-  /* Light Theme Text */
+  /* Light Theme Text (#292929 Primary) */
   --text-dark-primary: #292929;
-  --text-dark-secondary: #4A463F;
-  --text-dark-muted: #5C574E;
-  --text-dark-subtle: #787268;
-  --text-dark-quaternary: #A29B8F;
+  --text-dark-secondary: #424242;
+  --text-dark-muted: #595959;
+  --text-dark-subtle: #707070;
+  --text-dark-quaternary: #8c8c8c;
   --text-primary: var(--text-dark-primary);
   --text-secondary: var(--text-dark-secondary);
   --text-tertiary: var(--text-dark-subtle);
   --text-quaternary: var(--text-dark-quaternary);
   --text: var(--text-dark-primary);
 
-  /* Dark Theme Text */
-  --text-light-primary: #FAF9F6;
-  --text-light-secondary: #D8D0C4;
-  --text-light-muted: #A29B8F;
-  --text-light-subtle: rgba(250, 249, 246, 0.45);
-  --text-white: var(--text-light-primary);
+  /* Dark Theme Text (#e0e0e0 Primary) */
+  --text-light-primary: #e0e0e0;
+  --text-light-secondary: #c4c4c4;
+  --text-light-muted: #a6a6a6;
+  --text-light-subtle: rgba(224, 224, 224, 0.45);
+  --text-white: #e0e0e0;
   --text-brand: var(--brand-primary);
 
   /* ── 5. BORDER SYSTEM ── */
