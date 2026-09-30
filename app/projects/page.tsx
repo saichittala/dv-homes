@@ -64,7 +64,7 @@ export default function ProjectsPage() {
       {/* Projects Grid */}
       <section style={{ padding: "40px 24px 60px 24px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: "24px" }}>
+          <div className="grid-3x2-equal">
             {projectsData.map((project) => (
               <Link key={project.id} href={`/projects/${project.id}`} style={{ textDecoration: "none" }}>
                 <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "18px", overflow: "hidden", transition: "all 0.3s ease" }}>

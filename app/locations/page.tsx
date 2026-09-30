@@ -80,7 +80,7 @@ export default function LocationsHubPage() {
                   </h2>
                 </div>
 
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "20px" }}>
+                <div className="grid-3x2-equal">
                   {locationsInZone.map((loc) => (
                     <Link
                       key={loc.slug}

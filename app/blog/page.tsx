@@ -66,7 +66,7 @@ export default function BlogListingPage() {
       {/* Articles Grid */}
       <section style={{ padding: "40px 24px 60px 24px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: "24px" }}>
+          <div className="grid-3x2-equal">
             {blogs.map((post) => {
               const readingTime = getReadingTime(post.content || "");
               return (

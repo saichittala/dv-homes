@@ -268,7 +268,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
             Comprehensive interior solutions tailored to your floorplan requirements.
           </p>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px" }}>
+          <div className="grid-3x2-equal">
             {servicesData.slice(0, 6).map((srv) => (
               <Link key={srv.id} href={`/services/${srv.id}`} style={{ textDecoration: "none" }}>
                 <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "14px", padding: "18px", transition: "all 0.3s ease" }}>
