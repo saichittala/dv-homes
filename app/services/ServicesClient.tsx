@@ -17,42 +17,42 @@ export default function ServicesClient() {
     {
       id: "bedrooms",
       title: "Bed Rooms",
-      image: "/assets/parthu/bedroom-suite.webp",
+      image: "/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp",
     },
     {
       id: "kitchens",
       title: "Kitchens",
-      image: "/assets/main_images/kitchen-modern-black-red.webp",
+      image: "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
     },
     {
       id: "living-rooms",
       title: "Living Rooms",
-      image: "/assets/parthu/hero-living.webp",
+      image: "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp",
     },
     {
       id: "dining-rooms",
       title: "Dining Rooms",
-      image: "/assets/parthu/dining-interior.webp",
+      image: "/assets/main_images/luxury-interior-design-private-apartment-contemporary-dining-room.webp",
     },
     {
       id: "puja",
       title: "Puja",
-      image: "/assets/parthu/puja-room.webp",
+      image: "/assets/main_images/luxury-interior-exterior-design-collection-highend-architectural-home-decor-concepts-feat.webp",
     },
     {
       id: "partitions",
       title: "Partitions",
-      image: "/assets/parthu/luxury-wardrobe.webp",
+      image: "/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp",
     },
     {
       id: "study-rooms",
       title: "Study Rooms",
-      image: "/assets/parthu/study-room.webp",
+      image: "/assets/main_images/luxury-home-interior-design-3d-visualization-expensive-finishing-materials-furniture.webp",
     },
     {
       id: "office-spaces",
       title: "Office Spaces",
-      image: "/assets/parthu/viswajeet-villa.webp",
+      image: "/assets/main_images/luxury-modern-european-design-cafe-interior-downtown-with-colorful-furniture-3d-rendering.webp",
     },
   ];
 
@@ -62,7 +62,7 @@ export default function ServicesClient() {
         {/* Top Full-Width Luxury Hero Banner */}
         <section className="services-hero-banner">
           <img
-            src="/assets/parthu/hero-living.jpg"
+            src="/assets/main_images/hero-section.webp"
             alt="DV HOMES Premium Residential Interior Solutions"
             className="services-hero-img"
           />
