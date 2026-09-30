@@ -15,7 +15,9 @@ import {
   ArrowRightIcon
 } from "./Icons";
 
-import ConsultationModal from "./ConsultationModal";
+import dynamic from "next/dynamic";
+
+const ConsultationModal = dynamic(() => import("./ConsultationModal"), { ssr: false });
 
 interface HeaderProps {
   onOpenConsultation?: () => void;
@@ -48,8 +50,11 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
   }, [mobileMenuOpen]);
 
   useEffect(() => {
-    const handleScrollAndHash = () => {
-      setIsScrolled(window.scrollY > 15);
+    let ticking = false;
+
+    const updateScroll = () => {
+      const scrolled = window.scrollY > 20;
+      setIsScrolled((prev) => (prev !== scrolled ? scrolled : prev));
 
       if (pathname === "/") {
         const hash = window.location.hash;
@@ -80,7 +85,15 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
           foundSection = "home";
         }
 
-        setActiveSection(foundSection);
+        setActiveSection((prev) => (prev !== foundSection ? foundSection : prev));
+      }
+      ticking = false;
+    };
+
+    const handleScrollAndHash = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScroll);
+        ticking = true;
       }
     };
 

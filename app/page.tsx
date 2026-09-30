@@ -3,12 +3,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import dynamic from "next/dynamic";
 import Footer from "./components/Footer";
-import ConsultationModal from "./components/ConsultationModal";
-import PricingDeliveryModal from "./components/PricingDeliveryModal";
-import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import JsonLd, { defaultOrganizationSchema } from "./components/JsonLd";
 import ScrollBeforeAfterSection from "./components/ScrollBeforeAfterSection";
+
+const ConsultationModal = dynamic(() => import("./components/ConsultationModal"), { ssr: false });
+const PricingDeliveryModal = dynamic(() => import("./components/PricingDeliveryModal"), { ssr: false });
 import FaqAccordion from "./components/FaqAccordion";
 import ImageWithSkeleton from "./components/ImageWithSkeleton";
 import ChoiceChips, { ChoiceOption } from "./components/ui/ChoiceChips";

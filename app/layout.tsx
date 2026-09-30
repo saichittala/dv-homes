@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import "@fontsource/manrope/300.css";
+import dynamic from "next/dynamic";
 import "@fontsource/manrope/400.css";
 import "@fontsource/manrope/500.css";
 import "@fontsource/manrope/600.css";
 import "@fontsource/manrope/700.css";
-import "@fontsource/manrope/800.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -30,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "DV HOMES",
     images: [
       {
-        url: "/assets/logo.png",
+        url: "/assets/logoo.png",
         width: 1024,
         height: 360,
         alt: "DV HOMES - Premium Interior Design & Turnkey Execution",
@@ -49,8 +48,9 @@ export const metadata: Metadata = {
 
 import ScrollRevealProvider from "./components/ScrollRevealProvider";
 import Header from "./components/Header";
-import FloatingWhatsApp from "./components/FloatingWhatsApp";
-import TimedLeadModal from "./components/TimedLeadModal";
+
+const FloatingWhatsApp = dynamic(() => import("./components/FloatingWhatsApp"));
+const TimedLeadModal = dynamic(() => import("./components/TimedLeadModal"));
 
 export default function RootLayout({
   children

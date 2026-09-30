@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
 
 interface ImageWithSkeletonProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
@@ -9,6 +8,7 @@ interface ImageWithSkeletonProps extends React.ImgHTMLAttributes<HTMLImageElemen
   className?: string;
   parallaxSpeed?: number;
   disableParallax?: boolean;
+  priority?: boolean;
 }
 
 export default function ImageWithSkeleton({
@@ -17,33 +17,23 @@ export default function ImageWithSkeleton({
   className = "",
   style,
   parallaxSpeed = 0.15,
-  disableParallax = false,
+  disableParallax = true,
+  priority = false,
   ...props
 }: ImageWithSkeletonProps) {
   const [loaded, setLoaded] = useState(true);
   const containerRef = useRef<HTMLDivElement>(null);
   const imgRef = useRef<HTMLImageElement>(null);
 
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  });
-
-  const travel = 50 * parallaxSpeed;
-  const y = useTransform(scrollYProgress, [0, 1], disableParallax ? [0, 0] : [travel, -travel]);
-  const scale = disableParallax ? 1 : 1.25;
+  // Compute webp src path if possible
+  const webpSrc = src && (src.endsWith(".jpg") || src.endsWith(".png") || src.endsWith(".jpeg"))
+    ? src.replace(/\.(jpg|jpeg|png)$/, ".webp")
+    : null;
 
   useEffect(() => {
-    if (imgRef.current) {
-      if (imgRef.current.complete) {
-        setLoaded(true);
-      }
-    }
-    // Fallback timer to ensure image is visible
-    const timer = setTimeout(() => {
+    if (imgRef.current && imgRef.current.complete) {
       setLoaded(true);
-    }, 150);
-    return () => clearTimeout(timer);
+    }
   }, [src]);
 
   return (
@@ -52,25 +42,28 @@ export default function ImageWithSkeleton({
       className={`img-skeleton-wrapper ${loaded ? "is-loaded" : "is-loading"}`}
       style={{ position: "relative", width: "100%", height: "100%", overflow: "hidden" }}
     >
-      <motion.img
-        ref={imgRef}
-        src={src}
-        alt={alt}
-        onLoad={() => setLoaded(true)}
-        onError={() => setLoaded(true)}
-        style={{
-          y,
-          scale,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          objectPosition: "center",
-          display: "block",
-          ...style,
-        }}
-        className={`${className} ${loaded ? "is-loaded image-reveal-active" : "is-loaded image-reveal-active"}`}
-        {...(props as any)}
-      />
+      <picture>
+        {webpSrc && <source srcSet={webpSrc} type="image/webp" />}
+        <img
+          ref={imgRef}
+          src={src}
+          alt={alt}
+          loading={priority ? "eager" : "lazy"}
+          decoding="async"
+          onLoad={() => setLoaded(true)}
+          onError={() => setLoaded(true)}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center",
+            display: "block",
+            ...style,
+          }}
+          className={`${className} ${loaded ? "is-loaded image-reveal-active" : "is-loaded image-reveal-active"}`}
+          {...(props as any)}
+        />
+      </picture>
     </div>
   );
 }
