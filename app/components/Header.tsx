@@ -194,7 +194,6 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
                   src="/assets/logoo.png"
                   alt="DV HOMES"
                   className="nav-logo-img"
-                  style={{ height: "60px", maxHeight: "64px", objectFit: "contain" }}
                 />
               </Link>
 
