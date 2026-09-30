@@ -755,7 +755,7 @@ export default function HomePage() {
                         className="featured-service-arrow-btn"
                         aria-label={`Explore ${service.title}`}
                       >
-                        <ArrowRightIcon size={18} />
+                        <ArrowRightIcon size={18} color="#060606" />
                       </div>
                     </div>
                   </Link>
