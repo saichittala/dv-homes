@@ -937,7 +937,7 @@ export default function HomePage() {
                   <div>
                     <div className="testimonial-stars-row">
                       {[...Array(5)].map((_, i) => (
-                        <StarIcon key={i} size={18} color="var(--brand-primary)" />
+                        <StarIcon key={i} size={18} color="var(--brand-primary-lightmode, #0f8a33)" />
                       ))}
                     </div>
                     <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
@@ -948,7 +948,7 @@ export default function HomePage() {
                     </p>
                   </div>
                   <div className="testimonial-author-block">
-                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary)", color: "#FFFFFF" }}>RC</div>
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #0f8a33)", color: "#FFFFFF" }}>RC</div>
                     <div>
                       <div className="testimonial-author-name">Residential Interior Client</div>
                       <div className="testimonial-author-role">Hyderabad</div>
@@ -960,7 +960,7 @@ export default function HomePage() {
                   <div>
                     <div className="testimonial-stars-row">
                       {[...Array(5)].map((_, i) => (
-                        <StarIcon key={i} size={18} color="var(--brand-primary)" />
+                        <StarIcon key={i} size={18} color="var(--brand-primary-lightmode, #0f8a33)" />
                       ))}
                     </div>
                     <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
@@ -971,7 +971,7 @@ export default function HomePage() {
                     </p>
                   </div>
                   <div className="testimonial-author-block">
-                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary)", color: "#FFFFFF" }}>HO</div>
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #0f8a33)", color: "#FFFFFF" }}>HO</div>
                     <div>
                       <div className="testimonial-author-name">Homeowner</div>
                       <div className="testimonial-author-role">Hyderabad</div>
@@ -983,7 +983,7 @@ export default function HomePage() {
                   <div>
                     <div className="testimonial-stars-row">
                       {[...Array(5)].map((_, i) => (
-                        <StarIcon key={i} size={18} color="var(--brand-primary)" />
+                        <StarIcon key={i} size={18} color="var(--brand-primary-lightmode, #0f8a33)" />
                       ))}
                     </div>
                     <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
@@ -994,7 +994,7 @@ export default function HomePage() {
                     </p>
                   </div>
                   <div className="testimonial-author-block">
-                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary)", color: "#FFFFFF" }}>RC</div>
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #0f8a33)", color: "#FFFFFF" }}>RC</div>
                     <div>
                       <div className="testimonial-author-name">Residential Client</div>
                       <div className="testimonial-author-role">Hyderabad</div>

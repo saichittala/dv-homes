@@ -2864,7 +2864,7 @@ main {
   height: 58px;
   border-radius: 100% !important;
   background: var(--bg-light);
-  border: 2px solid var(--brand-primary);
+  border: 2px solid var(--brand-primary-lightmode, #0f8a33) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2880,13 +2880,13 @@ main {
   font-size: var(--fs-20);
   font-weight: var(--fw-bold);
   line-height: 1;
-  color: var(--brand-primary);
+  color: var(--brand-primary-lightmode, #0f8a33) !important;
   transition: color var(--duration-fast) var(--ease-apple);
 }
 
 .process-step-item:hover .process-circle-badge {
-  background: var(--brand-primary);
-  border-color: var(--brand-primary);
+  background: var(--brand-primary-lightmode, #0f8a33) !important;
+  border-color: var(--brand-primary-lightmode, #0f8a33) !important;
   transform: none !important;
   box-shadow: none !important;
 }
@@ -3142,8 +3142,8 @@ main {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-circle) !important;
-  background: var(--brand-tint-15);
-  color: var(--brand-primary);
+  background: var(--brand-primary-lightmode, #0f8a33) !important;
+  color: #FFFFFF !important;
   border: none !important;
   display: flex;
   align-items: center;
