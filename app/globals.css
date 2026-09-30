@@ -2527,7 +2527,7 @@ main {
 
 .featured-service-card-item:hover .featured-service-title {
   font-weight: 500 !important;
-  color: var(--brand-primary);
+  color: #060606 !important;
 }
 
 .featured-service-desc {
@@ -2558,9 +2558,9 @@ main {
 }
 
 .featured-service-card-item:hover .featured-service-arrow-btn {
-  background: var(--brand-primary);
-  border-color: var(--brand-primary);
-  color: #FFFFFF;
+  background: #060606 !important;
+  border-color: #060606 !important;
+  color: #FFFFFF !important;
 }
 
 .featured-service-card-item:hover .featured-service-arrow-btn svg {
@@ -4234,7 +4234,7 @@ main {
 
 .service-card-item:hover .service-card-title {
   font-weight: 500 !important;
-  color: var(--brand-primary);
+  color: #060606 !important;
 }
 
 @media (max-width: 1024px) {
