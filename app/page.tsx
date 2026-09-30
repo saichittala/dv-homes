@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import ConsultationModal from "./components/ConsultationModal";
 import PricingDeliveryModal from "./components/PricingDeliveryModal";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import JsonLd, { defaultOrganizationSchema } from "./components/JsonLd";
 import ScrollBeforeAfterSection from "./components/ScrollBeforeAfterSection";
 import FaqAccordion from "./components/FaqAccordion";
 import ImageWithSkeleton from "./components/ImageWithSkeleton";
@@ -354,6 +355,7 @@ export default function HomePage() {
 
   return (
     <>
+      <JsonLd data={defaultOrganizationSchema} />
       <main id="main-content">
         {/* =================================================================
             1. HERO SECTION (FULL-BLEED CINEMATIC SHOWCASE WITH AUTOMATIC SLIDER)

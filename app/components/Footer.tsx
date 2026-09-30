@@ -32,23 +32,24 @@ export default function Footer() {
               <li><Link href="/">Home</Link></li>
               <li><Link href="/about">About Us</Link></li>
               <li><Link href="/services">Services</Link></li>
-              <li><Link href="/#projects">Projects</Link></li>
-              <li><Link href="/#testimonials">Testimonials</Link></li>
+              <li><Link href="/locations">Locations</Link></li>
+              <li><Link href="/projects">Projects</Link></li>
+              <li><Link href="/blog">Blog &amp; Guides</Link></li>
               <li><Link href="/contact">Contact Us</Link></li>
             </ul>
           </div>
 
-          {/* Column 3: Our Services */}
+          {/* Column 3: Top Hyderabad Locations */}
           <div>
-            <h4 className="footer-heading">Our Services</h4>
+            <h4 className="footer-heading">Hyderabad Locations</h4>
             <ul className="footer-links-list">
-              <li><Link href="/services/kitchens">Complete Home Interiors</Link></li>
-              <li><Link href="/services/kitchens">Modular Kitchens</Link></li>
-              <li><Link href="/services/bedrooms">Wardrobes &amp; Storage</Link></li>
-              <li><Link href="/services/living-rooms">TV Units &amp; Feature Walls</Link></li>
-              <li><Link href="/services/puja">Pooja Mandirs</Link></li>
-              <li><Link href="/services/partitions">False Ceiling &amp; Lighting</Link></li>
-              <li><Link href="/services/study-rooms">Home Renovation</Link></li>
+              <li><Link href="/locations/madhapur">Madhapur</Link></li>
+              <li><Link href="/locations/gachibowli">Gachibowli</Link></li>
+              <li><Link href="/locations/kondapur">Kondapur</Link></li>
+              <li><Link href="/locations/jubilee-hills">Jubilee Hills</Link></li>
+              <li><Link href="/locations/kokapet">Kokapet</Link></li>
+              <li><Link href="/locations/financial-district">Financial District</Link></li>
+              <li><Link href="/locations">All Locations</Link></li>
             </ul>
           </div>
 

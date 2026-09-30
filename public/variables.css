@@ -199,15 +199,25 @@
   --transition-luxury: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 
   /* ── 8. MASTER BRAND RADII SYSTEM ── */
-  --radius-none: 0px;
+  /* --radius-none: 0px;
   --radius-xs: 4px;
   --radius-sm: 8px;
-  --radius-md: 12px;
+  --radius-md: 12px; */
+  --radius-none: 0px;
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
 
   /* Staff Product Designer Brand Radius Tokens */
-  --radius-brand-18: 18px;    /* 18px Standard Brand Radius */
-  --radius-brand-24: 24px;    /* 24px Medium Brand Radius */
-  --radius-brand-36: 36px;    /* 36px Large Brand Radius */
+  /* --radius-brand-18: 18px;   18px Standard Brand Radius */
+  /* --radius-brand-24: 24px;    24px Medium Brand Radius */
+  /* --radius-brand-36: 36px;    36px Large Brand Radius */
+  --radius-brand-18: 0px;
+  /* 18px Standard Brand Radius */
+  --radius-brand-24: 0px;
+  /* 24px Medium Brand Radius */
+  --radius-brand-36: 0px;
+  /* 36px Large Brand Radius */
 
   /* Semantic System Aliases */
   --radius-brand: var(--radius-brand-18);
