@@ -916,30 +916,44 @@ button:focus {
   border-radius: var(--radius-none);
 }
 
-/* Primary Button (#38d059 Emerald Green Background with White Text) */
+/* Primary Button (#38d059 Emerald Green Background with Black Text) */
 .btn-primary {
   background: #38d059 !important;
-  color: #FFFFFF !important;
-  font-weight: 500 !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #060606 !important;
+  font-weight: 600 !important;
+  border: 1px solid rgba(6, 6, 6, 0.15) !important;
   box-shadow: none !important;
   text-shadow: none !important;
   transform: none !important;
 }
 
+.btn-primary * {
+  color: #060606 !important;
+}
+
+.btn-primary svg,
+.btn-primary path {
+  stroke: #060606 !important;
+}
+
 .btn-primary:hover {
-  background: #698800 !important;
-  border-color: rgba(255, 255, 255, 0.40) !important;
-  color: #FFFFFF !important;
+  background: #2eb84d !important;
+  border-color: rgba(6, 6, 6, 0.25) !important;
+  color: #060606 !important;
   box-shadow: none !important;
   filter: none !important;
   transform: none !important;
+  opacity: 0.9 !important;
+}
+
+.btn-primary:hover * {
+  color: #060606 !important;
 }
 
 .btn-primary:active {
-  background: #597400 !important;
-  border-color: rgba(255, 255, 255, 0.40) !important;
-  color: #FFFFFF !important;
+  background: #269e42 !important;
+  border-color: rgba(6, 6, 6, 0.35) !important;
+  color: #060606 !important;
   box-shadow: none !important;
   transform: none !important;
 }
