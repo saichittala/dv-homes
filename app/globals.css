@@ -1786,13 +1786,13 @@ main {
   min-height: 540px;
   max-height: 820px;
   display: flex;
-  align-items: center;
+  align-items: flex-end !important;
   justify-content: center;
   overflow: hidden;
   background: var(--bg-dark);
   color: var(--text-light-primary);
   padding-top: clamp(110px, 12vw, 140px);
-  padding-bottom: clamp(36px, 4vw, 56px);
+  padding-bottom: 24px !important;
 }
 
 @media (min-width: 1024px) {
@@ -1800,6 +1800,7 @@ main {
     height: 80vh !important;
     min-height: 580px;
     max-height: 820px;
+    padding-bottom: 24px !important;
   }
 }
 
@@ -1863,7 +1864,7 @@ main {
 /* Hero Framer Motion Slider Controls */
 .hero-top-bar {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end !important;
   justify-content: space-between;
   width: 100%;
   gap: 20px;
@@ -1942,7 +1943,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 24px 0;
+  padding: 0 !important;
 }
 
 .hero-cinematic-eyebrow {
