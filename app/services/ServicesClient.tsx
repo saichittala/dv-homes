@@ -17,42 +17,42 @@ export default function ServicesClient() {
     {
       id: "bedrooms",
       title: "Bed Rooms",
-      image: "/assets/parthu/bedroom-suite.jpg",
+      image: "/assets/parthu/bedroom-suite.webp",
     },
     {
       id: "kitchens",
       title: "Kitchens",
-      image: "/assets/parthu/modular-kitchen.jpg",
+      image: "/assets/main_images/kitchen-modern-black-red.webp",
     },
     {
       id: "living-rooms",
       title: "Living Rooms",
-      image: "/assets/parthu/hero-living.jpg",
+      image: "/assets/parthu/hero-living.webp",
     },
     {
       id: "dining-rooms",
       title: "Dining Rooms",
-      image: "/assets/parthu/dining-interior.jpg",
+      image: "/assets/parthu/dining-interior.webp",
     },
     {
       id: "puja",
       title: "Puja",
-      image: "/assets/parthu/puja-room.jpg",
+      image: "/assets/parthu/puja-room.webp",
     },
     {
       id: "partitions",
       title: "Partitions",
-      image: "/assets/parthu/after-room.jpg",
+      image: "/assets/parthu/luxury-wardrobe.webp",
     },
     {
       id: "study-rooms",
       title: "Study Rooms",
-      image: "/assets/parthu/study-room.jpg",
+      image: "/assets/parthu/study-room.webp",
     },
     {
       id: "office-spaces",
       title: "Office Spaces",
-      image: "/assets/parthu/dining-interior.jpg",
+      image: "/assets/parthu/viswajeet-villa.webp",
     },
   ];
 

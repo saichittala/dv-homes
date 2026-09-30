@@ -170,12 +170,12 @@ export const servicesData: ServiceDetail[] = [
     category: "Kitchens",
     tagline: "Ergonomically engineered kitchens blending aesthetics and efficiency",
     description: "Experience the perfect harmony of German modular engineering and luxury design. Manufactured in our Kokapet facility, our kitchens feature 100% waterproof BWP marine plywood, anti-fingerprint acrylic and PU finishes, quartz counter surfaces, and intelligent pantry organizers.",
-    mainImage: "/assets/parthu/modular-kitchen.jpg",
+    mainImage: "/assets/main_images/kitchen-modern-black-red.webp",
     gallery: [
+      "/assets/main_images/kitchen-modern-black-red.webp",
       "/assets/parthu/modular-kitchen.jpg",
       "/assets/parthu/kitchen-detail-1.jpg",
-      "/assets/parthu/kitchen-detail-2.jpg",
-      "/assets/parthu/viswajeet-villa.jpg"
+      "/assets/parthu/kitchen-detail-2.jpg"
     ],
     features: [
       "100% Boiling Water Proof (BWP) Marine Plywood Carcass",
@@ -305,12 +305,12 @@ export const servicesData: ServiceDetail[] = [
     category: "Kitchens",
     tagline: "Ergonomically engineered kitchens blending aesthetics and efficiency",
     description: "Experience the perfect harmony of German modular engineering and luxury design. Manufactured in our state-of-the-art Kokapet facility, our kitchens feature 100% waterproof BWP marine plywood, anti-fingerprint acrylic and PU finishes, quartz counter surfaces, and intelligent pantry organizers.",
-    mainImage: "/assets/parthu/modular-kitchen.jpg",
+    mainImage: "/assets/main_images/kitchen-modern-black-red.webp",
     gallery: [
+      "/assets/main_images/kitchen-modern-black-red.webp",
       "/assets/parthu/modular-kitchen.jpg",
       "/assets/parthu/kitchen-detail-1.jpg",
-      "/assets/parthu/kitchen-detail-2.jpg",
-      "/assets/parthu/viswajeet-villa.jpg"
+      "/assets/parthu/kitchen-detail-2.jpg"
     ],
     features: [
       "100% Boiling Water Proof (BWP) Marine Plywood Carcass",
