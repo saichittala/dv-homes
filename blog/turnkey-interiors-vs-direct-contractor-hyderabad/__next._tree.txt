@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/4146ok48wbifd.css","style"]
+:HL["/_next/static/chunks/26x2h469s7eb3.css","style"]
 :HC["/",""]
 :HL["/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp","image"]
 :HL["/assets/logoo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"turnkey-interiors-vs-direct-contractor-hyderabad","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"9UvRtLnoe_UvyRpiOCF1Z"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"turnkey-interiors-vs-direct-contractor-hyderabad","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"0GVOgEhNrpOQpLaMKdUiR"}
