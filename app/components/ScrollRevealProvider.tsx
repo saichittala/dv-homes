@@ -11,6 +11,34 @@ export default function ScrollRevealProvider({
   const pathname = usePathname();
 
   useEffect(() => {
+    // Setup button text-swap attributes & child wrapping for signature text-roll animation
+    const initButtons = () => {
+      const buttons = document.querySelectorAll(".btn-primary");
+      buttons.forEach((btn) => {
+        const text = btn.textContent?.trim();
+        if (text && !btn.getAttribute("data-text")) {
+          btn.setAttribute("data-text", text);
+        }
+
+        // Ensure direct text nodes are wrapped in span for clean transform animation
+        btn.childNodes.forEach((node) => {
+          if (node.nodeType === Node.TEXT_NODE && node.nodeValue?.trim()) {
+            const span = document.createElement("span");
+            span.textContent = node.nodeValue;
+            btn.replaceChild(span, node);
+          }
+        });
+      });
+    };
+
+    initButtons();
+
+    // Observe DOM mutations so dynamic buttons (modals, client renders) get data-text immediately
+    const mutationObserver = new MutationObserver(() => {
+      initButtons();
+    });
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
+
     const observerOptions: IntersectionObserverInit = {
       root: null,
       rootMargin: "0px 0px -80px 0px",
@@ -42,6 +70,7 @@ export default function ScrollRevealProvider({
 
     return () => {
       observer.disconnect();
+      mutationObserver.disconnect();
     };
   }, [pathname]);
 

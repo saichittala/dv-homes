@@ -38,11 +38,12 @@ interface ConsultationModalProps {
 
 export default function ConsultationModal({ isOpen, onClose }: ConsultationModalProps) {
   const [mounted, setMounted] = useState(false);
+  const [showOptionalDetails, setShowOptionalDetails] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
-    propertyType: "",
+    propertyType: "3 BHK Apartment",
     location: "Hyderabad",
     scope: "",
     budget: "",
@@ -108,61 +109,76 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
       <div
         className="modal-box"
         onClick={(e) => e.stopPropagation()}
+        style={{
+          maxWidth: "460px",
+          padding: "24px 22px",
+          background: "#0a0b0d",
+          border: "1px solid rgba(255, 255, 255, 0.14)",
+          boxShadow: "0 24px 64px rgba(0,0,0,0.95), 0 0 32px rgba(255, 99, 100, 0.08)",
+        }}
       >
         <button className="modal-close-btn" onClick={onClose} aria-label="Close Modal">
-          <XCloseIcon size={20} color="#FFFFFF" />
+          <XCloseIcon size={18} color="#FFFFFF" />
         </button>
 
         {submitted ? (
-          <div className="form-success-state">
-            <div className="form-success-icon featured-icon featured-icon-brand">
-              <CheckCircleIcon size={28} color="var(--brand-primary, #ff6364)" />
+          <div className="form-success-state" style={{ padding: "16px 0", textAlign: "center" }}>
+            <div
+              className="form-success-icon featured-icon"
+              style={{
+                width: "48px",
+                height: "48px",
+                borderRadius: "50%",
+                background: "rgba(255, 99, 100, 0.15)",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginBottom: "12px",
+              }}
+            >
+              <CheckCircleIcon size={26} color="#ff6364" />
             </div>
-            <h3 className="modal-title">
-              Consultation Request Received!
+            <h3 className="modal-title" style={{ fontSize: "19px", marginBottom: "6px" }}>
+              Consultation Requested!
             </h3>
-            <p className="modal-body-text">
-              Our senior interior architect will connect with you within 2 business hours. Opening WhatsApp chat for priority booking...
+            <p className="modal-body-text" style={{ fontSize: "13px", marginBottom: "16px" }}>
+              Our senior interior architect will connect with you within 2 business hours. Opening WhatsApp chat...
             </p>
-            <button className="btn btn-primary btn-md" onClick={onClose}>
+            <button
+              className="btn btn-primary btn-md"
+              style={{ width: "100%", background: "#ff6364", color: "#FFFFFF", fontWeight: 700 }}
+              onClick={onClose}
+            >
               Close Window
             </button>
           </div>
         ) : (
           <div>
-            <div className="section-eyebrow">
-              Free Planning Session
-            </div>
-
-            <h3 className="modal-title">
-              Free Home Interior Planning Session
+            <h3 className="modal-title" style={{ fontSize: "20px", marginBottom: "14px" }}>
+              Free Home Planning Consultation
             </h3>
 
-            <p className="modal-body-text">
-              Requirements discussion, lifestyle design direction, budget factors, kitchen/wardrobe/living suggestions and preparation checklist.
-            </p>
-
             <form onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label className="form-label">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="e.g. Ananya Rao"
-                  className="form-input"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                />
-              </div>
+              <div className="form-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", marginBottom: "10px" }}>
+                <div className="form-group" style={{ marginBottom: 0 }}>
+                  <label className="form-label" style={{ fontSize: "12px", marginBottom: "4px" }}>
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="e.g. Ananya Rao"
+                    className="form-input"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  />
+                </div>
 
-              <div className="form-row">
-                <div className="form-group">
-                  <label className="form-label">
-                    WhatsApp Number *
+                <div className="form-group" style={{ marginBottom: 0 }}>
+                  <label className="form-label" style={{ fontSize: "12px", marginBottom: "4px" }}>
+                    WhatsApp Phone *
                   </label>
                   <div className="phone-input-group">
-                    <span className="phone-prefix">+91</span>
+                    <span className="phone-prefix" style={{ fontSize: "13px" }}>+91</span>
                     <span className="phone-separator" />
                     <input
                       type="tel"
@@ -174,19 +190,20 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
                     />
                   </div>
                 </div>
+              </div>
 
-                <div className="form-group">
-                  <label className="form-label">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="e.g. ananya@gmail.com"
-                    className="form-input"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  />
-                </div>
+              <div className="form-group" style={{ marginBottom: "10px" }}>
+                <label className="form-label" style={{ fontSize: "12px", marginBottom: "4px" }}>
+                  Project Location / Apartment *
+                </label>
+                <input
+                  type="text"
+                  required
+                  placeholder="e.g. Magna Solitaire, Kokapet"
+                  className="form-input"
+                  value={formData.location}
+                  onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+                />
               </div>
 
               <ChoiceChips
@@ -195,36 +212,80 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
                 selectedValue={formData.propertyType}
                 onChange={(val) => setFormData({ ...formData, propertyType: val })}
                 variant="dark"
+                compact={true}
               />
 
-              <ChoiceChips
-                label="Design Scope"
-                options={SCOPE_TYPES}
-                selectedValue={formData.scope}
-                onChange={(val) => setFormData({ ...formData, scope: val })}
-                variant="dark"
-              />
+              {!showOptionalDetails ? (
+                <button
+                  type="button"
+                  onClick={() => setShowOptionalDetails(true)}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: "rgba(255, 255, 255, 0.55)",
+                    fontSize: "12px",
+                    cursor: "pointer",
+                    padding: "2px 0 8px 0",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "4px",
+                    transition: "color 0.2s ease",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#ff6364")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255, 255, 255, 0.55)")}
+                >
+                  <span>+ Add Design Scope &amp; Budget (Optional)</span>
+                </button>
+              ) : (
+                <>
+                  <ChoiceChips
+                    label="Design Scope"
+                    options={SCOPE_TYPES}
+                    selectedValue={formData.scope}
+                    onChange={(val) => setFormData({ ...formData, scope: val })}
+                    variant="dark"
+                    compact={true}
+                  />
 
-              <ChoiceChips
-                label="Planned Investment / Budget"
-                options={BUDGET_TYPES}
-                selectedValue={formData.budget}
-                onChange={(val) => setFormData({ ...formData, budget: val })}
-                variant="dark"
-              />
+                  <ChoiceChips
+                    label="Planned Investment / Budget"
+                    options={BUDGET_TYPES}
+                    selectedValue={formData.budget}
+                    onChange={(val) => setFormData({ ...formData, budget: val })}
+                    variant="dark"
+                    compact={true}
+                  />
+                </>
+              )}
 
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn btn-primary btn-lg w-full"
-                style={{ width: "100%" }}
+                style={{
+                  width: "100%",
+                  height: "46px",
+                  borderRadius: "14px",
+                  background: "linear-gradient(135deg, #ff6364 0%, #e55556 100%)",
+                  color: "#FFFFFF",
+                  fontWeight: 700,
+                  fontSize: "14.5px",
+                  border: "none",
+                  cursor: "pointer",
+                  marginTop: "8px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "8px",
+                  boxShadow: "0 8px 24px rgba(255, 99, 100, 0.3)",
+                  transition: "all 0.2s ease",
+                }}
               >
-                <span>{isSubmitting ? "Submitting..." : "Get a Free Quote"}</span>
+                <span>{isSubmitting ? "Submitting..." : "Get Free Quote on WhatsApp →"}</span>
               </button>
 
-              <div className="modal-privacy-note">
-                <LockIcon size={14} color="var(--brand-primary, #ff6364)" />
-                <span>Zero spam. Free 3D plan &amp; site assessment included.</span>
+              <div className="modal-privacy-note" style={{ marginTop: "10px", fontSize: "11.5px", color: "rgba(255, 255, 255, 0.6)" }}>
+                <LockIcon size={13} color="#ff6364" />
+                <span>Zero Spam Guarantee • Free 3D Plan &amp; Site Assessment</span>
               </div>
             </form>
           </div>

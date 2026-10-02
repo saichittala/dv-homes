@@ -96,10 +96,10 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema]} />
 
       {/* Hero Header */}
-      <section style={{ padding: "100px 24px 40px 24px" }}>
+      <section style={{ padding: "140px 24px 30px 24px" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "6px 16px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "16px" }}>
-            <MapPinIcon size={16} color="#38d059" />
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "9999px", padding: "6px 16px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "16px" }}>
+            <MapPinIcon size={16} color="#ff6364" />
             <span>{project.location.toUpperCase()}</span>
           </div>
 
@@ -157,9 +157,9 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 Project Challenge &amp; Solution
               </h3>
               <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", padding: "20px 22px", borderRadius: "14px", marginBottom: "20px" }}>
-                <div style={{ fontWeight: "600", color: "#38d059", marginBottom: "6px" }}>Challenge:</div>
+                <div style={{ fontWeight: "600", color: "#ff6364", marginBottom: "6px" }}>Challenge:</div>
                 <p style={{ fontSize: "0.92rem", color: "#e0e0e0", margin: "0 0 12px 0", lineHeight: "1.5" }}>{project.challenge}</p>
-                <div style={{ fontWeight: "600", color: "#38d059", marginBottom: "6px" }}>DV Homes Solution:</div>
+                <div style={{ fontWeight: "600", color: "#ff6364", marginBottom: "6px" }}>DV Homes Solution:</div>
                 <p style={{ fontSize: "0.92rem", color: "#e0e0e0", margin: 0, lineHeight: "1.5" }}>{project.solution}</p>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "28px" }}>
                 {project.materials.map((mat, idx) => (
                   <div key={idx} style={{ display: "flex", alignItems: "center", gap: "10px", background: "transparent", padding: "10px 14px", borderRadius: "10px", border: "1px solid rgba(255,255,255,0.12)" }}>
-                    <CheckIcon size={16} color="#38d059" />
+                    <CheckIcon size={16} color="#ff6364" />
                     <span style={{ fontSize: "0.9rem", color: "#e0e0e0" }}>{mat}</span>
                   </div>
                 ))}
@@ -226,8 +226,8 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
             <Link
               href="/contact"
               style={{
-                background: "#38d059",
-                color: "#000000",
+                background: "#ff6364",
+                color: "#FFFFFF",
                 fontWeight: "700",
                 padding: "14px 32px",
                 borderRadius: "9999px",

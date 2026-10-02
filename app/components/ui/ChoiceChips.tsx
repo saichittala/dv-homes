@@ -16,6 +16,7 @@ interface ChoiceChipsProps {
   label?: string;
   required?: boolean;
   variant?: "light" | "dark";
+  compact?: boolean;
 }
 
 export default function ChoiceChips({
@@ -25,19 +26,20 @@ export default function ChoiceChips({
   label,
   required = false,
   variant = "light",
+  compact = false,
 }: ChoiceChipsProps) {
   const isDark = variant === "dark";
 
   return (
-    <div style={{ marginBottom: "18px", width: "100%" }}>
+    <div style={{ marginBottom: compact ? "10px" : "18px", width: "100%" }}>
       {label && (
         <label
           style={{
             display: "block",
-            fontSize: "14px",
+            fontSize: compact ? "12px" : "14px",
             fontWeight: "600",
             color: isDark ? "rgba(255, 255, 255, 0.85)" : "#374151",
-            marginBottom: "10px",
+            marginBottom: compact ? "6px" : "10px",
             letterSpacing: "normal",
           }}
         >
@@ -58,18 +60,18 @@ export default function ChoiceChips({
           const isActive = option.value === selectedValue;
           
           const bgNormal = isDark ? "rgba(255, 255, 255, 0.04)" : "#F3F4F6";
-          const bgActive = isDark ? "rgba(107, 255, 139, 0.16)" : "rgba(107, 255, 139, 0.14)";
+          const bgActive = isDark ? "rgba(255, 99, 100, 0.16)" : "rgba(255, 99, 100, 0.14)";
           const bgHover = isDark
-            ? isActive ? "rgba(107, 255, 139, 0.22)" : "rgba(255, 255, 255, 0.08)"
-            : isActive ? "rgba(107, 255, 139, 0.20)" : "#E5E7EB";
+            ? isActive ? "rgba(255, 99, 100, 0.22)" : "rgba(255, 255, 255, 0.08)"
+            : isActive ? "rgba(255, 99, 100, 0.20)" : "#E5E7EB";
 
           const borderNormal = isDark
             ? isActive ? "transparent" : "rgba(255, 255, 255, 0.14)"
             : isActive ? "transparent" : "rgba(23, 23, 22, 0.12)";
 
           const textNormal = isDark
-            ? isActive ? "#6bff8b" : "rgba(255, 255, 255, 0.85)"
-            : isActive ? "#0f8a33" : "#374151";
+            ? isActive ? "#ff6364" : "rgba(255, 255, 255, 0.85)"
+            : isActive ? "#ff6364" : "#374151";
 
           return (
             <motion.button
@@ -96,10 +98,10 @@ export default function ChoiceChips({
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
-                height: "40px",
-                padding: "0 16px",
+                height: compact ? "32px" : "40px",
+                padding: compact ? "0 12px" : "0 16px",
                 borderRadius: "9999px",
-                fontSize: "14px",
+                fontSize: compact ? "12px" : "14px",
                 fontWeight: "500",
                 cursor: "pointer",
                 border: `1px solid ${borderNormal}`,
@@ -132,7 +134,7 @@ export default function ChoiceChips({
                   flexShrink: 0,
                 }}
               >
-                <CheckIcon size={14} color={isDark ? "#6bff8b" : "#0f8a33"} strokeWidth={2.5} />
+                <CheckIcon size={14} color="#ff6364" strokeWidth={2.5} />
               </motion.span>
               <span>{option.label}</span>
             </motion.button>

@@ -97,7 +97,7 @@ export default function ContactPage() {
               <div className="contact-info-stack">
                 <div className="contact-info-card">
                   <div className="icon-wrapper">
-                    <MapPinIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
+                    <MapPinIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
                   </div>
                   <div>
                     <h3 className="card-title">Location</h3>
@@ -110,7 +110,7 @@ export default function ContactPage() {
 
                 <div className="contact-info-card">
                   <div className="icon-wrapper">
-                    <PhoneIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
+                    <PhoneIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
                   </div>
                   <div>
                     <h3 className="card-title">Direct Phone &amp; WhatsApp</h3>
@@ -125,7 +125,7 @@ export default function ContactPage() {
 
                 <div className="contact-info-card">
                   <div className="icon-wrapper">
-                    <MailIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
+                    <MailIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
                   </div>
                   <div>
                     <h3 className="card-title">Email Inquiries</h3>
@@ -162,7 +162,7 @@ export default function ContactPage() {
                 {submitted ? (
                   <div className="form-success-state">
                     <div className="form-success-icon featured-icon featured-icon-brand">
-                      <CheckCircleIcon size={32} color="#38d059" />
+                      <CheckCircleIcon size={32} color="#ff6364" />
                     </div>
                     <h2 className="form-success-title">
                       Inquiry Submitted!
@@ -269,7 +269,7 @@ export default function ContactPage() {
                       </button>
 
                       <div className="modal-privacy-note">
-                        <LockIcon size={14} color="#38d059" />
+                        <LockIcon size={14} color="#ff6364" />
                         <span>Strictly confidential. No promotional spam.</span>
                       </div>
                     </form>
@@ -372,13 +372,13 @@ export default function ContactPage() {
                     left: "16px",
                     zIndex: 10,
                     backgroundColor: "#060606",
-                    color: "#38d059",
+                    color: "#ff6364",
                     fontWeight: "700",
                     fontSize: "13px",
                     padding: "10px 20px",
                     borderRadius: "9999px",
                     boxShadow: "0 8px 24px rgba(0, 0, 0, 0.25)",
-                    border: "1px solid rgba(56, 208, 89, 0.35)",
+                    border: "1px solid rgba(255, 99, 100, 0.35)",
                     display: "inline-flex",
                     alignItems: "center",
                     gap: "6px",
@@ -418,7 +418,7 @@ export default function ContactPage() {
                       fontSize: "11px",
                       fontWeight: "700",
                       letterSpacing: "0.02em",
-                      border: "1px solid rgba(56, 208, 89, 0.4)",
+                      border: "1px solid rgba(255, 99, 100, 0.4)",
                       boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
                       marginBottom: "6px",
                       whiteSpace: "nowrap",
@@ -433,7 +433,7 @@ export default function ContactPage() {
                         width: "24px",
                         height: "24px",
                         borderRadius: "50%",
-                        backgroundColor: "rgba(56, 208, 89, 0.35)",
+                        backgroundColor: "rgba(255, 99, 100, 0.35)",
                         animation: "sonarPulse 2s infinite ease-out",
                       }}
                     />
@@ -442,8 +442,8 @@ export default function ContactPage() {
                         width: "12px",
                         height: "12px",
                         borderRadius: "50%",
-                        backgroundColor: "#38d059",
-                        boxShadow: "0 0 12px #38d059",
+                        backgroundColor: "#ff6364",
+                        boxShadow: "0 0 12px #ff6364",
                         border: "2px solid #050505",
                       }}
                     />

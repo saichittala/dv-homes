@@ -50,8 +50,8 @@ export default function BlogListingPage() {
       {/* Hero */}
       <section style={{ padding: "160px 32px 80px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: "880px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
-            <SparklesIcon size={16} color="#38d059" />
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
+            <SparklesIcon size={16} color="#ff6364" />
             <span>DESIGN INSIGHTS &amp; GUIDES</span>
           </div>
           <h1 style={{ fontSize: "clamp(2rem, 4.2vw, 2.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "20px", color: "#FFFFFF" }}>
@@ -79,7 +79,7 @@ export default function BlogListingPage() {
                         style={{ width: "100%", height: "100%", objectFit: "cover" }}
                         loading="lazy"
                       />
-                      <div style={{ position: "absolute", top: "16px", left: "16px", background: "rgba(0,0,0,0.75)", backdropFilter: "blur(8px)", color: "#38d059", padding: "6px 12px", borderRadius: "6px", fontSize: "0.78rem", fontWeight: "600" }}>
+                      <div style={{ position: "absolute", top: "16px", left: "16px", background: "rgba(0,0,0,0.75)", backdropFilter: "blur(8px)", color: "#ff6364", padding: "6px 12px", borderRadius: "6px", fontSize: "0.78rem", fontWeight: "600" }}>
                         {post.category}
                       </div>
                     </div>
@@ -97,9 +97,9 @@ export default function BlogListingPage() {
                         </p>
                       </div>
 
-                      <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.85rem", color: "#38d059", fontWeight: "600", marginTop: "16px" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.85rem", color: "#ff6364", fontWeight: "600", marginTop: "16px" }}>
                         <span>Read Full Guide</span>
-                        <ChevronRightIcon size={14} color="#38d059" />
+                        <ChevronRightIcon size={14} color="#ff6364" />
                       </div>
                     </div>
                   </article>

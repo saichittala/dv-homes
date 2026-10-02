@@ -90,17 +90,17 @@ export default function AboutPage() {
                 <p className="text-md" style={{ marginBottom: "16px", color: "var(--text-dark-secondary)" }}>
                   Before work begins on site, we provide a complete budget plan, material specifications, and a stage-wise cost breakdown. Every project phase comes with advance timelines and active progress updates.
                 </p>
-                <p className="text-md" style={{ marginBottom: "24px", color: "var(--brand-primary-lightmode, #0f8a33)", fontWeight: "600" }}>
+                <p className="text-md" style={{ marginBottom: "24px", color: "var(--brand-primary-lightmode, #ff6364)", fontWeight: "600" }}>
                   “Complete End-to-End Responsibility from Concept to Key Handover – DV HOMES.”
                 </p>
 
                 <div className="about-stats-grid">
                   <div style={{ padding: "18px", background: "var(--bg-light)", borderRadius: "var(--radius-brand-18)", border: "1px solid var(--border-light-subtle)" }}>
-                    <div style={{ fontSize: "var(--fs-28)", fontWeight: "800", color: "var(--brand-primary-lightmode, #0f8a33)", marginBottom: "8px" }}>4 Pillars</div>
+                    <div style={{ fontSize: "var(--fs-28)", fontWeight: "800", color: "var(--brand-primary-lightmode, #ff6364)", marginBottom: "8px" }}>4 Pillars</div>
                     <div style={{ fontSize: "var(--fs-14)", fontWeight: "700", color: "var(--text-dark-primary)" }}>Clarity, Trust, Quality &amp; Responsibility</div>
                   </div>
                   <div style={{ padding: "18px", background: "var(--bg-light)", borderRadius: "var(--radius-brand-18)", border: "1px solid var(--border-light-subtle)" }}>
-                    <div style={{ fontSize: "var(--fs-28)", fontWeight: "800", color: "var(--brand-primary-lightmode, #0f8a33)", marginBottom: "8px" }}>Hyderabad</div>
+                    <div style={{ fontSize: "var(--fs-28)", fontWeight: "800", color: "var(--brand-primary-lightmode, #ff6364)", marginBottom: "8px" }}>Hyderabad</div>
                     <div style={{ fontSize: "var(--fs-14)", fontWeight: "700", color: "var(--text-dark-primary)" }}>2BHK, 3BHK &amp; Villa Focus</div>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export default function AboutPage() {
             <div className="features-grid">
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <CheckCircleIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
+                  <CheckCircleIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
                 </div>
                 <h3 className="feature-title">1. Clarity</h3>
                 <p className="feature-desc">
@@ -132,7 +132,7 @@ export default function AboutPage() {
 
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <SettingsIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
+                  <SettingsIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
                 </div>
                 <h3 className="feature-title">2. Trust</h3>
                 <p className="feature-desc">
@@ -142,7 +142,7 @@ export default function AboutPage() {
 
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <ShieldCheckIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
+                  <ShieldCheckIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
                 </div>
                 <h3 className="feature-title">3. Quality</h3>
                 <p className="feature-desc">
@@ -152,7 +152,7 @@ export default function AboutPage() {
 
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <DiamondIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
+                  <DiamondIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
                 </div>
                 <h3 className="feature-title">4. Responsibility</h3>
                 <p className="feature-desc">
@@ -162,7 +162,7 @@ export default function AboutPage() {
 
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <SparklesIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
+                  <SparklesIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
                 </div>
                 <h3 className="feature-title">Free Planning Session</h3>
                 <p className="feature-desc">
@@ -172,7 +172,7 @@ export default function AboutPage() {
 
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <FactoryIcon size={24} color="var(--brand-primary-lightmode, #0f8a33)" />
+                  <FactoryIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
                 </div>
                 <h3 className="feature-title">Founder Leadership</h3>
                 <p className="feature-desc">

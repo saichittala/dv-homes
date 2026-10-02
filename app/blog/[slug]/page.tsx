@@ -145,7 +145,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
       <section style={{ padding: "100px 24px 30px 24px" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <div style={{ display: "flex", gap: "10px", alignItems: "center", marginBottom: "14px", flexWrap: "wrap" }}>
-            <span style={{ background: "rgba(56, 208, 89, 0.15)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "6px", padding: "4px 10px", fontSize: "0.78rem", fontWeight: "600" }}>
+            <span style={{ background: "rgba(255, 99, 100, 0.15)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "6px", padding: "4px 10px", fontSize: "0.78rem", fontWeight: "600" }}>
               {post.category}
             </span>
             <span style={{ fontSize: "0.82rem", color: "#a0a0a0" }}>
@@ -162,7 +162,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           </p>
 
           <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingTop: "14px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-            <div style={{ width: "38px", height: "38px", borderRadius: "50%", background: "#38d059", color: "#000000", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1rem" }}>
+            <div style={{ width: "38px", height: "38px", borderRadius: "50%", background: "#ff6364", color: "#FFFFFF", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1rem" }}>
               AP
             </div>
             <div>
@@ -199,7 +199,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           {/* Table of Contents */}
           {tableOfContents.length > 0 && (
             <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "16px", padding: "20px 24px", marginBottom: "36px" }}>
-              <h2 style={{ fontSize: "1.1rem", fontWeight: "700", color: "#38d059", marginBottom: "12px" }}>
+              <h2 style={{ fontSize: "1.1rem", fontWeight: "700", color: "#ff6364", marginBottom: "12px" }}>
                 Table of Contents
               </h2>
               <ul style={{ paddingLeft: "16px", margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
@@ -247,7 +247,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           )}
 
           {/* Consultation Banner inside Article */}
-          <div style={{ marginTop: "48px", background: "transparent", border: "1px solid rgba(56,208,89,0.3)", borderRadius: "18px", padding: "32px 28px", textAlign: "center" }}>
+          <div style={{ marginTop: "48px", background: "transparent", border: "1px solid rgba(255,99,100,0.3)", borderRadius: "18px", padding: "32px 28px", textAlign: "center" }}>
             <h3 style={{ fontSize: "1.35rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "10px" }}>
               Planning Your Home Interiors in Hyderabad?
             </h3>
@@ -260,8 +260,8 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "8px",
-                background: "#38d059",
-                color: "#000000",
+                background: "#ff6364",
+                color: "#FFFFFF",
                 fontWeight: "700",
                 padding: "12px 28px",
                 borderRadius: "9999px",
@@ -270,7 +270,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
               }}
             >
               <span>Schedule Free Consultation</span>
-              <ChevronRightIcon size={16} color="#000000" />
+              <ChevronRightIcon size={16} color="#FFFFFF" />
             </Link>
           </div>
 
@@ -285,12 +285,12 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                   <Link key={rel.id} href={`/blog/${rel.slug}`} style={{ textDecoration: "none" }}>
                     <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "14px", padding: "18px", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                       <div>
-                        <div style={{ fontSize: "0.75rem", color: "#38d059", fontWeight: "600", marginBottom: "4px" }}>{rel.category}</div>
+                        <div style={{ fontSize: "0.75rem", color: "#ff6364", fontWeight: "600", marginBottom: "4px" }}>{rel.category}</div>
                         <h3 style={{ fontSize: "1rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "6px", lineHeight: "1.3" }}>{rel.title}</h3>
                       </div>
-                      <div style={{ fontSize: "0.82rem", color: "#38d059", fontWeight: "600", marginTop: "10px", display: "flex", alignItems: "center", gap: "4px" }}>
+                      <div style={{ fontSize: "0.82rem", color: "#ff6364", fontWeight: "600", marginTop: "10px", display: "flex", alignItems: "center", gap: "4px" }}>
                         <span>Read Guide</span>
-                        <ChevronRightIcon size={14} color="#38d059" />
+                        <ChevronRightIcon size={14} color="#ff6364" />
                       </div>
                     </div>
                   </Link>

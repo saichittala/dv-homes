@@ -16,6 +16,7 @@ import {
 } from "./Icons";
 
 import dynamic from "next/dynamic";
+import { projectsData } from "../lib/projectsData";
 
 const ConsultationModal = dynamic(() => import("./ConsultationModal"), { ssr: false });
 
@@ -128,6 +129,22 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
 
   const getBreadcrumbs = () => {
     if (pathname === "/") return [];
+    if (pathname === "/projects") {
+      return [
+        { label: "Home", href: "/" },
+        { label: "Projects", href: "" }
+      ];
+    }
+    if (pathname.startsWith("/projects/")) {
+      const projId = pathname.replace("/projects/", "");
+      const proj = projectsData.find((p) => p.id === projId);
+      const title = proj ? proj.title : projId.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
+      return [
+        { label: "Home", href: "/" },
+        { label: "Projects", href: "/projects" },
+        { label: title, href: "" }
+      ];
+    }
     if (pathname === "/services") {
       return [
         { label: "Home", href: "/" },
@@ -150,6 +167,21 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
       return [
         { label: "Home", href: "/" },
         { label: "Services", href: "/services" },
+        { label: title, href: "" }
+      ];
+    }
+    if (pathname === "/locations") {
+      return [
+        { label: "Home", href: "/" },
+        { label: "Locations", href: "" }
+      ];
+    }
+    if (pathname.startsWith("/locations/")) {
+      const slug = pathname.replace("/locations/", "");
+      const title = slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
+      return [
+        { label: "Home", href: "/" },
+        { label: "Locations", href: "/locations" },
         { label: title, href: "" }
       ];
     }

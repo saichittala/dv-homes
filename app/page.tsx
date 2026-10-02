@@ -409,22 +409,6 @@ export default function HomePage() {
                     </h1>
                   </motion.div>
                 </AnimatePresence>
-
-                <div className="hero-cinematic-actions">
-                  <button
-                    onClick={() => setConsultationOpen(true)}
-                    className="btn btn-primary btn-lg"
-                  >
-                    <span>Get a Free Quote</span>
-                  </button>
-
-                  <a
-                    href="#projects"
-                    className="btn btn-secondary-glass btn-lg"
-                  >
-                    <span>View Latest Projects</span>
-                  </a>
-                </div>
               </div>
 
               {/* Slider Navigation Controls (Left/Right Arrow Buttons) */}
@@ -618,8 +602,8 @@ export default function HomePage() {
             <div className="why-parthu-items-grid">
               {/* Item 1 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(15, 138, 51, 0.08)", border: "1px solid rgba(15, 138, 51, 0.20)", color: "var(--brand-primary-lightmode, #0f8a33)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <CompassIcon size={26} color="var(--brand-primary-lightmode, #0f8a33)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <CompassIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Customised Interior Solutions
@@ -628,8 +612,8 @@ export default function HomePage() {
 
               {/* Item 2 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(15, 138, 51, 0.08)", border: "1px solid rgba(15, 138, 51, 0.20)", color: "var(--brand-primary-lightmode, #0f8a33)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <ShieldCheckIcon size={26} color="var(--brand-primary-lightmode, #0f8a33)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <ShieldCheckIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   End-to-End Execution
@@ -638,8 +622,8 @@ export default function HomePage() {
 
               {/* Item 3 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(15, 138, 51, 0.08)", border: "1px solid rgba(15, 138, 51, 0.20)", color: "var(--brand-primary-lightmode, #0f8a33)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <DiamondIcon size={26} color="var(--brand-primary-lightmode, #0f8a33)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <DiamondIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Quality Materials
@@ -648,8 +632,8 @@ export default function HomePage() {
 
               {/* Item 4 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(15, 138, 51, 0.08)", border: "1px solid rgba(15, 138, 51, 0.20)", color: "var(--brand-primary-lightmode, #0f8a33)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <RulerIcon size={26} color="var(--brand-primary-lightmode, #0f8a33)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <RulerIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Smart Space Planning
@@ -658,8 +642,8 @@ export default function HomePage() {
 
               {/* Item 5 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(15, 138, 51, 0.08)", border: "1px solid rgba(15, 138, 51, 0.20)", color: "var(--brand-primary-lightmode, #0f8a33)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <HomeIcon size={26} color="var(--brand-primary-lightmode, #0f8a33)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <HomeIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Modern &amp; Functional Design
@@ -668,8 +652,8 @@ export default function HomePage() {
 
               {/* Item 6 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(15, 138, 51, 0.08)", border: "1px solid rgba(15, 138, 51, 0.20)", color: "var(--brand-primary-lightmode, #0f8a33)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <ToolIcon size={26} color="var(--brand-primary-lightmode, #0f8a33)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <ToolIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Professional Project Management
@@ -932,7 +916,7 @@ export default function HomePage() {
                   <div>
                     <div className="testimonial-stars-row">
                       {[...Array(5)].map((_, i) => (
-                        <StarIcon key={i} size={18} color="var(--brand-primary-lightmode, #0f8a33)" />
+                        <StarIcon key={i} size={18} color="var(--brand-primary-lightmode, #ff6364)" />
                       ))}
                     </div>
                     <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
@@ -943,7 +927,7 @@ export default function HomePage() {
                     </p>
                   </div>
                   <div className="testimonial-author-block">
-                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #0f8a33)", color: "#FFFFFF" }}>RC</div>
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #ff6364)", color: "#FFFFFF" }}>RC</div>
                     <div>
                       <div className="testimonial-author-name">Residential Interior Client</div>
                       <div className="testimonial-author-role">Hyderabad</div>
@@ -955,7 +939,7 @@ export default function HomePage() {
                   <div>
                     <div className="testimonial-stars-row">
                       {[...Array(5)].map((_, i) => (
-                        <StarIcon key={i} size={18} color="var(--brand-primary-lightmode, #0f8a33)" />
+                        <StarIcon key={i} size={18} color="var(--brand-primary-lightmode, #ff6364)" />
                       ))}
                     </div>
                     <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
@@ -966,7 +950,7 @@ export default function HomePage() {
                     </p>
                   </div>
                   <div className="testimonial-author-block">
-                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #0f8a33)", color: "#FFFFFF" }}>HO</div>
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #ff6364)", color: "#FFFFFF" }}>HO</div>
                     <div>
                       <div className="testimonial-author-name">Homeowner</div>
                       <div className="testimonial-author-role">Hyderabad</div>
@@ -978,7 +962,7 @@ export default function HomePage() {
                   <div>
                     <div className="testimonial-stars-row">
                       {[...Array(5)].map((_, i) => (
-                        <StarIcon key={i} size={18} color="var(--brand-primary-lightmode, #0f8a33)" />
+                        <StarIcon key={i} size={18} color="var(--brand-primary-lightmode, #ff6364)" />
                       ))}
                     </div>
                     <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginTop: "10px", marginBottom: "8px", color: "var(--text-dark-primary)" }}>
@@ -989,7 +973,7 @@ export default function HomePage() {
                     </p>
                   </div>
                   <div className="testimonial-author-block">
-                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #0f8a33)", color: "#FFFFFF" }}>RC</div>
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #ff6364)", color: "#FFFFFF" }}>RC</div>
                     <div>
                       <div className="testimonial-author-name">Residential Client</div>
                       <div className="testimonial-author-role">Hyderabad</div>

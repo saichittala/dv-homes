@@ -78,19 +78,21 @@
   --lh-text-sm: 1.5;
   --lh-text-xs: 1.4;
 
-  /* ── 2. BRAND COLOR SYSTEM (#38d059 - DV HOMES Emerald Green & Black) ── */
-  --brand-primary: #38d059;
-  --brand-primary-hover: #2eb84d;
-  --brand-primary-active: #269e42;
-  --brand-primary-light: #54d971;
-  --brand-tint-05: rgba(56, 208, 89, 0.05);
-  --brand-tint-08: rgba(56, 208, 89, 0.08);
-  --brand-tint-10: rgba(56, 208, 89, 0.10);
-  --brand-tint-15: rgba(56, 208, 89, 0.15);
-  --brand-tint-20: rgba(56, 208, 89, 0.20);
-  --brand-tint-25: rgba(56, 208, 89, 0.25);
-  --brand-border: rgba(56, 208, 89, 0.40);
-  --brand-border-subtle: rgba(56, 208, 89, 0.25);
+  /* ── 2. BRAND COLOR SYSTEM (#ff6364 Coral Red) ── */
+  --brand-primary: #ff6364;
+  --brand-primary-hover: #e04b4c;
+  --brand-primary-active: #c83839;
+  --brand-primary-light: #ff8586;
+  --brand-primary-lightmode: #ff6364;
+  --brand-primary-lightmode-hover: #e04b4c;
+  --brand-tint-05: rgba(255, 99, 100, 0.05);
+  --brand-tint-08: rgba(255, 99, 100, 0.08);
+  --brand-tint-10: rgba(255, 99, 100, 0.10);
+  --brand-tint-15: rgba(255, 99, 100, 0.15);
+  --brand-tint-20: rgba(255, 99, 100, 0.20);
+  --brand-tint-25: rgba(255, 99, 100, 0.25);
+  --brand-border: rgba(255, 99, 100, 0.40);
+  --brand-border-subtle: rgba(255, 99, 100, 0.25);
 
   /* Legacy & Compatibility Aliases */
   --brand-500: var(--brand-primary);
@@ -99,8 +101,8 @@
   --gold: var(--brand-primary);
   --gold-dark: var(--brand-primary-hover);
   --gold-light: var(--brand-primary-light);
-  --gold-gradient: linear-gradient(135deg, #38d059 0%, #2eb84d 100%);
-  --gold-gradient-hover: linear-gradient(135deg, #54d971 0%, #38d059 100%);
+  --gold-gradient: linear-gradient(135deg, #ff6364 0%, #e04b4c 100%);
+  --gold-gradient-hover: linear-gradient(135deg, #ff8586 0%, #ff6364 100%);
 
   /* WhatsApp Brand Tokens */
   --brand-whatsapp: #25D366;

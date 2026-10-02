@@ -118,8 +118,8 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
       {/* Hero */}
       <section style={{ position: "relative", padding: "160px 32px 90px 32px", overflow: "hidden" }}>
         <div style={{ maxWidth: "1040px", margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "24px" }}>
-            <MapPinIcon size={16} color="#38d059" />
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "24px" }}>
+            <MapPinIcon size={16} color="#ff6364" />
             <span>INTERIOR DESIGN IN {location.name.toUpperCase()}, HYDERABAD</span>
           </div>
 
@@ -138,8 +138,8 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "10px",
-                background: "#38d059",
-                color: "#000000",
+                background: "#ff6364",
+                color: "#FFFFFF",
                 fontWeight: "700",
                 padding: "16px 36px",
                 borderRadius: "9999px",
@@ -148,7 +148,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
               }}
             >
               <span>Book a Consultation</span>
-              <ChevronRightIcon size={18} color="#000000" />
+              <ChevronRightIcon size={18} color="#FFFFFF" />
             </Link>
 
             <a
@@ -167,7 +167,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                 fontSize: "0.98rem"
               }}
             >
-              <PhoneIcon size={18} color="#38d059" />
+              <PhoneIcon size={18} color="#ff6364" />
               <span>+91 99168 62442</span>
             </a>
           </div>
@@ -194,7 +194,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
               <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "36px" }}>
                 {location.propertyTypes.map((pt, idx) => (
                   <div key={idx} style={{ display: "flex", alignItems: "center", gap: "12px", background: "transparent", padding: "14px 18px", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.12)" }}>
-                    <CheckIcon size={18} color="#38d059" />
+                    <CheckIcon size={18} color="#ff6364" />
                     <span style={{ fontSize: "0.95rem", color: "#e0e0e0", fontWeight: "500" }}>{pt}</span>
                   </div>
                 ))}
@@ -223,8 +223,8 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
               <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
                 {location.keyHighlights.map((kh, idx) => (
                   <div key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "14px" }}>
-                    <div style={{ background: "rgba(56, 208, 89, 0.15)", borderRadius: "10px", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      <SparklesIcon size={18} color="#38d059" />
+                    <div style={{ background: "rgba(255, 99, 100, 0.15)", borderRadius: "10px", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <SparklesIcon size={18} color="#ff6364" />
                     </div>
                     <span style={{ fontSize: "0.95rem", color: "#e0e0e0", lineHeight: "1.6" }}>{kh}</span>
                   </div>
@@ -241,8 +241,8 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                     display: "block",
                     width: "100%",
                     textAlign: "center",
-                    background: "#38d059",
-                    color: "#000000",
+                    background: "#ff6364",
+                    color: "#FFFFFF",
                     fontWeight: "700",
                     padding: "14px",
                     borderRadius: "12px",
@@ -280,9 +280,9 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                       {srv.tagline}
                     </p>
                   </div>
-                  <div style={{ marginTop: "20px", display: "flex", alignItems: "center", gap: "6px", fontSize: "0.82rem", color: "#38d059", fontWeight: "600" }}>
+                  <div style={{ marginTop: "20px", display: "flex", alignItems: "center", gap: "6px", fontSize: "0.82rem", color: "#ff6364", fontWeight: "600" }}>
                     <span>Learn More</span>
-                    <ChevronRightIcon size={14} color="#38d059" />
+                    <ChevronRightIcon size={14} color="#ff6364" />
                   </div>
                 </div>
               </Link>
@@ -330,7 +330,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                   style={{
                     background: "transparent",
                     border: "1px solid rgba(255,255,255,0.14)",
-                    color: "#38d059",
+                    color: "#ff6364",
                     padding: "8px 20px",
                     borderRadius: "9999px",
                     textDecoration: "none",

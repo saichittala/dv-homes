@@ -51,8 +51,8 @@ export default function LocationsHubPage() {
       {/* Hero Section */}
       <section style={{ padding: "160px 32px 80px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: "880px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(56, 208, 89, 0.12)", color: "#38d059", border: "1px solid rgba(56, 208, 89, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
-            <MapPinIcon size={16} color="#38d059" />
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
+            <MapPinIcon size={16} color="#ff6364" />
             <span>HYDERABAD SERVICE AREAS</span>
           </div>
           <h1 style={{ fontSize: "clamp(2rem, 4.2vw, 2.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "20px", color: "#FFFFFF" }}>
@@ -74,7 +74,7 @@ export default function LocationsHubPage() {
             return (
               <div key={zone} style={{ marginBottom: "64px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "28px" }}>
-                  <div style={{ width: "4px", height: "24px", background: "#38d059", borderRadius: "2px" }} />
+                  <div style={{ width: "4px", height: "24px", background: "#ff6364", borderRadius: "2px" }} />
                   <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", margin: 0 }}>
                     {zone}
                   </h2>
@@ -105,7 +105,7 @@ export default function LocationsHubPage() {
                             <h3 style={{ fontSize: "1.2rem", fontWeight: "600", color: "#FFFFFF", margin: 0 }}>
                               {loc.name}
                             </h3>
-                            <ChevronRightIcon size={18} color="#38d059" />
+                            <ChevronRightIcon size={18} color="#ff6364" />
                           </div>
                           <p style={{ fontSize: "0.9rem", color: "#b0b0b0", lineHeight: "1.55", marginBottom: "20px" }}>
                             {loc.heroSubheadline}
@@ -119,9 +119,9 @@ export default function LocationsHubPage() {
                           </div>
                         </div>
 
-                        <div style={{ marginTop: "24px", paddingTop: "16px", borderTop: "1px solid rgba(255,255,255,0.06)", display: "flex", alignItems: "center", gap: "8px", fontSize: "0.85rem", color: "#38d059", fontWeight: "600" }}>
+                        <div style={{ marginTop: "24px", paddingTop: "16px", borderTop: "1px solid rgba(255,255,255,0.06)", display: "flex", alignItems: "center", gap: "8px", fontSize: "0.85rem", color: "#ff6364", fontWeight: "600" }}>
                           <span>View {loc.name} Interiors</span>
-                          <ChevronRightIcon size={14} color="#38d059" />
+                          <ChevronRightIcon size={14} color="#ff6364" />
                         </div>
                       </div>
                     </Link>
@@ -136,7 +136,7 @@ export default function LocationsHubPage() {
       {/* Trust & Guarantee Banner */}
       <section style={{ padding: "80px 32px 100px 32px" }}>
         <div style={{ maxWidth: "960px", margin: "0 auto", textAlign: "center" }}>
-          <ShieldCheckIcon size={40} color="#38d059" style={{ marginBottom: "18px" }} />
+          <ShieldCheckIcon size={40} color="#ff6364" style={{ marginBottom: "18px" }} />
           <h2 style={{ fontSize: "1.6rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "14px" }}>
             Direct Factory Execution from Kokapet
           </h2>
@@ -150,8 +150,8 @@ export default function LocationsHubPage() {
               display: "inline-flex",
               alignItems: "center",
               gap: "8px",
-              background: "#38d059",
-              color: "#000000",
+              background: "#ff6364",
+              color: "#FFFFFF",
               fontWeight: "700",
               padding: "16px 36px",
               borderRadius: "9999px",
