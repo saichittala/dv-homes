@@ -84,17 +84,17 @@ export default function AboutPage() {
                 <p className="text-md" style={{ marginBottom: "16px", color: "var(--text-dark-secondary)" }}>
                   Before work begins on site, we provide a complete budget plan, material specifications, and a stage-wise cost breakdown. Every project phase comes with advance timelines and active progress updates.
                 </p>
-                <p className="text-md" style={{ marginBottom: "24px", color: "var(--brand-primary-lightmode, #ff6364)", fontWeight: "600" }}>
+                <p className="text-md" style={{ marginBottom: "24px", color: "var(--text-dark-primary)", fontWeight: "600" }}>
                   “Complete End-to-End Responsibility from Concept to Key Handover – DV HOMES.”
                 </p>
 
                 <div className="about-stats-grid">
                   <div style={{ padding: "18px", background: "var(--bg-light)", borderRadius: "var(--radius-brand-18)", border: "1px solid var(--border-light-subtle)" }}>
-                    <div style={{ fontSize: "var(--fs-28)", fontWeight: "800", color: "var(--brand-primary-lightmode, #ff6364)", marginBottom: "8px" }}>4 Pillars</div>
+                    <div style={{ fontSize: "var(--fs-28)", fontWeight: "800", color: "var(--text-dark-primary)", marginBottom: "8px" }}>4 Pillars</div>
                     <div style={{ fontSize: "var(--fs-14)", fontWeight: "700", color: "var(--text-dark-primary)" }}>Clarity, Trust, Quality &amp; Responsibility</div>
                   </div>
                   <div style={{ padding: "18px", background: "var(--bg-light)", borderRadius: "var(--radius-brand-18)", border: "1px solid var(--border-light-subtle)" }}>
-                    <div style={{ fontSize: "var(--fs-28)", fontWeight: "800", color: "var(--brand-primary-lightmode, #ff6364)", marginBottom: "8px" }}>Hyderabad</div>
+                    <div style={{ fontSize: "var(--fs-28)", fontWeight: "800", color: "var(--text-dark-primary)", marginBottom: "8px" }}>Hyderabad</div>
                     <div style={{ fontSize: "var(--fs-14)", fontWeight: "700", color: "var(--text-dark-primary)" }}>2BHK, 3BHK &amp; Villa Focus</div>
                   </div>
                 </div>
