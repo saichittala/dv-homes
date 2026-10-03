@@ -24,9 +24,9 @@
 @import '@fontsource/inter-tight/800.css';
 
 :root {
-  /* ── 1. TYPOGRAPHY TOKENS (SWITZER HEADING & BODY) ── */
+  /* ── 1. TYPOGRAPHY TOKENS (SWITZER HEADING, INTER TIGHT BODY) ── */
   --font-heading: 'Switzer', 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-body: 'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font: var(--font-body);
   --font-family: var(--font);
   --primary-font: var(--font);
