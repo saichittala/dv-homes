@@ -124,14 +124,11 @@ const HOME_BUDGET_OPTIONS: ChoiceOption[] = [
 
 const COMMUNITY_PROJECTS = [
   { name: "Rainbow Vistas Rock Garden", logo: "/assets/companies_trusted/rainbow-vistas.png" },
-  { name: "Vasavi Nandanavanam Suchitra", logo: "" },
-  { name: "ASBL Springs Pocharam", logo: "/assets/companies_trusted/asbl.svg" },
-  { name: "ASBL Springs", logo: "/assets/companies_trusted/asbl.svg" },
   { name: "My Home Bhooja", logo: "/assets/companies_trusted/bhooja_logo.png" },
   { name: "Aparna Zenith", logo: "/assets/companies_trusted/aparna-logo.svg" },
   { name: "INDIS OneCity", logo: "/assets/companies_trusted/indis-logo-light.svg" },
   { name: "Janapriya Upscale", logo: "/assets/companies_trusted/janapriya-logo.png" },
-  { name: "ASBL Spectra", logo: "/assets/companies_trusted/asbl.svg" },
+  { name: "ASBL Springs", logo: "/assets/companies_trusted/asbl.svg" },
   { name: "LODHA Bellezza", logo: "/assets/companies_trusted/asbl-lodha-logo.png" },
   { name: "Prestige High Fields", logo: "/assets/companies_trusted/prestige.svg" },
   { name: "Rajapushpa Atria", logo: "/assets/companies_trusted/rajpushpa.svg" },
