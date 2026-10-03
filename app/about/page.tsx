@@ -24,7 +24,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <main>
+      <main style={{ background: "#060606", color: "#FFFFFF", minHeight: "100vh" }}>
         {/* About Hero (2-Column: Left Content, Right Image) */}
         <section className="section-py inner-page-hero">
           <div className="container">
@@ -122,7 +122,7 @@ export default function AboutPage() {
             <div className="features-grid">
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <CheckCircleIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
+                  <CheckCircleIcon size={24} color="#000000" />
                 </div>
                 <h3 className="feature-title">1. Clarity</h3>
                 <p className="feature-desc">
@@ -132,7 +132,7 @@ export default function AboutPage() {
 
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <SettingsIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
+                  <SettingsIcon size={24} color="#000000" />
                 </div>
                 <h3 className="feature-title">2. Trust</h3>
                 <p className="feature-desc">
@@ -142,7 +142,7 @@ export default function AboutPage() {
 
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <ShieldCheckIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
+                  <ShieldCheckIcon size={24} color="#000000" />
                 </div>
                 <h3 className="feature-title">3. Quality</h3>
                 <p className="feature-desc">
@@ -152,7 +152,7 @@ export default function AboutPage() {
 
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <DiamondIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
+                  <DiamondIcon size={24} color="#000000" />
                 </div>
                 <h3 className="feature-title">4. Responsibility</h3>
                 <p className="feature-desc">
@@ -162,9 +162,9 @@ export default function AboutPage() {
 
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <SparklesIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
+                  <SparklesIcon size={24} color="#000000" />
                 </div>
-                <h3 className="feature-title">Free Planning Session</h3>
+                <h3 className="feature-title">5. Free Planning Session</h3>
                 <p className="feature-desc">
                   Home requirement reviews, lifestyle design direction, budget analysis &amp; preparation checklists.
                 </p>
@@ -172,9 +172,9 @@ export default function AboutPage() {
 
               <div className="feature-card">
                 <div className="featured-icon featured-icon-brand">
-                  <FactoryIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
+                  <FactoryIcon size={24} color="#000000" />
                 </div>
-                <h3 className="feature-title">Founder Leadership</h3>
+                <h3 className="feature-title">6. Founder Leadership</h3>
                 <p className="feature-desc">
                   Led by Founder Arige Praveenkumar with a steadfast commitment to responsible communication.
                 </p>

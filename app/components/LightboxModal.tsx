@@ -144,10 +144,6 @@ export default function LightboxModal({
               fontSize: "var(--fs-14)",
               fontWeight: "600",
               color: "rgba(255, 255, 255, 0.8)",
-              padding: "4px 12px",
-              background: "rgba(255, 255, 255, 0.12)",
-              borderRadius: "var(--radius-pill)",
-              border: "1px solid rgba(255, 255, 255, 0.18)",
             }}
           >
             {currentIndex + 1} / {images.length}
@@ -160,8 +156,7 @@ export default function LightboxModal({
           aria-label="Close Lightbox"
           whileHover={{
             scale: 1.04,
-            backgroundColor: "rgba(255, 255, 255, 0.12)",
-            borderColor: "rgba(255, 255, 255, 0.40)",
+            backgroundColor: "rgba(255, 255, 255, 0.08)",
           }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
@@ -173,7 +168,7 @@ export default function LightboxModal({
             padding: "0 20px",
             borderRadius: "var(--radius-pill)",
             background: "transparent",
-            border: "1px solid rgba(255, 255, 255, 0.22)",
+            border: "none",
             color: "#FFFFFF",
             fontSize: "var(--fs-14)",
             fontWeight: "700",
@@ -213,17 +208,16 @@ export default function LightboxModal({
               top: "50%",
               transform: "translateY(-50%)",
               zIndex: 1000000000,
-              width: "56px",
-              height: "56px",
-              borderRadius: "var(--radius-circle)",
-              background: "rgba(255, 255, 255, 0.12)",
-              border: "1px solid rgba(255, 255, 255, 0.25)",
+              width: "48px",
+              height: "48px",
+              background: "transparent",
+              border: "none",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               cursor: "pointer",
-              boxShadow: "0 8px 32px rgba(0,0,0,0.6)",
-              transition: "all 0.2s ease",
+              boxShadow: "none",
+              transition: "opacity 0.2s ease, transform 0.2s ease",
             }}
           >
             <ChevronLeftIcon size={28} color="#FFFFFF" />
@@ -281,17 +275,16 @@ export default function LightboxModal({
               top: "50%",
               transform: "translateY(-50%)",
               zIndex: 1000000000,
-              width: "56px",
-              height: "56px",
-              borderRadius: "var(--radius-circle)",
-              background: "rgba(255, 255, 255, 0.12)",
-              border: "1px solid rgba(255, 255, 255, 0.25)",
+              width: "48px",
+              height: "48px",
+              background: "transparent",
+              border: "none",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               cursor: "pointer",
-              boxShadow: "0 8px 32px rgba(0,0,0,0.6)",
-              transition: "all 0.2s ease",
+              boxShadow: "none",
+              transition: "opacity 0.2s ease, transform 0.2s ease",
             }}
           >
             <ChevronRightIcon size={28} color="#FFFFFF" />

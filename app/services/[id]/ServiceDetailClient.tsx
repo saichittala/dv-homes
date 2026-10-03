@@ -72,12 +72,13 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
               <div
                 className="services-main-image-box"
                 onClick={() => setLightboxOpen(true)}
-                style={{ position: "relative" }}
               >
                 <ImageWithSkeleton
                   src={galleryImages[activeImageIndex] || service.mainImage}
                   alt={`${service.title} Showcase`}
                   className="services-main-img"
+                  enableParallax={false}
+                  priority
                 />
 
                 {/* Left Arrow Button for Inline Switching */}
@@ -137,38 +138,18 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
                     <ChevronRightIcon size={22} color="#FFFFFF" />
                   </button>
                 )}
-
-                {/* Hover Expand Badge */}
-                <div className="services-img-hover-overlay">
-                  <div className="services-expand-badge">
-                    <ExpandIcon size={16} color="#FFFFFF" />
-                    <span>Click to Expand</span>
-                  </div>
-                </div>
               </div>
 
-              {/* Gallery Thumbnails Grid */}
+              {/* 3-Column Gallery Thumbnails Row Below */}
               {galleryImages.length > 1 && (
                 <div className="services-thumbnails-grid">
-                  {galleryImages.map((img, idx) => (
+                  {galleryImages.slice(0, 3).map((img, idx) => (
                     <div
                       key={idx}
                       className={`services-thumb-card ${idx === activeImageIndex ? "active" : ""}`}
                       onClick={() => setActiveImageIndex(idx)}
                     >
                       <img src={img} alt={`${service.title} Thumbnail ${idx + 1}`} />
-                      <div className="services-thumb-overlay">
-                        <div
-                          className="services-thumb-expand"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setActiveImageIndex(idx);
-                            setLightboxOpen(true);
-                          }}
-                        >
-                          <ExpandIcon size={16} color="#FFFFFF" />
-                        </div>
-                      </div>
                     </div>
                   ))}
                 </div>
@@ -176,9 +157,6 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
 
               {/* Description & Feature Specifications Box */}
               <div className="services-description-box" style={{ marginTop: "48px" }}>
-                <h3 style={{ fontSize: "var(--fs-22)", fontWeight: "700", color: "#FFFFFF", marginBottom: "16px" }}>
-                  {service.tagline}
-                </h3>
                 <p style={{ fontSize: "var(--fs-16)", color: "var(--text-white-secondary)", lineHeight: "1.75", marginBottom: "0px" }}>
                   {service.description}
                 </p>

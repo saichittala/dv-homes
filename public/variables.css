@@ -122,14 +122,14 @@
 
   /* Light Surfaces (Projects, Services, Process, Testimonials, FAQ) */
   --bg-light: #FFFFFF;
-  --bg-light-secondary: #F7F7F7;
-  --bg-light-tertiary: #F0F0F0;
+  --bg-light-secondary: #FFFFFF;
+  --bg-light-tertiary: #FFFFFF;
   --bg-light-card: #FFFFFF;
-  --bg-light-card-hover: #F7F7F7;
+  --bg-light-card-hover: #F8F9FA;
   --bg-surface: #FFFFFF;
   --bg: #FFFFFF;
   --warm-ivory: #FFFFFF;
-  --warm-stone: #F7F7F7;
+  --warm-stone: #FFFFFF;
   --soft-white: #FFFFFF;
 
   /* ── 4. FOREGROUND & TYPOGRAPHY COLORS ── */
@@ -213,10 +213,13 @@
   --radius-brand-12: 12px;
   --radius-brand-14: 14px;
   --radius-brand-16: 16px;
-  --radius-brand-18: 18px; /* 18px Standard Brand Radius */
+  --radius-brand-18: 18px;
+  /* 18px Standard Brand Radius */
   --radius-brand-20: 20px;
-  --radius-brand-24: 24px; /* 24px Medium Brand Radius */
-  --radius-brand-36: 36px; /* 36px Large Brand Radius */
+  --radius-brand-24: 24px;
+  /* 24px Medium Brand Radius */
+  --radius-brand-36: 36px;
+  /* 36px Large Brand Radius */
 
   /* Semantic System Aliases */
   --radius-brand: var(--radius-brand-18);

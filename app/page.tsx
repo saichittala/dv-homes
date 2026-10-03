@@ -485,7 +485,7 @@ export default function HomePage() {
               left: "-10%",
               width: "500px",
               height: "500px",
-              background: "radial-gradient(circle, rgba(122, 158, 0, 0.15) 0%, rgba(0, 0, 0, 0) 70%)",
+              background: "radial-gradient(circle, rgba(255, 99, 100, 0.22) 0%, rgba(0, 0, 0, 0) 70%)",
               pointerEvents: "none",
               zIndex: 0,
             }}
@@ -572,7 +572,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Overlaid Finished Showroom / Residence Card */}
-                <div className="who-we-are-showroom-card" style={{ borderRadius: "var(--radius-brand-20)", boxShadow: "0 20px 50px rgba(122, 158, 0, 0.2)", border: "1px solid rgba(255, 255, 255, 0.15)" }}>
+                <div className="who-we-are-showroom-card" style={{ borderRadius: "var(--radius-brand-20)", boxShadow: "0 20px 50px rgba(255, 99, 100, 0.2)", border: "1px solid rgba(255, 255, 255, 0.15)" }}>
                   <ParallaxImage
                     src="/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp"
                     alt="DV HOMES Completed Project"
@@ -601,8 +601,8 @@ export default function HomePage() {
             <div className="why-parthu-items-grid">
               {/* Item 1 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <CompassIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(0, 0, 0, 0.05)", border: "1px solid rgba(0, 0, 0, 0.08)", color: "#000000", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <CompassIcon size={26} color="#000000" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Customised Interior Solutions
@@ -611,8 +611,8 @@ export default function HomePage() {
 
               {/* Item 2 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <ShieldCheckIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(0, 0, 0, 0.05)", border: "1px solid rgba(0, 0, 0, 0.08)", color: "#000000", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <ShieldCheckIcon size={26} color="#000000" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   End-to-End Execution
@@ -621,8 +621,8 @@ export default function HomePage() {
 
               {/* Item 3 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <DiamondIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(0, 0, 0, 0.05)", border: "1px solid rgba(0, 0, 0, 0.08)", color: "#000000", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <DiamondIcon size={26} color="#000000" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Quality Materials
@@ -631,8 +631,8 @@ export default function HomePage() {
 
               {/* Item 4 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <RulerIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(0, 0, 0, 0.05)", border: "1px solid rgba(0, 0, 0, 0.08)", color: "#000000", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <RulerIcon size={26} color="#000000" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Smart Space Planning
@@ -641,8 +641,8 @@ export default function HomePage() {
 
               {/* Item 5 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <HomeIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(0, 0, 0, 0.05)", border: "1px solid rgba(0, 0, 0, 0.08)", color: "#000000", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <HomeIcon size={26} color="#000000" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Modern &amp; Functional Design
@@ -651,8 +651,8 @@ export default function HomePage() {
 
               {/* Item 6 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
-                  <ToolIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
+                <div className="why-parthu-item-icon" style={{ background: "rgba(0, 0, 0, 0.05)", border: "1px solid rgba(0, 0, 0, 0.08)", color: "#000000", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                  <ToolIcon size={26} color="#000000" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
                   Professional Project Management
@@ -1090,7 +1090,7 @@ export default function HomePage() {
                 {homeFormSubmitted ? (
                   <div className="form-success-state">
                     <div className="form-success-icon featured-icon featured-icon-brand">
-                      <CheckCircleIcon size={28} color="var(--brand-primary, #ff6364)" />
+                      <CheckCircleIcon size={28} color="#000000" />
                     </div>
                     <h4 className="form-success-title">
                       Consultation Requested!

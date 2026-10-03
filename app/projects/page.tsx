@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import JsonLd, { defaultOrganizationSchema } from "../components/JsonLd";
 import { projectsData } from "../lib/projectsData";
 import { ChevronRightIcon, MapPinIcon } from "../components/Icons";
+import ImageWithSkeleton from "../components/ImageWithSkeleton";
 
 export const metadata = {
   title: "Interior Design Portfolio & Projects in Hyderabad | DV Homes",
@@ -69,10 +70,9 @@ export default function ProjectsPage() {
                 style={{ textDecoration: "none" }}
               >
                 <div className="project-card-img-wrapper">
-                  <img
+                  <ImageWithSkeleton
                     src={project.mainImage}
                     alt={`${project.title} - ${project.location} Interior Design by DV Homes`}
-                    loading="lazy"
                   />
                 </div>
                 <div className="project-card-white-box">

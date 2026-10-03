@@ -155,3 +155,11 @@ export function WhatsAppIcon({ size = 20, color = "var(--brand-whatsapp, #25D366
     </svg>
   );
 }
+
+export function PlusIcon({ size = 20, color = "currentColor", strokeWidth = 1.75, className, style, ...props }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" className={className} style={style} {...props}>
+      <path d="M12 5V19M5 12H19" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}

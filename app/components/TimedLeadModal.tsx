@@ -134,14 +134,15 @@ export default function TimedLeadModal() {
                 width: "48px",
                 height: "48px",
                 borderRadius: "var(--radius-circle)",
-                background: "rgba(255, 99, 100, 0.15)",
+                background: "rgba(0, 0, 0, 0.05)",
+                border: "1px solid rgba(0, 0, 0, 0.08)",
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
                 marginBottom: "12px",
               }}
             >
-              <CheckCircleIcon size={26} color="#ff6364" />
+              <CheckCircleIcon size={26} color="#000000" />
             </div>
             <h3 className="modal-title" style={{ fontSize: "19px", marginBottom: "6px" }}>
               Request Received!
@@ -159,14 +160,14 @@ export default function TimedLeadModal() {
           </div>
         ) : (
           <div>
-            <h3 className="modal-title" style={{ fontSize: "20px", marginBottom: "14px" }}>
+            <h3 className="modal-title" style={{ fontSize: "22px", marginBottom: "20px", fontWeight: "700" }}>
               DV HOMES Planning Session
             </h3>
 
             <form onSubmit={handleSubmit}>
-              <div className="form-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", marginBottom: "10px" }}>
+              <div className="form-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "18px" }}>
                 <div className="form-group" style={{ marginBottom: 0 }}>
-                  <label className="form-label" style={{ fontSize: "12px", marginBottom: "4px" }}>
+                  <label className="form-label" style={{ fontSize: "13px", marginBottom: "8px", fontWeight: 600, color: "rgba(255, 255, 255, 0.9)" }}>
                     Full Name
                   </label>
                   <input
@@ -179,11 +180,11 @@ export default function TimedLeadModal() {
                 </div>
 
                 <div className="form-group" style={{ marginBottom: 0 }}>
-                  <label className="form-label" style={{ fontSize: "12px", marginBottom: "4px" }}>
+                  <label className="form-label" style={{ fontSize: "13px", marginBottom: "8px", fontWeight: 600, color: "rgba(255, 255, 255, 0.9)" }}>
                     WhatsApp Phone *
                   </label>
                   <div className="phone-input-group">
-                    <span className="phone-prefix" style={{ fontSize: "13px" }}>+91</span>
+                    <span className="phone-prefix" style={{ fontSize: "13.5px" }}>+91</span>
                     <span className="phone-separator" />
                     <input
                       type="tel"
@@ -197,8 +198,8 @@ export default function TimedLeadModal() {
                 </div>
               </div>
 
-              <div className="form-group" style={{ marginBottom: "10px" }}>
-                <label className="form-label" style={{ fontSize: "12px", marginBottom: "4px" }}>
+              <div className="form-group" style={{ marginBottom: "20px" }}>
+                <label className="form-label" style={{ fontSize: "13px", marginBottom: "8px", fontWeight: 600, color: "rgba(255, 255, 255, 0.9)" }}>
                   Project Location / Apartment *
                 </label>
                 <input
@@ -211,14 +212,16 @@ export default function TimedLeadModal() {
                 />
               </div>
 
-              <ChoiceChips
-                label="Property Type"
-                options={PROPERTY_OPTIONS}
-                selectedValue={formData.propertyType}
-                onChange={(val) => setFormData({ ...formData, propertyType: val })}
-                variant="dark"
-                compact={true}
-              />
+              <div style={{ marginBottom: "18px" }}>
+                <ChoiceChips
+                  label="Property Type"
+                  options={PROPERTY_OPTIONS}
+                  selectedValue={formData.propertyType}
+                  onChange={(val) => setFormData({ ...formData, propertyType: val })}
+                  variant="dark"
+                  compact={false}
+                />
+              </div>
 
               {!showOptionalDetails ? (
                 <button
@@ -227,29 +230,29 @@ export default function TimedLeadModal() {
                   style={{
                     background: "none",
                     border: "none",
-                    color: "rgba(255, 255, 255, 0.55)",
-                    fontSize: "12px",
+                    color: "rgba(255, 255, 255, 0.60)",
+                    fontSize: "13px",
                     cursor: "pointer",
-                    padding: "2px 0 8px 0",
+                    padding: "8px 0 16px 0",
                     display: "flex",
                     alignItems: "center",
-                    gap: "4px",
+                    gap: "6px",
                     transition: "color 0.2s ease",
                   }}
                   onMouseEnter={(e) => (e.currentTarget.style.color = "#ff6364")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255, 255, 255, 0.55)")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255, 255, 255, 0.60)")}
                 >
                   <span>+ Add Budget &amp; Timeline (Optional)</span>
                 </button>
               ) : (
-                <>
+                <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginBottom: "18px" }}>
                   <ChoiceChips
                     label="Budget Range"
                     options={BUDGET_OPTIONS}
                     selectedValue={formData.budget}
                     onChange={(val) => setFormData({ ...formData, budget: val })}
                     variant="dark"
-                    compact={true}
+                    compact={false}
                   />
 
                   <ChoiceChips
@@ -258,9 +261,9 @@ export default function TimedLeadModal() {
                     selectedValue={formData.timeToStart}
                     onChange={(val) => setFormData({ ...formData, timeToStart: val })}
                     variant="dark"
-                    compact={true}
+                    compact={false}
                   />
-                </>
+                </div>
               )}
 
               <button
@@ -268,29 +271,29 @@ export default function TimedLeadModal() {
                 disabled={isSubmitting}
                 style={{
                   width: "100%",
-                  height: "46px",
-                  borderRadius: "var(--radius-brand-14)",
+                  height: "52px",
+                  borderRadius: "var(--radius-pill)",
                   background: "linear-gradient(135deg, #ff6364 0%, #e55556 100%)",
                   color: "#FFFFFF",
                   fontWeight: 700,
-                  fontSize: "14.5px",
+                  fontSize: "15.5px",
                   border: "none",
                   cursor: "pointer",
-                  marginTop: "8px",
+                  marginTop: "16px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   gap: "8px",
-                  boxShadow: "0 8px 24px rgba(255, 99, 100, 0.3)",
+                  boxShadow: "0 10px 28px rgba(255, 99, 100, 0.35)",
                   transition: "all 0.2s ease",
                 }}
               >
-                <span>{isSubmitting ? "Submitting Request..." : "Get Free Estimate on WhatsApp →"}</span>
+                <span>{isSubmitting ? "Submitting Request..." : "Get Free Estimate on WhatsApp"}</span>
               </button>
 
-              <div className="modal-privacy-note" style={{ marginTop: "10px", fontSize: "11.5px", color: "rgba(255, 255, 255, 0.6)" }}>
-                <LockIcon size={13} color="#ff6364" />
-                <span>Zero Spam Guarantee • 100% Confidential • Free 3D Plan</span>
+              <div className="modal-privacy-note" style={{ marginTop: "16px", fontSize: "12.5px", color: "rgba(255, 255, 255, 0.65)" }}>
+                <LockIcon size={14} color="#ff6364" />
+                <span>Zero Spam Guarantee • Free 3D Plan &amp; Site Assessment</span>
               </div>
             </form>
           </div>

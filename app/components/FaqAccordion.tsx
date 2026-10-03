@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronDownIcon } from "./Icons";
+import { PlusIcon } from "./Icons";
 
 interface FaqItem {
   question: string;
@@ -83,14 +83,14 @@ export default function FaqAccordion() {
               <span
                 className="faq-icon-circle"
                 style={{
-                  transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-                  transition: "transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, border-color 0.25s ease",
+                  transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                   display: "inline-flex",
                   alignItems: "center",
                   justifyContent: "center"
                 }}
               >
-                <ChevronDownIcon size={16} color="var(--text-dark-primary)" />
+                <PlusIcon size={20} color="#111111" strokeWidth={1.5} />
               </span>
             </button>
             <div className="faq-answer-wrapper">

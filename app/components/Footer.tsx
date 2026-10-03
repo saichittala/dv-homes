@@ -87,6 +87,17 @@ export default function Footer() {
         {/* Footer Bottom Divider */}
         <div className="footer-divider">
           <p>© 2026 DV HOMES. All Rights Reserved. Founder: Arige Praveenkumar</p>
+          <p style={{ fontSize: "0.85rem", color: "rgba(255, 255, 255, 0.65)", margin: 0 }}>
+            Designed and developed by{" "}
+            <a
+              href="https://reelscale.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#FFFFFF", textDecoration: "none", fontWeight: "600", transition: "color 0.2s ease" }}
+            >
+              Reelscale Co
+            </a>
+          </p>
           <div style={{ display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <span>Clarity</span>
             <span style={{ opacity: 0.4 }}>•</span>

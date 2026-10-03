@@ -2,7 +2,7 @@
 
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/lib/utils";
 
 export interface ParallaxImageProps {
   src: string;
@@ -31,32 +31,45 @@ export const ParallaxImage = ({
     offset: ["start end", "end start"],
   });
 
-  const travel = 50 * speed;
+  const travel = 40 * speed;
   const y = useTransform(
     scrollYProgress,
     [0, 1],
     direction === "up" ? [travel, -travel] : [-travel, travel]
   );
-  const scale = 1.25;
+  const baseScale = 1.25;
+
+  const webpSrc = src && (src.endsWith(".jpg") || src.endsWith(".png") || src.endsWith(".jpeg"))
+    ? src.replace(/\.(jpg|jpeg|png)$/, ".webp")
+    : null;
 
   return (
     <div
       ref={containerRef}
-      className={cn("relative overflow-hidden w-full h-full", className)}
-      style={{ aspectRatio, ...style }}
+      className={cn("relative overflow-hidden w-full h-full block", className)}
+      style={{ aspectRatio, width: "100%", height: "100%", ...style }}
     >
-      <motion.img
-        src={src}
-        alt={alt}
-        style={{
-          y,
-          scale,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-        }}
-        className={cn("w-full h-full object-cover block", imgClassName)}
-      />
+      <picture style={{ display: "block", width: "100%", height: "100%" }}>
+        {webpSrc && <source srcSet={webpSrc} type="image/webp" />}
+        <motion.img
+          src={src}
+          alt={alt}
+          initial={{ scale: baseScale }}
+          whileHover={{ scale: baseScale * 1.025 }}
+          transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+          style={{
+            y,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center",
+            display: "block",
+            transformOrigin: "center center",
+            willChange: "transform",
+          }}
+          className={cn("w-full h-full object-cover block", imgClassName)}
+        />
+      </picture>
     </div>
   );
 };

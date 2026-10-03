@@ -76,7 +76,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <main>
+      <main style={{ background: "#060606", color: "#FFFFFF", minHeight: "100vh" }}>
         {/* Contact Hero & Main Details */}
         <section className="section-py inner-page-hero">
           <div className="container">
@@ -97,7 +97,7 @@ export default function ContactPage() {
               <div className="contact-info-stack">
                 <div className="contact-info-card">
                   <div className="icon-wrapper">
-                    <MapPinIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
+                    <MapPinIcon size={24} color="#000000" />
                   </div>
                   <div>
                     <h3 className="card-title">Location</h3>
@@ -110,7 +110,7 @@ export default function ContactPage() {
 
                 <div className="contact-info-card">
                   <div className="icon-wrapper">
-                    <PhoneIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
+                    <PhoneIcon size={24} color="#000000" />
                   </div>
                   <div>
                     <h3 className="card-title">Direct Phone &amp; WhatsApp</h3>
@@ -125,7 +125,7 @@ export default function ContactPage() {
 
                 <div className="contact-info-card">
                   <div className="icon-wrapper">
-                    <MailIcon size={24} color="var(--brand-primary-lightmode, #ff6364)" />
+                    <MailIcon size={24} color="#000000" />
                   </div>
                   <div>
                     <h3 className="card-title">Email Inquiries</h3>
@@ -290,31 +290,31 @@ export default function ContactPage() {
                   Visit Us In Person
                 </div>
                 <h2 className="display-md" style={{ marginBottom: "16px", color: "var(--text-dark-primary)" }}>
-                  Experience Center &amp; Manufacturing Plant
+                  Office &amp; Experience Center
                 </h2>
                 <p className="text-lg" style={{ color: "var(--text-dark-secondary)", lineHeight: "1.6", marginBottom: "28px" }}>
-                  Walk through live room setups, inspect German hardware, and witness custom woodwork being crafted in real-time.
+                  Walk through live room setups, inspect German hardware, and consult with our interior design experts.
                 </p>
 
                 {/* Location & Hours Detail Cards */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginBottom: "32px" }}>
                   <div style={{ display: "flex", alignItems: "flex-start", gap: "14px", background: "#FFFFFF", padding: "18px 20px", borderRadius: "var(--radius-brand-18)", border: "1px solid var(--border-light-subtle)", boxShadow: "0 4px 16px rgba(0,0,0,0.02)" }}>
                     <div className="featured-icon featured-icon-brand" style={{ width: "42px", height: "42px", flexShrink: 0, marginTop: "2px" }}>
-                      <MapPinIcon size={20} color="var(--brand-primary)" />
+                      <MapPinIcon size={20} color="#000000" />
                     </div>
                     <div>
                       <div style={{ fontWeight: "700", fontSize: "15px", color: "var(--text-dark-primary)", marginBottom: "4px" }}>
-                        Factory &amp; Experience Center Address
+                        Office &amp; Experience Center Address
                       </div>
                       <div style={{ fontSize: "14px", color: "var(--text-dark-secondary)", lineHeight: "1.5" }}>
-                        Plot No. 291/E2, Beside Delhivery Warehouse, Khanapur Village Road, Neopolis-Kokapet, Hyderabad, Telangana 500075
+                        Plot No. 42, Beside Pillar No. 142, Main Road, Hyderguda, Attapur, Hyderabad, Telangana 500048
                       </div>
                     </div>
                   </div>
 
                   <div style={{ display: "flex", alignItems: "flex-start", gap: "14px", background: "#FFFFFF", padding: "18px 20px", borderRadius: "var(--radius-brand-18)", border: "1px solid var(--border-light-subtle)", boxShadow: "0 4px 16px rgba(0,0,0,0.02)" }}>
                     <div className="featured-icon featured-icon-brand" style={{ width: "42px", height: "42px", flexShrink: 0, marginTop: "2px" }}>
-                      <ClockIcon size={20} color="var(--brand-primary)" />
+                      <ClockIcon size={20} color="#000000" />
                     </div>
                     <div>
                       <div style={{ fontWeight: "700", fontSize: "15px", color: "var(--text-dark-primary)", marginBottom: "4px" }}>
@@ -330,14 +330,14 @@ export default function ContactPage() {
                 {/* Direct Action Buttons */}
                 <div className="contact-action-btns">
                   <a
-                    href="https://maps.google.com/?q=Kokapet+Hyderabad"
+                    href="https://maps.google.com/?q=Attapur+Hyderabad"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary btn-md"
                     style={{ gap: "8px", borderRadius: "var(--radius-pill)" }}
                   >
                     <MapPinIcon size={16} />
-                    <span>Open in Maps ↗</span>
+                    <span>Open in Maps</span>
                   </a>
                   <a
                     href="tel:+919916862442"
@@ -354,7 +354,7 @@ export default function ContactPage() {
               <div className="contact-map-box">
                 <iframe
                   title="DV HOMES Location Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.887258936997!2d78.337482!3d17.393245!2m3!1f0f0f0f0!3f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb945037d0c325%3A0xb3ff76c24bc91eb!2sKokapet%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.728984021272!2d78.432822!3d17.373441!2m3!1f0f0f0f0!3f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb974712e096db%3A0x6b8f36cb76e27b61!2sAttapur%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                   allowFullScreen={false}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -363,7 +363,7 @@ export default function ContactPage() {
 
                 {/* Top-Left "Open in Maps" Pill Button (9999px Radius) */}
                 <a
-                  href="https://maps.google.com/?q=Kokapet+Hyderabad"
+                  href="https://maps.google.com/?q=Attapur+Hyderabad"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
