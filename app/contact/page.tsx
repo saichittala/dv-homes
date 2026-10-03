@@ -81,9 +81,6 @@ export default function ContactPage() {
         <section className="section-py inner-page-hero">
           <div className="container">
             <div className="section-header" style={{ marginBottom: "40px" }}>
-              <div className="section-eyebrow">
-                GET IN TOUCH
-              </div>
               <h1 className="display-lg">
                 Your Dream Space Starts with a Conversation
               </h1>
@@ -286,9 +283,6 @@ export default function ContactPage() {
             <div className="contact-map-grid">
               {/* Left Column: Details & Actions */}
               <div className="contact-map-info">
-                <div className="section-eyebrow" style={{ marginBottom: "14px" }}>
-                  Visit Us In Person
-                </div>
                 <h2 className="display-md" style={{ marginBottom: "16px", color: "var(--text-dark-primary)" }}>
                   Office &amp; Experience Center
                 </h2>
