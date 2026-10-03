@@ -1071,11 +1071,6 @@ export default function HomePage() {
                     <span>WhatsApp</span>
                   </a>
                 </div>
-
-                <div className="cta-contact-line">
-                  <PhoneIcon size={14} color="var(--brand-primary)" />
-                  <span>DV HOMES &bull; Founder: Arige Praveenkumar &bull; 📍 Hyderabad &amp; nearby areas</span>
-                </div>
               </div>
 
               {/* Instant Booking Form Card */}
