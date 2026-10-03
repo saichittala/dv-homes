@@ -15,6 +15,7 @@ import ImageWithSkeleton from "./components/ImageWithSkeleton";
 import ChoiceChips, { ChoiceOption } from "./components/ui/ChoiceChips";
 import ScrollBlurFadeIn from "./components/ui/ScrollBlurFadeIn";
 import { submitLeadToGoogleSheet, openWhatsAppLeadChat } from "./lib/leadSubmission";
+import { projectsData } from "./lib/projectsData";
 import { ParallaxScroll, ParallaxImage } from "./components/ui/parallax-scroll";
 import {
   FactoryIcon,
@@ -752,26 +753,34 @@ export default function HomePage() {
           <div className="container">
             <ScrollBlurFadeIn>
               <div className="section-header section-header--left section-header--mb">
-                <h2 className="projects-section-title">Latest Projects</h2>
+                <h2 className="display-md">Real Homes, Exceptional Execution</h2>
+                <p style={{ marginTop: "12px", color: "rgba(255, 255, 255, 0.75)", fontSize: "1.05rem" }}>
+                  Explore our curated showcase of turnkey residential interior projects executed across Hyderabad’s premier neighborhoods.
+                </p>
               </div>
 
               {/* Projects Grid */}
               <div className="projects-cards-grid">
-                {(showAllProjects ? projects : projects.slice(0, 4)).map((project) => (
-                  <div key={project.id} className="project-card-item">
+                {(showAllProjects ? projectsData : projectsData.slice(0, 4)).map((project) => (
+                  <Link
+                    key={project.id}
+                    href={`/projects/${project.id}`}
+                    className="project-card-item"
+                    style={{ textDecoration: "none" }}
+                  >
                     <div className="project-card-img-wrapper">
-                      <ImageWithSkeleton src={project.image} alt={project.name} />
+                      <ImageWithSkeleton src={project.mainImage} alt={project.title} />
                     </div>
                     <div className="project-card-white-box">
-                      <h3 className="project-card-title">{project.name}</h3>
+                      <h3 className="project-card-title">{project.title.toUpperCase()}</h3>
                       <p className="project-card-location">{project.location}</p>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
 
               {/* View All Projects / Show Less Button */}
-              {projects.length > 4 && (
+              {projectsData.length > 4 && (
                 <div className="projects-cta-wrap">
                   <button
                     type="button"
