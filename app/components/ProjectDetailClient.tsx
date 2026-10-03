@@ -44,7 +44,7 @@ export default function ProjectDetailClient({
       <div
         onClick={() => openLightbox(heroIndex)}
         style={{
-          marginTop: "20px",
+          marginTop: "0px",
           borderRadius: "var(--radius-brand-20)",
           overflow: "hidden",
           height: "clamp(320px, 50vh, 520px)",

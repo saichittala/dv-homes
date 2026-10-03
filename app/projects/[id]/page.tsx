@@ -103,7 +103,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
               fontWeight: "700",
               letterSpacing: "-0.02em",
               lineHeight: "1.15",
-              marginBottom: "20px",
+              marginBottom: "36px",
               color: "#FFFFFF",
               display: "-webkit-box",
               WebkitLineClamp: 2,
