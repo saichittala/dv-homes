@@ -145,7 +145,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
       <section style={{ padding: "100px 24px 30px 24px" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <div style={{ display: "flex", gap: "10px", alignItems: "center", marginBottom: "14px", flexWrap: "wrap" }}>
-            <span style={{ background: "rgba(255, 99, 100, 0.15)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "var(--radius-brand-6)", padding: "4px 10px", fontSize: "0.78rem", fontWeight: "600" }}>
+            <span style={{ background: "rgba(255, 255, 255, 0.12)", color: "#FFFFFF", border: "1px solid rgba(255, 255, 255, 0.2)", borderRadius: "var(--radius-brand-6)", padding: "4px 10px", fontSize: "0.78rem", fontWeight: "600" }}>
               {post.category}
             </span>
             <span style={{ fontSize: "0.82rem", color: "#a0a0a0" }}>
@@ -285,7 +285,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                   <Link key={rel.id} href={`/blog/${rel.slug}`} style={{ textDecoration: "none" }}>
                     <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "var(--radius-brand-14)", padding: "18px", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                       <div>
-                        <div style={{ fontSize: "0.75rem", color: "#ff6364", fontWeight: "600", marginBottom: "4px" }}>{rel.category}</div>
+                        <div style={{ fontSize: "0.75rem", color: "#FFFFFF", fontWeight: "600", marginBottom: "4px" }}>{rel.category}</div>
                         <h3 style={{ fontSize: "1rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "6px", lineHeight: "1.3" }}>{rel.title}</h3>
                       </div>
                       <div style={{ fontSize: "0.82rem", color: "#ff6364", fontWeight: "600", marginTop: "10px", display: "flex", alignItems: "center", gap: "4px" }}>

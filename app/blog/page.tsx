@@ -79,7 +79,7 @@ export default function BlogListingPage() {
                         style={{ width: "100%", height: "100%", objectFit: "cover" }}
                         loading="lazy"
                       />
-                      <div style={{ position: "absolute", top: "16px", left: "16px", background: "rgba(0,0,0,0.75)", backdropFilter: "blur(8px)", color: "#ff6364", padding: "6px 12px", borderRadius: "var(--radius-brand-6)", fontSize: "0.78rem", fontWeight: "600" }}>
+                      <div style={{ position: "absolute", top: "16px", left: "16px", background: "rgba(0,0,0,0.75)", backdropFilter: "blur(8px)", color: "#FFFFFF", padding: "6px 12px", borderRadius: "var(--radius-brand-6)", fontSize: "0.78rem", fontWeight: "600" }}>
                         {post.category}
                       </div>
                     </div>
