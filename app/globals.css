@@ -2337,7 +2337,7 @@ main {
 }
 
 .who-we-are-factory-card:hover .who-we-are-factory-img {
-  transform: scale(1.03);
+  transform: none;
 }
 
 .who-we-are-factory-tag {
@@ -2653,7 +2653,7 @@ main {
 }
 
 .featured-service-card-item:hover .featured-service-img-wrapper img {
-  transform: scale(1.025) !important;
+  transform: none !important;
 }
 
 .featured-service-white-box {
@@ -2725,7 +2725,7 @@ main {
 .featured-service-card-item:hover .featured-service-arrow-btn svg {
   color: #FFFFFF !important;
   stroke: #FFFFFF !important;
-  transform: rotate(-45deg) scale(1.1);
+  transform: rotate(-45deg);
 }
 
 /* ==============================================================================
@@ -2796,7 +2796,7 @@ main {
 }
 
 .project-card-item:hover .project-card-img-wrapper img {
-  transform: scale(1.025);
+  transform: none;
 }
 
 .project-card-white-box {
