@@ -136,25 +136,25 @@ export default function ProjectDetailClient({
           
           {/* LINE 1: PROJECT OVERVIEW */}
           <div>
-            <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "16px", letterSpacing: "-0.01em" }}>
+            <h2 style={{ fontSize: "18px", fontWeight: "600", color: "#FFFFFF", marginBottom: "16px", letterSpacing: "-0.01em" }}>
               Project Overview
             </h2>
-            <p style={{ fontSize: "1rem", color: "var(--text-light-primary)", lineHeight: "1.7" }}>
+            <p style={{ fontSize: "16px", fontWeight: "400", color: "var(--text-light-primary)", lineHeight: "1.6" }}>
               {concept}
             </p>
           </div>
 
           {/* LINE 2: THE PROBLEM & SOLUTION */}
           <div>
-            <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "16px", letterSpacing: "-0.01em" }}>
+            <h2 style={{ fontSize: "18px", fontWeight: "600", color: "#FFFFFF", marginBottom: "16px", letterSpacing: "-0.01em" }}>
               Project Challenge &amp; Solution
             </h2>
             <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.14)", padding: "28px 28px", borderRadius: "var(--radius-brand-18)", display: "flex", flexDirection: "column", gap: "18px" }}>
               <div>
-                <div style={{ fontWeight: "700", color: "#FFFFFF", fontSize: "1.05rem", marginBottom: "6px" }}>
+                <div style={{ fontWeight: "500", color: "#FFFFFF", fontSize: "16px", marginBottom: "6px" }}>
                   Challenge:
                 </div>
-                <p style={{ fontSize: "0.98rem", color: "var(--text-light-primary)", margin: 0, lineHeight: "1.6" }}>
+                <p style={{ fontSize: "16px", fontWeight: "400", color: "var(--text-light-primary)", margin: 0, lineHeight: "1.6" }}>
                   {challenge}
                 </p>
               </div>
@@ -162,10 +162,10 @@ export default function ProjectDetailClient({
               <div style={{ height: "1px", background: "rgba(255,255,255,0.08)" }} />
 
               <div>
-                <div style={{ fontWeight: "700", color: "#FFFFFF", fontSize: "1.05rem", marginBottom: "6px" }}>
+                <div style={{ fontWeight: "500", color: "#FFFFFF", fontSize: "16px", marginBottom: "6px" }}>
                   DV Homes Solution:
                 </div>
-                <p style={{ fontSize: "0.98rem", color: "var(--text-light-primary)", margin: 0, lineHeight: "1.6" }}>
+                <p style={{ fontSize: "16px", fontWeight: "400", color: "var(--text-light-primary)", margin: 0, lineHeight: "1.6" }}>
                   {solution}
                 </p>
               </div>
@@ -174,7 +174,7 @@ export default function ProjectDetailClient({
 
           {/* LINE 3: IMAGES OF THE INTERIORS */}
           <div>
-            <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "20px", letterSpacing: "-0.01em" }}>
+            <h2 style={{ fontSize: "18px", fontWeight: "600", color: "#FFFFFF", marginBottom: "20px", letterSpacing: "-0.01em" }}>
               Images of the Interiors
             </h2>
             <div className="project-interiors-grid">
