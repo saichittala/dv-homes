@@ -133,38 +133,6 @@ export default function LocationsHubPage() {
         </div>
       </section>
 
-      {/* Trust & Guarantee Banner */}
-      <section style={{ padding: "80px 32px 100px 32px" }}>
-        <div style={{ maxWidth: "960px", margin: "0 auto", textAlign: "center" }}>
-          <ShieldCheckIcon size={40} color="#ff6364" style={{ marginBottom: "18px" }} />
-          <h2 style={{ fontSize: "1.6rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "14px" }}>
-            Direct Factory Execution from Kokapet
-          </h2>
-          <p style={{ fontSize: "1.02rem", color: "#cccccc", lineHeight: "1.65", maxWidth: "720px", margin: "0 auto 28px auto" }}>
-            Regardless of your home location in Hyderabad, our centralized Kokapet facility handles precision CNC woodworking, PUR hotmelt edge-banding, and quality audits before site assembly.
-          </p>
-          <Link
-            href="/contact"
-            className="magnetic-btn-wrapper"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "8px",
-              background: "#ff6364",
-              color: "#FFFFFF",
-              fontWeight: "700",
-              padding: "16px 36px",
-              borderRadius: "var(--radius-pill)",
-              textDecoration: "none",
-              fontSize: "0.95rem"
-            }}
-          >
-            <span>Book a Design Consultation</span>
-            <ChevronRightIcon size={18} color="#FFFFFF" />
-          </Link>
-        </div>
-      </section>
-
       <Footer />
     </main>
   );
