@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import ImageWithSkeleton from "./ImageWithSkeleton";
 import LightboxModal from "./LightboxModal";
+import { getRoomHeading } from "../lib/roomHelper";
 
 interface ProjectGalleryGridProps {
   images: string[];
@@ -25,22 +26,35 @@ export default function ProjectGalleryGrid({
     <>
       <div className="project-interiors-grid">
         {images.map((imgUrl, idx) => (
-          <div
-            key={idx}
-            onClick={() => handleImageClick(idx)}
-            style={{
-              borderRadius: "var(--radius-brand-20)",
-              overflow: "hidden",
-              height: "380px",
-              border: "1px solid rgba(255,255,255,0.14)",
-              position: "relative",
-              cursor: "pointer",
-            }}
-          >
-            <ImageWithSkeleton
-              src={imgUrl}
-              alt={`${projectTitle} Interior View ${idx + 1} - DV Homes`}
-            />
+          <div key={idx} style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <div
+              onClick={() => handleImageClick(idx)}
+              style={{
+                borderRadius: "var(--radius-brand-20)",
+                overflow: "hidden",
+                height: "360px",
+                border: "1px solid rgba(255,255,255,0.14)",
+                position: "relative",
+                cursor: "pointer",
+              }}
+            >
+              <ImageWithSkeleton
+                src={imgUrl}
+                alt={`${projectTitle} - ${getRoomHeading(imgUrl, idx)} - DV Homes`}
+              />
+            </div>
+            <h4
+              style={{
+                fontSize: "16px",
+                fontWeight: "600",
+                color: "#FFFFFF",
+                margin: "0",
+                paddingLeft: "4px",
+                letterSpacing: "-0.01em",
+              }}
+            >
+              {getRoomHeading(imgUrl, idx)}
+            </h4>
           </div>
         ))}
       </div>

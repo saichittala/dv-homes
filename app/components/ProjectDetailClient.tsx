@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import ImageWithSkeleton from "./ImageWithSkeleton";
 import LightboxModal from "./LightboxModal";
+import { getRoomHeading } from "../lib/roomHelper";
 
 interface ProjectDetailClientProps {
   mainImage: string;
@@ -41,24 +42,38 @@ export default function ProjectDetailClient({
   return (
     <>
       {/* Big Featured Hero Showcase Image */}
-      <div
-        onClick={() => openLightbox(heroIndex)}
-        style={{
-          marginTop: "0px",
-          borderRadius: "var(--radius-brand-20)",
-          overflow: "hidden",
-          height: "clamp(320px, 50vh, 520px)",
-          width: "100%",
-          border: "1px solid rgba(255,255,255,0.14)",
-          position: "relative",
-          cursor: "pointer",
-        }}
-      >
-        <ImageWithSkeleton
-          src={mainImage}
-          alt={`${projectTitle} Featured Interior - DV Homes`}
-          priority
-        />
+      <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+        <div
+          onClick={() => openLightbox(heroIndex)}
+          style={{
+            marginTop: "0px",
+            borderRadius: "var(--radius-brand-20)",
+            overflow: "hidden",
+            height: "clamp(320px, 50vh, 520px)",
+            width: "100%",
+            border: "1px solid rgba(255,255,255,0.14)",
+            position: "relative",
+            cursor: "pointer",
+          }}
+        >
+          <ImageWithSkeleton
+            src={mainImage}
+            alt={`${projectTitle} Featured Interior - DV Homes`}
+            priority
+          />
+        </div>
+        <h4
+          style={{
+            fontSize: "18px",
+            fontWeight: "600",
+            color: "#FFFFFF",
+            margin: "0",
+            paddingLeft: "4px",
+            letterSpacing: "-0.01em",
+          }}
+        >
+          {getRoomHeading(mainImage, 0)}
+        </h4>
       </div>
 
       {/* Location, Project Type & Completion Metadata Card - Placed AFTER Hero Image */}
@@ -179,22 +194,35 @@ export default function ProjectDetailClient({
             </h3>
             <div className="project-interiors-grid">
               {allImages.map((imgUrl, idx) => (
-                <div
-                  key={idx}
-                  onClick={() => openLightbox(idx)}
-                  style={{
-                    borderRadius: "var(--radius-brand-20)",
-                    overflow: "hidden",
-                    height: "380px",
-                    border: "1px solid rgba(255,255,255,0.14)",
-                    position: "relative",
-                    cursor: "pointer",
-                  }}
-                >
-                  <ImageWithSkeleton
-                    src={imgUrl}
-                    alt={`${projectTitle} Interior View ${idx + 1} - DV Homes`}
-                  />
+                <div key={idx} style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                  <div
+                    onClick={() => openLightbox(idx)}
+                    style={{
+                      borderRadius: "var(--radius-brand-20)",
+                      overflow: "hidden",
+                      height: "360px",
+                      border: "1px solid rgba(255,255,255,0.14)",
+                      position: "relative",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <ImageWithSkeleton
+                      src={imgUrl}
+                      alt={`${projectTitle} - ${getRoomHeading(imgUrl, idx)} - DV Homes`}
+                    />
+                  </div>
+                  <h4
+                    style={{
+                      fontSize: "16px",
+                      fontWeight: "600",
+                      color: "#FFFFFF",
+                      margin: "0",
+                      paddingLeft: "4px",
+                      letterSpacing: "-0.01em",
+                    }}
+                  >
+                    {getRoomHeading(imgUrl, idx)}
+                  </h4>
                 </div>
               ))}
             </div>

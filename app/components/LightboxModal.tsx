@@ -4,6 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 import { XCloseIcon, ChevronLeftIcon, ChevronRightIcon } from "./Icons";
+import { getRoomHeading } from "../lib/roomHelper";
 
 interface LightboxModalProps {
   isOpen: boolean;
@@ -137,7 +138,7 @@ export default function LightboxModal({
         {/* Title & Counter Capsule */}
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <span style={{ fontSize: "var(--fs-16)", fontWeight: "700", color: "#FFFFFF" }}>
-            {title || "Gallery"}
+            {title ? `${title} • ` : ""}{getRoomHeading(images[currentIndex] || "", currentIndex)}
           </span>
           <span
             style={{

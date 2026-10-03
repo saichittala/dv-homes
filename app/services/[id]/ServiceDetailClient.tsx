@@ -9,6 +9,7 @@ import ImageWithSkeleton from "../../components/ImageWithSkeleton";
 import { ExpandIcon, ChevronLeftIcon, ChevronRightIcon } from "../../components/Icons";
 import CategoryTabs from "../../components/CategoryTabs";
 import { ServiceDetail } from "../../lib/servicesData";
+import { getRoomHeading } from "../../lib/roomHelper";
 
 interface ServiceDetailClientProps {
   service: ServiceDetail;
@@ -139,6 +140,18 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
                   </button>
                 )}
               </div>
+              <h4
+                style={{
+                  fontSize: "16px",
+                  fontWeight: "600",
+                  color: "#FFFFFF",
+                  margin: "12px 0 0 0",
+                  paddingLeft: "4px",
+                  letterSpacing: "-0.01em",
+                }}
+              >
+                {getRoomHeading(galleryImages[activeImageIndex] || service.mainImage, activeImageIndex)}
+              </h4>
 
               {/* 3-Column Gallery Thumbnails Row Below */}
               {galleryImages.length > 1 && (
