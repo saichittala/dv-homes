@@ -42,38 +42,24 @@ export default function ProjectDetailClient({
   return (
     <>
       {/* Big Featured Hero Showcase Image */}
-      <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-        <div
-          onClick={() => openLightbox(heroIndex)}
-          style={{
-            marginTop: "0px",
-            borderRadius: "var(--radius-brand-20)",
-            overflow: "hidden",
-            height: "clamp(320px, 50vh, 520px)",
-            width: "100%",
-            border: "1px solid rgba(255,255,255,0.14)",
-            position: "relative",
-            cursor: "pointer",
-          }}
-        >
-          <ImageWithSkeleton
-            src={mainImage}
-            alt={`${projectTitle} Featured Interior - DV Homes`}
-            priority
-          />
-        </div>
-        <h4
-          style={{
-            fontSize: "18px",
-            fontWeight: "600",
-            color: "#FFFFFF",
-            margin: "0",
-            paddingLeft: "4px",
-            letterSpacing: "-0.01em",
-          }}
-        >
-          {getRoomHeading(mainImage, 0)}
-        </h4>
+      <div
+        onClick={() => openLightbox(heroIndex)}
+        style={{
+          marginTop: "0px",
+          borderRadius: "var(--radius-brand-20)",
+          overflow: "hidden",
+          height: "clamp(320px, 50vh, 520px)",
+          width: "100%",
+          border: "1px solid rgba(255,255,255,0.14)",
+          position: "relative",
+          cursor: "pointer",
+        }}
+      >
+        <ImageWithSkeleton
+          src={mainImage}
+          alt={`${projectTitle} Featured Interior - DV Homes`}
+          priority
+        />
       </div>
 
       {/* Location, Project Type & Completion Metadata Card - Placed AFTER Hero Image */}
