@@ -1068,7 +1068,7 @@ export default function HomePage() {
                     className="btn btn-whatsapp btn-lg"
                   >
                     <WhatsAppIcon size={18} />
-                    <span>WhatsApp Consultation</span>
+                    <span>WhatsApp</span>
                   </a>
                 </div>
 

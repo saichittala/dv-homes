@@ -210,7 +210,7 @@ export default function AboutPage() {
                 style={{ gap: "8px" }}
               >
                 <WhatsAppIcon size={18} />
-                <span>WhatsApp Consultation</span>
+                <span>WhatsApp</span>
               </a>
             </div>
           </div>

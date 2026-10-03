@@ -152,7 +152,7 @@ export default function ContactPage() {
                     className="btn btn-whatsapp btn-sm"
                   >
                     <WhatsAppIcon size={18} />
-                    <span>WhatsApp VIP</span>
+                    <span>WhatsApp</span>
                   </a>
                 </div>
               </div>
