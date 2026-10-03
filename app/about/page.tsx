@@ -31,9 +31,6 @@ export default function AboutPage() {
             <div className="about-hero-grid">
               {/* Left Column Content */}
               <div>
-                <div className="section-eyebrow" style={{ marginBottom: "16px" }}>
-                  About DV HOMES
-                </div>
                 <h1 className="display-lg" style={{ marginBottom: "20px", textTransform: "none" }}>
                   Complete End-to-End Responsibility From Design to Handover
                 </h1>
@@ -81,9 +78,6 @@ export default function AboutPage() {
 
               {/* Right Column Content */}
               <div>
-                <div className="section-eyebrow">
-                  OUR BRAND PROMISE
-                </div>
                 <h2 className="display-md" style={{ marginBottom: "24px", color: "var(--text-dark-primary)" }}>
                   Clear Planning + Quality Execution + Responsible Communication
                 </h2>
@@ -113,9 +107,6 @@ export default function AboutPage() {
         <section className="section-py">
           <div className="container">
             <div className="section-header">
-              <div className="section-eyebrow">
-                THE 4 PILLARS OF DV HOMES
-              </div>
               <h2 className="display-md">Built on Real Trust &amp; Systems</h2>
             </div>
 
@@ -186,9 +177,6 @@ export default function AboutPage() {
         {/* CTA Banner */}
         <section className="cta-dark-section" style={{ padding: "clamp(60px, 8vw, 90px) 0" }}>
           <div className="container" style={{ textAlign: "center", maxWidth: "720px" }}>
-            <div className="section-eyebrow" style={{ color: "var(--brand-primary)", marginBottom: "14px" }}>
-              DV HOMES PROMISE
-            </div>
             <h2 className="cta-dark-title" style={{ fontSize: "24px", fontWeight: "700", lineHeight: "1.25", marginBottom: "16px" }}>
               Clear Planning, Quality Execution &amp; Responsible Communication.
             </h2>
