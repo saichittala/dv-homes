@@ -1602,7 +1602,7 @@ button:focus-visible {
 /* Map section */
 .contact-map-section {
   background: var(--bg-light-secondary, #F8F7F4);
-  border-top: 1px solid var(--border-light-subtle, rgba(23, 23, 22, 0.08));
+  border-top: none !important;
 }
 
 .contact-map-grid {
