@@ -47,7 +47,7 @@ export default function ProjectsPage() {
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema]} />
 
       {/* Hero */}
-      <section style={{ padding: "160px 32px 50px 32px", textAlign: "center" }}>
+      <section style={{ padding: "96px 32px 40px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: "880px", margin: "0 auto" }}>
           <h1 style={{ fontSize: "clamp(1.5rem, 3.2vw, 2.2rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "12px", color: "#FFFFFF" }}>
             Real Homes, Exceptional Execution

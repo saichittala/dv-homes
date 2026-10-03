@@ -49,7 +49,7 @@ export default function LocationsHubPage() {
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema]} />
 
       {/* Hero Section */}
-      <section style={{ padding: "160px 32px 80px 32px", textAlign: "center" }}>
+      <section style={{ padding: "96px 32px 40px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: "880px", margin: "0 auto" }}>
           <h1 style={{ fontSize: "clamp(2rem, 4.2vw, 2.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "20px", color: "#FFFFFF" }}>
             Interior Design Across Hyderabad

@@ -116,7 +116,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])]} />
 
       {/* Hero */}
-      <section style={{ position: "relative", padding: "160px 32px 90px 32px", overflow: "hidden" }}>
+      <section style={{ position: "relative", padding: "96px 32px 40px 32px", overflow: "hidden" }}>
         <div style={{ maxWidth: "1040px", margin: "0 auto", position: "relative", zIndex: 1 }}>
           <h1 style={{ fontSize: "clamp(2rem, 4.2vw, 2.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "20px", color: "#FFFFFF" }}>
             {location.heroHeadline}

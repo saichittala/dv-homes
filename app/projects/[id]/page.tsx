@@ -95,7 +95,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema]} />
 
       {/* Hero Header */}
-      <section style={{ padding: "140px 24px 30px 24px" }}>
+      <section style={{ padding: "96px 24px 20px 24px" }}>
         <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
           <h1
             style={{

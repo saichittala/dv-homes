@@ -142,7 +142,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
       <JsonLd data={[defaultOrganizationSchema, breadcrumbSchema, articleSchema, ...(faqSchema ? [faqSchema] : [])]} />
 
       {/* Article Header */}
-      <section style={{ padding: "100px 24px 30px 24px" }}>
+      <section style={{ padding: "96px 24px 20px 24px" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <div style={{ display: "flex", gap: "10px", alignItems: "center", marginBottom: "14px", flexWrap: "wrap" }}>
             <span style={{ background: "rgba(255, 255, 255, 0.12)", color: "#FFFFFF", border: "1px solid rgba(255, 255, 255, 0.2)", borderRadius: "var(--radius-brand-6)", padding: "4px 10px", fontSize: "0.78rem", fontWeight: "600" }}>
