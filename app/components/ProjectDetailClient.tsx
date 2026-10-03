@@ -136,9 +136,9 @@ export default function ProjectDetailClient({
           
           {/* LINE 1: PROJECT OVERVIEW */}
           <div>
-            <h2 style={{ fontSize: "18px", fontWeight: "600", color: "#FFFFFF", marginBottom: "16px", letterSpacing: "-0.01em" }}>
+            <h3 style={{ fontSize: "18px", fontWeight: "600", color: "#FFFFFF", marginBottom: "16px", letterSpacing: "-0.01em" }}>
               Project Overview
-            </h2>
+            </h3>
             <p style={{ fontSize: "16px", fontWeight: "400", color: "var(--text-light-primary)", lineHeight: "1.6" }}>
               {concept}
             </p>
@@ -146,9 +146,9 @@ export default function ProjectDetailClient({
 
           {/* LINE 2: THE PROBLEM & SOLUTION */}
           <div>
-            <h2 style={{ fontSize: "18px", fontWeight: "600", color: "#FFFFFF", marginBottom: "16px", letterSpacing: "-0.01em" }}>
+            <h3 style={{ fontSize: "18px", fontWeight: "600", color: "#FFFFFF", marginBottom: "16px", letterSpacing: "-0.01em" }}>
               Project Challenge &amp; Solution
-            </h2>
+            </h3>
             <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.14)", padding: "28px 28px", borderRadius: "var(--radius-brand-18)", display: "flex", flexDirection: "column", gap: "18px" }}>
               <div>
                 <div style={{ fontWeight: "500", color: "#FFFFFF", fontSize: "16px", marginBottom: "6px" }}>
@@ -174,9 +174,9 @@ export default function ProjectDetailClient({
 
           {/* LINE 3: IMAGES OF THE INTERIORS */}
           <div>
-            <h2 style={{ fontSize: "18px", fontWeight: "600", color: "#FFFFFF", marginBottom: "20px", letterSpacing: "-0.01em" }}>
+            <h3 style={{ fontSize: "18px", fontWeight: "600", color: "#FFFFFF", marginBottom: "20px", letterSpacing: "-0.01em" }}>
               Images of the Interiors
-            </h2>
+            </h3>
             <div className="project-interiors-grid">
               {allImages.map((imgUrl, idx) => (
                 <div
