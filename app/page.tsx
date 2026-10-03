@@ -751,9 +751,6 @@ export default function HomePage() {
             <ScrollBlurFadeIn>
               <div className="section-header section-header--left section-header--mb">
                 <h2 className="display-md">Real Homes, Exceptional Execution</h2>
-                <p style={{ marginTop: "12px", color: "rgba(255, 255, 255, 0.75)", fontSize: "1.05rem" }}>
-                  Explore our curated showcase of turnkey residential interior projects executed across Hyderabad’s premier neighborhoods.
-                </p>
               </div>
 
               {/* Projects Grid */}
