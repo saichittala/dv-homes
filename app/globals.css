@@ -434,7 +434,7 @@ h6,
 .card-title,
 .cta-dark-title {
   font-family: var(--font-heading) !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   letter-spacing: -0.02rem !important;
   color: var(--text-dark-primary);
   text-transform: capitalize;
@@ -591,7 +591,7 @@ textarea:disabled,
   font-size: var(--font-display-2xl);
   line-height: var(--lh-display-2xl);
   letter-spacing: var(--letter-spacing);
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   color: var(--text-dark-primary);
 }
 
@@ -600,7 +600,7 @@ textarea:disabled,
   font-size: var(--font-display-xl);
   line-height: var(--lh-display-xl);
   letter-spacing: var(--letter-spacing);
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   color: var(--text-dark-primary);
 }
 
@@ -609,7 +609,7 @@ textarea:disabled,
   font-size: var(--font-display-lg);
   line-height: var(--lh-display-lg);
   letter-spacing: var(--letter-spacing);
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   text-transform: capitalize;
   color: var(--text-dark-primary);
 }
@@ -619,7 +619,7 @@ textarea:disabled,
   font-size: var(--font-display-md);
   line-height: var(--lh-display-md);
   letter-spacing: var(--letter-spacing);
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   text-transform: capitalize;
   color: var(--text-dark-primary);
 }
@@ -629,7 +629,7 @@ textarea:disabled,
   font-size: var(--font-display-sm);
   line-height: var(--lh-display-sm);
   letter-spacing: var(--letter-spacing);
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   text-transform: capitalize;
   color: var(--text-dark-primary);
 }
@@ -639,7 +639,7 @@ textarea:disabled,
   font-size: var(--font-display-xs);
   line-height: 24px;
   letter-spacing: var(--letter-spacing);
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   text-transform: capitalize;
   color: var(--text-dark-primary);
 }
