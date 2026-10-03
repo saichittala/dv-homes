@@ -118,11 +118,6 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
       {/* Hero */}
       <section style={{ position: "relative", padding: "160px 32px 90px 32px", overflow: "hidden" }}>
         <div style={{ maxWidth: "1040px", margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "var(--radius-pill)", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "24px" }}>
-            <MapPinIcon size={16} color="#ff6364" />
-            <span>INTERIOR DESIGN IN {location.name.toUpperCase()}, HYDERABAD</span>
-          </div>
-
           <h1 style={{ fontSize: "clamp(2rem, 4.2vw, 2.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "20px", color: "#FFFFFF" }}>
             {location.heroHeadline}
           </h1>

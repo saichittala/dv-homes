@@ -51,10 +51,6 @@ export default function LocationsHubPage() {
       {/* Hero Section */}
       <section style={{ padding: "160px 32px 80px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: "880px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "var(--radius-pill)", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
-            <MapPinIcon size={16} color="#ff6364" />
-            <span>HYDERABAD SERVICE AREAS</span>
-          </div>
           <h1 style={{ fontSize: "clamp(2rem, 4.2vw, 2.8rem)", fontWeight: "700", letterSpacing: "-0.02em", lineHeight: "1.2", marginBottom: "20px", color: "#FFFFFF" }}>
             Interior Design Across Hyderabad
           </h1>
