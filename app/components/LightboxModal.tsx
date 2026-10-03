@@ -135,26 +135,43 @@ export default function LightboxModal({
           flexShrink: 0,
         }}
       >
-        {/* Title & Counter Capsule */}
-        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <span style={{ fontSize: "var(--fs-16)", fontWeight: "700", color: "#FFFFFF" }}>
-            {title ? `${title} • ` : ""}{getRoomHeading(images[currentIndex] || "", currentIndex)}
-          </span>
-          <span
+        {/* Title & Counter Stack in Flex Direction Column */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "2px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            {title && (
+              <span
+                className="lightbox-header-title"
+                style={{ fontSize: "15px", fontWeight: "700", color: "#FFFFFF" }}
+              >
+                {title}
+              </span>
+            )}
+            <span
+              style={{
+                fontSize: "13px",
+                fontWeight: "600",
+                color: "rgba(255, 255, 255, 0.75)",
+              }}
+            >
+              {currentIndex + 1} / {images.length}
+            </span>
+          </div>
+          <div
             style={{
-              fontSize: "var(--fs-14)",
+              fontSize: "14px",
               fontWeight: "600",
-              color: "rgba(255, 255, 255, 0.8)",
+              color: "#FFFFFF",
             }}
           >
-            {currentIndex + 1} / {images.length}
-          </span>
+            {getRoomHeading(images[currentIndex] || "", currentIndex)}
+          </div>
         </div>
 
         {/* Top Right Prominent Close Button */}
         <motion.button
           onClick={onClose}
           aria-label="Close Lightbox"
+          className="lightbox-close-btn"
           whileHover={{
             scale: 1.04,
             backgroundColor: "rgba(255, 255, 255, 0.08)",
@@ -166,10 +183,10 @@ export default function LightboxModal({
             alignItems: "center",
             gap: "8px",
             height: "40px",
-            padding: "0 20px",
+            padding: "0 18px",
             borderRadius: "var(--radius-pill)",
-            background: "transparent",
-            border: "none",
+            background: "rgba(255, 255, 255, 0.1)",
+            border: "1px solid rgba(255, 255, 255, 0.2)",
             color: "#FFFFFF",
             fontSize: "var(--fs-14)",
             fontWeight: "700",
@@ -179,7 +196,7 @@ export default function LightboxModal({
           }}
         >
           <XCloseIcon size={18} color="#FFFFFF" />
-          <span>Close</span>
+          <span className="lightbox-close-text">Close</span>
         </motion.button>
       </div>
 

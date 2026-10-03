@@ -4992,6 +4992,22 @@ main {
     width: 80px;
     height: 56px;
   }
+
+  .lightbox-close-text {
+    display: none !important;
+  }
+
+  .lightbox-header-title {
+    display: none !important;
+  }
+
+  .lightbox-close-btn {
+    padding: 0 !important;
+    width: 36px !important;
+    height: 36px !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+  }
 }
 
 .lightbox-thumb-btn {
