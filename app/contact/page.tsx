@@ -298,7 +298,7 @@ export default function ContactPage() {
 
                 {/* Location & Hours Detail Cards */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginBottom: "32px" }}>
-                  <div style={{ display: "flex", alignItems: "flex-start", gap: "14px", background: "#FFFFFF", padding: "18px 20px", borderRadius: "18px", border: "1px solid var(--border-light-subtle)", boxShadow: "0 4px 16px rgba(0,0,0,0.02)" }}>
+                  <div style={{ display: "flex", alignItems: "flex-start", gap: "14px", background: "#FFFFFF", padding: "18px 20px", borderRadius: "var(--radius-brand-18)", border: "1px solid var(--border-light-subtle)", boxShadow: "0 4px 16px rgba(0,0,0,0.02)" }}>
                     <div className="featured-icon featured-icon-brand" style={{ width: "42px", height: "42px", flexShrink: 0, marginTop: "2px" }}>
                       <MapPinIcon size={20} color="var(--brand-primary)" />
                     </div>
@@ -312,7 +312,7 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <div style={{ display: "flex", alignItems: "flex-start", gap: "14px", background: "#FFFFFF", padding: "18px 20px", borderRadius: "18px", border: "1px solid var(--border-light-subtle)", boxShadow: "0 4px 16px rgba(0,0,0,0.02)" }}>
+                  <div style={{ display: "flex", alignItems: "flex-start", gap: "14px", background: "#FFFFFF", padding: "18px 20px", borderRadius: "var(--radius-brand-18)", border: "1px solid var(--border-light-subtle)", boxShadow: "0 4px 16px rgba(0,0,0,0.02)" }}>
                     <div className="featured-icon featured-icon-brand" style={{ width: "42px", height: "42px", flexShrink: 0, marginTop: "2px" }}>
                       <ClockIcon size={20} color="var(--brand-primary)" />
                     </div>
@@ -334,7 +334,7 @@ export default function ContactPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary btn-md"
-                    style={{ gap: "8px", borderRadius: "9999px" }}
+                    style={{ gap: "8px", borderRadius: "var(--radius-pill)" }}
                   >
                     <MapPinIcon size={16} />
                     <span>Open in Maps ↗</span>
@@ -342,7 +342,7 @@ export default function ContactPage() {
                   <a
                     href="tel:+919916862442"
                     className="btn btn-secondary btn-md"
-                    style={{ gap: "8px", borderRadius: "9999px" }}
+                    style={{ gap: "8px", borderRadius: "var(--radius-pill)" }}
                   >
                     <PhoneIcon size={16} />
                     <span>Call +91 99168 62442</span>
@@ -376,7 +376,7 @@ export default function ContactPage() {
                     fontWeight: "700",
                     fontSize: "13px",
                     padding: "10px 20px",
-                    borderRadius: "9999px",
+                    borderRadius: "var(--radius-pill)",
                     boxShadow: "0 8px 24px rgba(0, 0, 0, 0.25)",
                     border: "1px solid rgba(255, 99, 100, 0.35)",
                     display: "inline-flex",
@@ -414,7 +414,7 @@ export default function ContactPage() {
                       backdropFilter: "blur(8px)",
                       WebkitBackdropFilter: "blur(8px)",
                       padding: "6px 14px",
-                      borderRadius: "9999px",
+                      borderRadius: "var(--radius-pill)",
                       fontSize: "11px",
                       fontWeight: "700",
                       letterSpacing: "0.02em",
@@ -432,7 +432,7 @@ export default function ContactPage() {
                         position: "absolute",
                         width: "24px",
                         height: "24px",
-                        borderRadius: "50%",
+                        borderRadius: "var(--radius-circle)",
                         backgroundColor: "rgba(255, 99, 100, 0.35)",
                         animation: "sonarPulse 2s infinite ease-out",
                       }}
@@ -441,7 +441,7 @@ export default function ContactPage() {
                       style={{
                         width: "12px",
                         height: "12px",
-                        borderRadius: "50%",
+                        borderRadius: "var(--radius-circle)",
                         backgroundColor: "#ff6364",
                         boxShadow: "0 0 12px #ff6364",
                         border: "2px solid #050505",

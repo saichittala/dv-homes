@@ -146,7 +146,7 @@ export default function LightboxModal({
               color: "rgba(255, 255, 255, 0.8)",
               padding: "4px 12px",
               background: "rgba(255, 255, 255, 0.12)",
-              borderRadius: "9999px",
+              borderRadius: "var(--radius-pill)",
               border: "1px solid rgba(255, 255, 255, 0.18)",
             }}
           >
@@ -171,7 +171,7 @@ export default function LightboxModal({
             gap: "8px",
             height: "40px",
             padding: "0 20px",
-            borderRadius: "9999px",
+            borderRadius: "var(--radius-pill)",
             background: "transparent",
             border: "1px solid rgba(255, 255, 255, 0.22)",
             color: "#FFFFFF",
@@ -215,7 +215,7 @@ export default function LightboxModal({
               zIndex: 1000000000,
               width: "56px",
               height: "56px",
-              borderRadius: "50%",
+              borderRadius: "var(--radius-circle)",
               background: "rgba(255, 255, 255, 0.12)",
               border: "1px solid rgba(255, 255, 255, 0.25)",
               display: "flex",
@@ -248,7 +248,7 @@ export default function LightboxModal({
               display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
-              borderRadius: "var(--radius-brand-24, 24px)",
+              borderRadius: "var(--radius-brand-24)",
               overflow: "hidden",
               boxShadow: "0 32px 96px rgba(0, 0, 0, 0.95)",
               border: "1px solid rgba(255, 255, 255, 0.18)",
@@ -262,7 +262,7 @@ export default function LightboxModal({
                 maxHeight: "72vh",
                 display: "block",
                 objectFit: "contain",
-                borderRadius: "var(--radius-brand-24, 24px)",
+                borderRadius: "var(--radius-brand-24)",
                 overflow: "hidden",
                 transition: "opacity 0.2s ease, transform 0.2s ease",
               }}
@@ -283,7 +283,7 @@ export default function LightboxModal({
               zIndex: 1000000000,
               width: "56px",
               height: "56px",
-              borderRadius: "50%",
+              borderRadius: "var(--radius-circle)",
               background: "rgba(255, 255, 255, 0.12)",
               border: "1px solid rgba(255, 255, 255, 0.25)",
               display: "flex",
@@ -332,10 +332,10 @@ export default function LightboxModal({
                     width: "88px",
                     height: "60px",
                     flexShrink: 0,
-                    borderRadius: "14px",
+                    borderRadius: "var(--radius-brand-14)",
                     overflow: "hidden",
                     border: isActive
-                      ? "2px solid var(--brand-primary, #7A9E00)"
+                      ? "2px solid var(--brand-primary, #ff6364)"
                       : "2px solid transparent",
                     opacity: isActive ? 1 : 0.45,
                     cursor: "pointer",

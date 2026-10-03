@@ -128,7 +128,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
               style={{
                 width: "48px",
                 height: "48px",
-                borderRadius: "50%",
+                borderRadius: "var(--radius-circle)",
                 background: "rgba(255, 99, 100, 0.15)",
                 display: "inline-flex",
                 alignItems: "center",
@@ -264,7 +264,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
                 style={{
                   width: "100%",
                   height: "46px",
-                  borderRadius: "14px",
+                  borderRadius: "var(--radius-brand-14)",
                   background: "linear-gradient(135deg, #ff6364 0%, #e55556 100%)",
                   color: "#FFFFFF",
                   fontWeight: 700,

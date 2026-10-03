@@ -51,7 +51,7 @@ export default function LocationsHubPage() {
       {/* Hero Section */}
       <section style={{ padding: "160px 32px 80px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: "880px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "var(--radius-pill)", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
             <MapPinIcon size={16} color="#ff6364" />
             <span>HYDERABAD SERVICE AREAS</span>
           </div>
@@ -74,7 +74,7 @@ export default function LocationsHubPage() {
             return (
               <div key={zone} style={{ marginBottom: "64px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "28px" }}>
-                  <div style={{ width: "4px", height: "24px", background: "#ff6364", borderRadius: "2px" }} />
+                  <div style={{ width: "4px", height: "24px", background: "#ff6364", borderRadius: "var(--radius-brand-2)" }} />
                   <h2 style={{ fontSize: "1.45rem", fontWeight: "700", color: "#FFFFFF", margin: 0 }}>
                     {zone}
                   </h2>
@@ -91,7 +91,7 @@ export default function LocationsHubPage() {
                         style={{
                           background: "transparent",
                           border: "1px solid rgba(255, 255, 255, 0.12)",
-                          borderRadius: "18px",
+                          borderRadius: "var(--radius-brand-18)",
                           padding: "32px 28px",
                           height: "100%",
                           transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
@@ -112,7 +112,7 @@ export default function LocationsHubPage() {
                           </p>
                           <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                             {loc.propertyTypes.slice(0, 2).map((pt, idx) => (
-                              <span key={idx} style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", color: "#d0d0d0", fontSize: "0.78rem", padding: "4px 10px", borderRadius: "6px" }}>
+                              <span key={idx} style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", color: "#d0d0d0", fontSize: "0.78rem", padding: "4px 10px", borderRadius: "var(--radius-brand-6)" }}>
                                 {pt}
                               </span>
                             ))}
@@ -154,13 +154,13 @@ export default function LocationsHubPage() {
               color: "#FFFFFF",
               fontWeight: "700",
               padding: "16px 36px",
-              borderRadius: "9999px",
+              borderRadius: "var(--radius-pill)",
               textDecoration: "none",
               fontSize: "0.95rem"
             }}
           >
             <span>Book a Design Consultation</span>
-            <ChevronRightIcon size={18} color="#000000" />
+            <ChevronRightIcon size={18} color="#FFFFFF" />
           </Link>
         </div>
       </section>

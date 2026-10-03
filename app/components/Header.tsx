@@ -382,7 +382,7 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
                         fontWeight: "600",
                         fontFamily: "var(--font-heading)",
                         letterSpacing: "-0.01em",
-                        color: isActive ? "var(--brand-primary, #7A9E00)" : "#FFFFFF",
+                        color: isActive ? "var(--brand-primary, #ff6364)" : "#FFFFFF",
                         textDecoration: "none",
                         padding: "18px 0",
                         borderBottom: "1px solid rgba(255, 255, 255, 0.15)",
@@ -392,7 +392,7 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
                       <span>{link.name}</span>
                       <ChevronRightIcon
                         size={20}
-                        color={isActive ? "var(--brand-primary, #7A9E00)" : "#FFFFFF"}
+                        color={isActive ? "var(--brand-primary, #ff6364)" : "#FFFFFF"}
                         strokeWidth={2}
                       />
                     </Link>
@@ -433,7 +433,7 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
                   fontWeight: "500",
                   padding: "16px",
                   borderRadius: "14px",
-                  background: "#7A9E00",
+                  background: "var(--brand-primary, #ff6364)",
                   color: "#FFFFFF",
                   boxShadow: "none",
                 }}
@@ -463,7 +463,7 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
                     textDecoration: "none",
                   }}
                 >
-                  <PhoneIcon size={16} color="var(--brand-primary, #7A9E00)" />
+                  <PhoneIcon size={16} color="var(--brand-primary, #ff6364)" />
                   <span>+91 99168 62442</span>
                 </a>
 
@@ -500,7 +500,13 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
             <div className="header-breadcrumb-links">
               {breadcrumbs.map((crumb, idx) => (
                 <React.Fragment key={idx}>
-                  {idx > 0 && <span className="header-breadcrumb-sep">/</span>}
+                  {idx > 0 && (
+                    <ChevronRightIcon
+                      size={14}
+                      color="rgba(255, 255, 255, 0.4)"
+                      className="header-breadcrumb-sep"
+                    />
+                  )}
                   {crumb.href ? (
                     <Link href={crumb.href} className="header-breadcrumb-link">
                       {crumb.label}

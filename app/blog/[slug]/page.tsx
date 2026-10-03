@@ -145,7 +145,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
       <section style={{ padding: "100px 24px 30px 24px" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <div style={{ display: "flex", gap: "10px", alignItems: "center", marginBottom: "14px", flexWrap: "wrap" }}>
-            <span style={{ background: "rgba(255, 99, 100, 0.15)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "6px", padding: "4px 10px", fontSize: "0.78rem", fontWeight: "600" }}>
+            <span style={{ background: "rgba(255, 99, 100, 0.15)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "var(--radius-brand-6)", padding: "4px 10px", fontSize: "0.78rem", fontWeight: "600" }}>
               {post.category}
             </span>
             <span style={{ fontSize: "0.82rem", color: "#a0a0a0" }}>
@@ -162,7 +162,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           </p>
 
           <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingTop: "14px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-            <div style={{ width: "38px", height: "38px", borderRadius: "50%", background: "#ff6364", color: "#FFFFFF", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1rem" }}>
+            <div style={{ width: "38px", height: "38px", borderRadius: "var(--radius-circle)", background: "#ff6364", color: "#FFFFFF", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1rem" }}>
               AP
             </div>
             <div>
@@ -181,7 +181,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
       {post.featuredImage && (
         <section style={{ padding: "20px 24px" }}>
           <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-            <div style={{ borderRadius: "18px", overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)", maxHeight: "440px" }}>
+            <div style={{ borderRadius: "var(--radius-brand-18)", overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)", maxHeight: "440px" }}>
               <img
                 src={post.featuredImage}
                 alt={post.title}
@@ -198,7 +198,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           
           {/* Table of Contents */}
           {tableOfContents.length > 0 && (
-            <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "16px", padding: "20px 24px", marginBottom: "36px" }}>
+            <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "var(--radius-brand-16)", padding: "20px 24px", marginBottom: "36px" }}>
               <h2 style={{ fontSize: "1.1rem", fontWeight: "700", color: "#ff6364", marginBottom: "12px" }}>
                 Table of Contents
               </h2>
@@ -233,7 +233,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 {post.faq.map((f, idx) => (
-                  <div key={idx} style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", padding: "18px 20px", borderRadius: "12px" }}>
+                  <div key={idx} style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", padding: "18px 20px", borderRadius: "var(--radius-brand-12)" }}>
                     <h3 style={{ fontSize: "1.05rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "6px" }}>
                       {f.question}
                     </h3>
@@ -247,7 +247,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           )}
 
           {/* Consultation Banner inside Article */}
-          <div style={{ marginTop: "48px", background: "transparent", border: "1px solid rgba(255,99,100,0.3)", borderRadius: "18px", padding: "32px 28px", textAlign: "center" }}>
+          <div style={{ marginTop: "48px", background: "transparent", border: "1px solid rgba(255,99,100,0.3)", borderRadius: "var(--radius-brand-18)", padding: "32px 28px", textAlign: "center" }}>
             <h3 style={{ fontSize: "1.35rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "10px" }}>
               Planning Your Home Interiors in Hyderabad?
             </h3>
@@ -264,7 +264,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                 color: "#FFFFFF",
                 fontWeight: "700",
                 padding: "12px 28px",
-                borderRadius: "9999px",
+                borderRadius: "var(--radius-pill)",
                 textDecoration: "none",
                 fontSize: "0.9rem"
               }}
@@ -283,7 +283,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px" }}>
                 {relatedPosts.map((rel) => (
                   <Link key={rel.id} href={`/blog/${rel.slug}`} style={{ textDecoration: "none" }}>
-                    <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "14px", padding: "18px", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                    <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "var(--radius-brand-14)", padding: "18px", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                       <div>
                         <div style={{ fontSize: "0.75rem", color: "#ff6364", fontWeight: "600", marginBottom: "4px" }}>{rel.category}</div>
                         <h3 style={{ fontSize: "1rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "6px", lineHeight: "1.3" }}>{rel.title}</h3>

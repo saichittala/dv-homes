@@ -50,7 +50,7 @@ export default function BlogListingPage() {
       {/* Hero */}
       <section style={{ padding: "160px 32px 80px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: "880px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "var(--radius-pill)", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "20px" }}>
             <SparklesIcon size={16} color="#ff6364" />
             <span>DESIGN INSIGHTS &amp; GUIDES</span>
           </div>
@@ -71,7 +71,7 @@ export default function BlogListingPage() {
               const readingTime = getReadingTime(post.content || "");
               return (
                 <Link key={post.id} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
-                  <article style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "20px", overflow: "hidden", height: "100%", display: "flex", flexDirection: "column", transition: "all 0.3s ease" }}>
+                  <article style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "var(--radius-brand-20)", overflow: "hidden", height: "100%", display: "flex", flexDirection: "column", transition: "all 0.3s ease" }}>
                     <div style={{ position: "relative", height: "220px", overflow: "hidden" }}>
                       <img
                         src={post.featuredImage || "/assets/main_images/luxury-living-room-with-classic-white-sofa-sofa-interior-design.webp"}
@@ -79,7 +79,7 @@ export default function BlogListingPage() {
                         style={{ width: "100%", height: "100%", objectFit: "cover" }}
                         loading="lazy"
                       />
-                      <div style={{ position: "absolute", top: "16px", left: "16px", background: "rgba(0,0,0,0.75)", backdropFilter: "blur(8px)", color: "#ff6364", padding: "6px 12px", borderRadius: "6px", fontSize: "0.78rem", fontWeight: "600" }}>
+                      <div style={{ position: "absolute", top: "16px", left: "16px", background: "rgba(0,0,0,0.75)", backdropFilter: "blur(8px)", color: "#ff6364", padding: "6px 12px", borderRadius: "var(--radius-brand-6)", fontSize: "0.78rem", fontWeight: "600" }}>
                         {post.category}
                       </div>
                     </div>

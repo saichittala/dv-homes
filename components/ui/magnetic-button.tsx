@@ -55,7 +55,7 @@ export const MagneticButton = ({
       className={`inline-block cursor-pointer transition-colors duration-150 ${className}`}
       style={{
         display: "inline-block",
-        borderRadius: "9999px",
+        borderRadius: "var(--radius-pill)",
         borderColor: hasMoved && showBorder ? "var(--brand-primary, #c3f80b)" : "transparent",
         backgroundColor: hasMoved && showBorder
           ? "rgba(195, 248, 11, 0.12)"

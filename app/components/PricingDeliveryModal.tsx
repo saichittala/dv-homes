@@ -139,7 +139,7 @@ export default function PricingDeliveryModal({
                 right: "24px",
                 width: "40px",
                 height: "40px",
-                borderRadius: "50%",
+                borderRadius: "var(--radius-circle)",
                 background: "transparent",
                 border: "1px solid rgba(255, 255, 255, 0.22)",
                 display: "flex",
@@ -180,7 +180,7 @@ export default function PricingDeliveryModal({
                 maxWidth: "380px",
                 background: "rgba(255, 255, 255, 0.04)",
                 border: "1px solid rgba(255, 255, 255, 0.10)",
-                borderRadius: "12px",
+                borderRadius: "var(--radius-brand-12)",
                 padding: "4px",
                 gap: "4px",
               }}
@@ -191,14 +191,14 @@ export default function PricingDeliveryModal({
                 style={{
                   flex: 1,
                   padding: "10px 18px",
-                  borderRadius: "8px",
+                  borderRadius: "var(--radius-sm)",
                   fontSize: "14px",
                   fontWeight: "600",
                   cursor: "pointer",
                   transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
-                  border: activeTab === "pricing" ? "1px solid var(--brand-border, rgba(122, 158, 0, 0.4))" : "1px solid transparent",
-                  background: activeTab === "pricing" ? "rgba(122, 158, 0, 0.18)" : "transparent",
-                  color: activeTab === "pricing" ? "#7A9E00" : "rgba(255, 255, 255, 0.65)",
+                  border: activeTab === "pricing" ? "1px solid var(--brand-border, rgba(255, 99, 100, 0.4))" : "1px solid transparent",
+                  background: activeTab === "pricing" ? "rgba(255, 99, 100, 0.18)" : "transparent",
+                  color: activeTab === "pricing" ? "#ff6364" : "rgba(255, 255, 255, 0.65)",
                   textAlign: "center",
                 }}
               >
@@ -210,14 +210,14 @@ export default function PricingDeliveryModal({
                 style={{
                   flex: 1,
                   padding: "10px 18px",
-                  borderRadius: "8px",
+                  borderRadius: "var(--radius-sm)",
                   fontSize: "14px",
                   fontWeight: "600",
                   cursor: "pointer",
                   transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
-                  border: activeTab === "delivery" ? "1px solid var(--brand-border, rgba(122, 158, 0, 0.4))" : "1px solid transparent",
-                  background: activeTab === "delivery" ? "rgba(122, 158, 0, 0.18)" : "transparent",
-                  color: activeTab === "delivery" ? "#7A9E00" : "rgba(255, 255, 255, 0.65)",
+                  border: activeTab === "delivery" ? "1px solid var(--brand-border, rgba(255, 99, 100, 0.4))" : "1px solid transparent",
+                  background: activeTab === "delivery" ? "rgba(255, 99, 100, 0.18)" : "transparent",
+                  color: activeTab === "delivery" ? "#ff6364" : "rgba(255, 255, 255, 0.65)",
                   textAlign: "center",
                 }}
               >
@@ -242,7 +242,7 @@ export default function PricingDeliveryModal({
                       style={{
                         background: "transparent",
                         border: "1px solid rgba(255, 255, 255, 0.12)",
-                        borderRadius: "16px",
+                        borderRadius: "var(--radius-brand-16)",
                         padding: "24px 20px",
                         display: "flex",
                         flexDirection: "column",
@@ -256,13 +256,13 @@ export default function PricingDeliveryModal({
                         <div
                           style={{
                             display: "inline-block",
-                            background: "rgba(122, 158, 0, 0.15)",
-                            border: "1px solid rgba(122, 158, 0, 0.40)",
-                            color: "#7A9E00",
+                            background: "rgba(255, 99, 100, 0.15)",
+                            border: "1px solid rgba(255, 99, 100, 0.40)",
+                            color: "#ff6364",
                             fontSize: "14px",
                             fontWeight: "700",
                             padding: "3px 12px",
-                            borderRadius: "6px",
+                            borderRadius: "var(--radius-brand-6)",
                             marginBottom: "14px",
                           }}
                         >
@@ -309,8 +309,8 @@ export default function PricingDeliveryModal({
                                 style={{
                                   width: "6px",
                                   height: "6px",
-                                  borderRadius: "50%",
-                                  background: "#7A9E00",
+                                  borderRadius: "var(--radius-circle)",
+                                  background: "#ff6364",
                                   flexShrink: 0,
                                 }}
                               />
@@ -325,7 +325,7 @@ export default function PricingDeliveryModal({
                         style={{
                           background: "#000000",
                           border: "1px solid rgba(255, 255, 255, 0.08)",
-                          borderRadius: "6px",
+                          borderRadius: "var(--radius-brand-6)",
                           padding: "8px 12px",
                           textAlign: "center",
                           fontSize: "14px",
@@ -360,7 +360,7 @@ export default function PricingDeliveryModal({
                     style={{
                       width: "100%",
                       justifyContent: "center",
-                      background: "#7A9E00",
+                      background: "#ff6364",
                       color: "#FFFFFF",
                       fontWeight: "500",
                       boxShadow: "none",
@@ -390,14 +390,14 @@ export default function PricingDeliveryModal({
                   style={{
                     background: "transparent",
                     border: "1px solid rgba(255, 255, 255, 0.12)",
-                    borderRadius: "16px",
+                    borderRadius: "var(--radius-brand-16)",
                     padding: "36px 32px",
                     marginBottom: "32px",
                     textAlign: "left",
                   }}
                 >
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-                    <ClockIcon size={24} color="#7A9E00" />
+                    <ClockIcon size={24} color="#ff6364" />
                     <span style={{ fontSize: "18px", fontWeight: "700", color: "#FFFFFF" }}>
                       Guaranteed 21-Day Factory-to-Site Handover
                     </span>
@@ -434,7 +434,7 @@ export default function PricingDeliveryModal({
                     className="btn btn-primary btn-lg"
                     style={{
                       padding: "14px 32px",
-                      background: "#7A9E00",
+                      background: "#ff6364",
                       color: "#FFFFFF",
                       fontWeight: "500",
                       boxShadow: "none",

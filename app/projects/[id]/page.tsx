@@ -98,7 +98,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
       {/* Hero Header */}
       <section style={{ padding: "140px 24px 30px 24px" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "9999px", padding: "6px 16px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "16px" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "var(--radius-pill)", padding: "6px 16px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "16px" }}>
             <MapPinIcon size={16} color="#ff6364" />
             <span>{project.location.toUpperCase()}</span>
           </div>
@@ -107,7 +107,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
             {project.title}
           </h1>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "16px", background: "transparent", padding: "20px", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.12)" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "16px", background: "transparent", padding: "20px", borderRadius: "var(--radius-brand-16)", border: "1px solid rgba(255,255,255,0.12)" }}>
             <div>
               <div style={{ fontSize: "0.75rem", color: "#a0a0a0", textTransform: "uppercase" }}>Project Type</div>
               <div style={{ fontSize: "0.95rem", fontWeight: "600", color: "#FFFFFF", marginTop: "4px" }}>{project.projectType}</div>
@@ -131,7 +131,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
       {/* Main Image Showcase */}
       <section style={{ padding: "20px 24px" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <div style={{ borderRadius: "20px", overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)" }}>
+          <div style={{ borderRadius: "var(--radius-brand-20)", overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)" }}>
             <img
               src={project.mainImage}
               alt={`${project.title} in ${project.location} - Main Interior View by DV Homes`}
@@ -156,7 +156,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
               <h3 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "14px" }}>
                 Project Challenge &amp; Solution
               </h3>
-              <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", padding: "20px 22px", borderRadius: "14px", marginBottom: "20px" }}>
+              <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", padding: "20px 22px", borderRadius: "var(--radius-brand-14)", marginBottom: "20px" }}>
                 <div style={{ fontWeight: "600", color: "#ff6364", marginBottom: "6px" }}>Challenge:</div>
                 <p style={{ fontSize: "0.92rem", color: "#e0e0e0", margin: "0 0 12px 0", lineHeight: "1.5" }}>{project.challenge}</p>
                 <div style={{ fontWeight: "600", color: "#ff6364", marginBottom: "6px" }}>DV Homes Solution:</div>
@@ -170,7 +170,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "28px" }}>
                 {project.materials.map((mat, idx) => (
-                  <div key={idx} style={{ display: "flex", alignItems: "center", gap: "10px", background: "transparent", padding: "10px 14px", borderRadius: "10px", border: "1px solid rgba(255,255,255,0.12)" }}>
+                  <div key={idx} style={{ display: "flex", alignItems: "center", gap: "10px", background: "transparent", padding: "10px 14px", borderRadius: "var(--radius-brand-10)", border: "1px solid rgba(255,255,255,0.12)" }}>
                     <CheckIcon size={16} color="#ff6364" />
                     <span style={{ fontSize: "0.9rem", color: "#e0e0e0" }}>{mat}</span>
                   </div>
@@ -199,7 +199,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "20px" }}>
             {project.gallery.map((imgUrl, idx) => (
-              <div key={idx} style={{ borderRadius: "14px", overflow: "hidden", height: "220px", border: "1px solid rgba(255,255,255,0.12)" }}>
+              <div key={idx} style={{ borderRadius: "var(--radius-brand-14)", overflow: "hidden", height: "220px", border: "1px solid rgba(255,255,255,0.12)" }}>
                 <img
                   src={imgUrl}
                   alt={`${project.title} ${project.location} Interior Shot ${idx + 1} - DV Homes`}
@@ -230,7 +230,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 color: "#FFFFFF",
                 fontWeight: "700",
                 padding: "14px 32px",
-                borderRadius: "9999px",
+                borderRadius: "var(--radius-pill)",
                 textDecoration: "none",
                 fontSize: "0.95rem"
               }}
@@ -245,7 +245,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 color: "#FFFFFF",
                 fontWeight: "600",
                 padding: "14px 24px",
-                borderRadius: "9999px",
+                borderRadius: "var(--radius-pill)",
                 textDecoration: "none",
                 border: "1px solid rgba(255,255,255,0.15)",
                 fontSize: "0.95rem"

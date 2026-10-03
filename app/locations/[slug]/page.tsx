@@ -118,7 +118,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
       {/* Hero */}
       <section style={{ position: "relative", padding: "160px 32px 90px 32px", overflow: "hidden" }}>
         <div style={{ maxWidth: "1040px", margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "9999px", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "24px" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255, 99, 100, 0.12)", color: "#ff6364", border: "1px solid rgba(255, 99, 100, 0.3)", borderRadius: "var(--radius-pill)", padding: "8px 20px", fontSize: "0.85rem", fontWeight: "600", marginBottom: "24px" }}>
             <MapPinIcon size={16} color="#ff6364" />
             <span>INTERIOR DESIGN IN {location.name.toUpperCase()}, HYDERABAD</span>
           </div>
@@ -142,7 +142,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                 color: "#FFFFFF",
                 fontWeight: "700",
                 padding: "16px 36px",
-                borderRadius: "9999px",
+                borderRadius: "var(--radius-pill)",
                 textDecoration: "none",
                 fontSize: "0.98rem"
               }}
@@ -161,7 +161,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                 color: "#FFFFFF",
                 fontWeight: "600",
                 padding: "16px 28px",
-                borderRadius: "9999px",
+                borderRadius: "var(--radius-pill)",
                 textDecoration: "none",
                 border: "1px solid rgba(255, 255, 255, 0.18)",
                 fontSize: "0.98rem"
@@ -193,7 +193,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "36px" }}>
                 {location.propertyTypes.map((pt, idx) => (
-                  <div key={idx} style={{ display: "flex", alignItems: "center", gap: "12px", background: "transparent", padding: "14px 18px", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.12)" }}>
+                  <div key={idx} style={{ display: "flex", alignItems: "center", gap: "12px", background: "transparent", padding: "14px 18px", borderRadius: "var(--radius-brand-12)", border: "1px solid rgba(255,255,255,0.12)" }}>
                     <CheckIcon size={18} color="#ff6364" />
                     <span style={{ fontSize: "0.95rem", color: "#e0e0e0", fontWeight: "500" }}>{pt}</span>
                   </div>
@@ -215,7 +215,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
             </div>
 
             {/* Right Column: Key Highlights Box */}
-            <div style={{ background: "transparent", border: "1px solid rgba(255, 255, 255, 0.12)", borderRadius: "24px", padding: "36px 32px" }}>
+            <div style={{ background: "transparent", border: "1px solid rgba(255, 255, 255, 0.12)", borderRadius: "var(--radius-brand-24)", padding: "36px 32px" }}>
               <h3 style={{ fontSize: "1.35rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "24px" }}>
                 Why DV Homes in {location.name}?
               </h3>
@@ -223,7 +223,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
               <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
                 {location.keyHighlights.map((kh, idx) => (
                   <div key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "14px" }}>
-                    <div style={{ background: "rgba(255, 99, 100, 0.15)", borderRadius: "10px", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    <div style={{ background: "rgba(255, 99, 100, 0.15)", borderRadius: "var(--radius-brand-10)", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                       <SparklesIcon size={18} color="#ff6364" />
                     </div>
                     <span style={{ fontSize: "0.95rem", color: "#e0e0e0", lineHeight: "1.6" }}>{kh}</span>
@@ -245,7 +245,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                     color: "#FFFFFF",
                     fontWeight: "700",
                     padding: "14px",
-                    borderRadius: "12px",
+                    borderRadius: "var(--radius-brand-12)",
                     textDecoration: "none",
                     fontSize: "0.95rem"
                   }}
@@ -271,7 +271,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
           <div className="grid-3x2-equal">
             {servicesData.slice(0, 6).map((srv) => (
               <Link key={srv.id} href={`/services/${srv.id}`} style={{ textDecoration: "none" }}>
-                <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "18px", padding: "28px 24px", height: "100%", transition: "all 0.3s ease", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                <div style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "var(--radius-brand-18)", padding: "28px 24px", height: "100%", transition: "all 0.3s ease", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                   <div>
                     <h3 style={{ fontSize: "1.15rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "10px", lineHeight: "1.3" }}>
                       {srv.title}
@@ -301,7 +301,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
 
             <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
               {location.faqs.map((faq, idx) => (
-                <div key={idx} style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "18px", padding: "28px 32px" }}>
+                <div key={idx} style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "var(--radius-brand-18)", padding: "28px 32px" }}>
                   <h3 style={{ fontSize: "1.15rem", fontWeight: "600", color: "#FFFFFF", marginBottom: "12px" }}>
                     {faq.question}
                   </h3>
@@ -332,7 +332,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                     border: "1px solid rgba(255,255,255,0.14)",
                     color: "#ff6364",
                     padding: "8px 20px",
-                    borderRadius: "9999px",
+                    borderRadius: "var(--radius-pill)",
                     textDecoration: "none",
                     fontSize: "0.88rem",
                     fontWeight: "500"

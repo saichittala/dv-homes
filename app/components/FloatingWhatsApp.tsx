@@ -32,7 +32,7 @@ export default function FloatingWhatsApp() {
           WebkitBackdropFilter: "blur(12px)",
           border: "1px solid rgba(37, 211, 102, 0.4)",
           padding: "8px 16px",
-          borderRadius: "9999px",
+          borderRadius: "var(--radius-pill)",
           color: "#FFFFFF",
           fontSize: "13px",
           fontWeight: "600",
@@ -41,7 +41,7 @@ export default function FloatingWhatsApp() {
         }}
         className="floating-whatsapp-tooltip"
       >
-        <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#25D366", display: "inline-block", boxShadow: "0 0 10px #25D366" }} />
+        <span style={{ width: "8px", height: "8px", borderRadius: "var(--radius-circle)", background: "#25D366", display: "inline-block", boxShadow: "0 0 10px #25D366" }} />
         <span>Chat with Architect • Online Now</span>
       </a>
 
@@ -54,7 +54,7 @@ export default function FloatingWhatsApp() {
         style={{
           width: "60px",
           height: "60px",
-          borderRadius: "50%",
+          borderRadius: "var(--radius-circle)",
           backgroundColor: "#25D366",
           display: "flex",
           alignItems: "center",

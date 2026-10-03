@@ -119,7 +119,7 @@ export default function TimedLeadModal() {
           padding: "24px 22px",
           background: "#0a0b0d",
           border: "1px solid rgba(255, 255, 255, 0.14)",
-          boxShadow: "0 24px 64px rgba(0,0,0,0.95), 0 0 32px rgba(80, 255, 153, 0.08)",
+          boxShadow: "0 24px 64px rgba(0,0,0,0.95), 0 0 32px rgba(255, 99, 100, 0.18)",
         }}
       >
         <button className="modal-close-btn" onClick={handleClose} aria-label="Close Modal">
@@ -133,7 +133,7 @@ export default function TimedLeadModal() {
               style={{
                 width: "48px",
                 height: "48px",
-                borderRadius: "50%",
+                borderRadius: "var(--radius-circle)",
                 background: "rgba(255, 99, 100, 0.15)",
                 display: "inline-flex",
                 alignItems: "center",
@@ -269,7 +269,7 @@ export default function TimedLeadModal() {
                 style={{
                   width: "100%",
                   height: "46px",
-                  borderRadius: "14px",
+                  borderRadius: "var(--radius-brand-14)",
                   background: "linear-gradient(135deg, #ff6364 0%, #e55556 100%)",
                   color: "#FFFFFF",
                   fontWeight: 700,

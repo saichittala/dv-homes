@@ -122,6 +122,7 @@ const HOME_BUDGET_OPTIONS: ChoiceOption[] = [
 ];
 
 const COMMUNITY_PROJECTS = [
+  { name: "Rainbow Vistas Rock Garden", logo: "/assets/companies_trusted/rainbow-vistas.png" },
   { name: "Vasavi Nandanavanam Suchitra", logo: "" },
   { name: "ASBL Springs Pocharam", logo: "/assets/companies_trusted/asbl.svg" },
   { name: "ASBL Springs", logo: "/assets/companies_trusted/asbl.svg" },
@@ -514,14 +515,14 @@ export default function HomePage() {
                   <button
                     onClick={() => setConsultationOpen(true)}
                     className="btn btn-primary btn-lg"
-                    style={{ borderRadius: "9999px", boxShadow: "none" }}
+                    style={{ borderRadius: "var(--radius-pill)", boxShadow: "none" }}
                   >
                     <span>Get a Free Quote</span>
                   </button>
                   <Link
                     href="/about"
                     className="btn btn-secondary-glass btn-lg"
-                    style={{ borderRadius: "9999px", border: "1px solid rgba(255, 255, 255, 0.2)" }}
+                    style={{ borderRadius: "var(--radius-pill)", border: "1px solid rgba(255, 255, 255, 0.2)" }}
                   >
                     <span>About Us ↗</span>
                   </Link>
@@ -541,7 +542,7 @@ export default function HomePage() {
                     backdropFilter: "blur(16px)",
                     WebkitBackdropFilter: "blur(16px)",
                     border: "1px solid rgba(255, 255, 255, 0.15)",
-                    borderRadius: "16px",
+                    borderRadius: "var(--radius-brand-16)",
                     padding: "12px 18px",
                     display: "flex",
                     alignItems: "center",
@@ -549,7 +550,7 @@ export default function HomePage() {
                     boxShadow: "0 12px 30px rgba(0, 0, 0, 0.4)",
                   }}
                 >
-                  <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "var(--brand-primary)", display: "flex", alignItems: "center", justifyContent: "center", color: "#FFFFFF", fontWeight: "800", fontSize: "14px" }}>
+                  <div style={{ width: "36px", height: "36px", borderRadius: "var(--radius-circle)", background: "var(--brand-primary)", display: "flex", alignItems: "center", justifyContent: "center", color: "#FFFFFF", fontWeight: "800", fontSize: "14px" }}>
                     ★
                   </div>
                   <div>
@@ -559,7 +560,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Main Luxury Interior Backdrop Card */}
-                <div className="who-we-are-factory-card" style={{ borderRadius: "24px", boxShadow: "0 20px 50px rgba(0, 0, 0, 0.5)" }}>
+                <div className="who-we-are-factory-card" style={{ borderRadius: "var(--radius-brand-24)", boxShadow: "0 20px 50px rgba(0, 0, 0, 0.5)" }}>
                   <ParallaxImage
                     src="/assets/main_images/luxury-living-room-interior-design-opulent-space-with-modern-furniture-warm-lighting.webp"
                     alt="DV HOMES Luxury Design & Execution"
@@ -573,7 +574,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Overlaid Finished Showroom / Residence Card */}
-                <div className="who-we-are-showroom-card" style={{ borderRadius: "20px", boxShadow: "0 20px 50px rgba(122, 158, 0, 0.2)", border: "1px solid rgba(255, 255, 255, 0.15)" }}>
+                <div className="who-we-are-showroom-card" style={{ borderRadius: "var(--radius-brand-20)", boxShadow: "0 20px 50px rgba(122, 158, 0, 0.2)", border: "1px solid rgba(255, 255, 255, 0.15)" }}>
                   <ParallaxImage
                     src="/assets/main_images/bedroom-interior-design-minimal-aesthetic-3d-rendered.webp"
                     alt="DV HOMES Completed Project"
@@ -602,7 +603,7 @@ export default function HomePage() {
             <div className="why-parthu-items-grid">
               {/* Item 1 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <CompassIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
@@ -612,7 +613,7 @@ export default function HomePage() {
 
               {/* Item 2 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <ShieldCheckIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
@@ -622,7 +623,7 @@ export default function HomePage() {
 
               {/* Item 3 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <DiamondIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
@@ -632,7 +633,7 @@ export default function HomePage() {
 
               {/* Item 4 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <RulerIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
@@ -642,7 +643,7 @@ export default function HomePage() {
 
               {/* Item 5 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <HomeIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
@@ -652,7 +653,7 @@ export default function HomePage() {
 
               {/* Item 6 */}
               <div className="why-parthu-item" style={{ textAlign: "center", alignItems: "center", display: "flex", flexDirection: "column", padding: "16px 8px" }}>
-                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "14px", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
+                <div className="why-parthu-item-icon" style={{ background: "rgba(255, 99, 100, 0.08)", border: "1px solid rgba(255, 99, 100, 0.20)", color: "var(--brand-primary-lightmode, #ff6364)", borderRadius: "var(--radius-brand-14)", width: "52px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
                   <ToolIcon size={26} color="var(--brand-primary-lightmode, #ff6364)" strokeWidth={2} />
                 </div>
                 <div className="why-parthu-item-label" style={{ fontWeight: "600", fontSize: "1rem", color: "var(--text-dark-primary)", lineHeight: "1.35", textAlign: "center" }}>
@@ -734,7 +735,7 @@ export default function HomePage() {
                         className="featured-service-arrow-btn"
                         aria-label={`Explore ${service.title}`}
                       >
-                        <ArrowRightIcon size={18} color="#060606" />
+                        <ArrowRightIcon size={18} color="#FFFFFF" />
                       </div>
                     </div>
                   </Link>
@@ -923,14 +924,14 @@ export default function HomePage() {
                       “A Smooth and Professional Experience”
                     </h3>
                     <p className="testimonial-text">
-                      “DV HOMES understood our requirements clearly and provided customised solutions for our home. The overall design and execution experience was smooth and professional.”
+                      “DV HOMES understood our requirements clearly and provided customised solutions for our home at My Home Bhooja. The overall design, 3D planning, and execution experience was smooth and professional.”
                     </p>
                   </div>
                   <div className="testimonial-author-block">
-                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #ff6364)", color: "#FFFFFF" }}>RC</div>
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #ff6364)", color: "#FFFFFF" }}>RR</div>
                     <div>
-                      <div className="testimonial-author-name">Residential Interior Client</div>
-                      <div className="testimonial-author-role">Hyderabad</div>
+                      <div className="testimonial-author-name">Rajeshwar Rao &amp; Family</div>
+                      <div className="testimonial-author-role">My Home Bhooja, HITEC City, Hyderabad</div>
                     </div>
                   </div>
                 </div>
@@ -946,14 +947,14 @@ export default function HomePage() {
                       “Beautiful and Functional Design”
                     </h3>
                     <p className="testimonial-text">
-                      “We wanted an interior that looked modern but was also practical for everyday use. The team helped us achieve a beautiful and functional home.”
+                      “We wanted an interior that looked modern but was also practical for everyday use. The team at DV HOMES helped us achieve a beautiful and functional home at Lansum Etania.”
                     </p>
                   </div>
                   <div className="testimonial-author-block">
-                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #ff6364)", color: "#FFFFFF" }}>HO</div>
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #ff6364)", color: "#FFFFFF" }}>AR</div>
                     <div>
-                      <div className="testimonial-author-name">Homeowner</div>
-                      <div className="testimonial-author-role">Hyderabad</div>
+                      <div className="testimonial-author-name">Dr. Ananya Reddy</div>
+                      <div className="testimonial-author-role">Lansum Etania, Gachibowli, Hyderabad</div>
                     </div>
                   </div>
                 </div>
@@ -969,14 +970,14 @@ export default function HomePage() {
                       “Attention to Every Detail”
                     </h3>
                     <p className="testimonial-text">
-                      “From design discussions to the final execution, the team paid attention to our requirements and helped us create a space that feels personalised.”
+                      “From design discussions to the final execution, the team paid attention to our requirements and helped us create a space that feels truly personalised and luxurious.”
                     </p>
                   </div>
                   <div className="testimonial-author-block">
-                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #ff6364)", color: "#FFFFFF" }}>RC</div>
+                    <div className="testimonial-avatar-circle" style={{ backgroundColor: "var(--brand-primary-lightmode, #ff6364)", color: "#FFFFFF" }}>VV</div>
                     <div>
-                      <div className="testimonial-author-name">Residential Client</div>
-                      <div className="testimonial-author-role">Hyderabad</div>
+                      <div className="testimonial-author-name">Vikramaditya Varma</div>
+                      <div className="testimonial-author-role">Jayabheri Silicon County, Hyderabad</div>
                     </div>
                   </div>
                 </div>

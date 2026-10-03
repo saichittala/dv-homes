@@ -211,7 +211,7 @@ export default function ScrollBeforeAfterSection({ onOpenConsultation }: ScrollB
               fontWeight: "700",
               fontSize: "14px",
               padding: "8px 18px",
-              borderRadius: "9999px",
+              borderRadius: "var(--radius-pill)",
               boxShadow: "none",
             }}
           >
@@ -232,7 +232,7 @@ export default function ScrollBeforeAfterSection({ onOpenConsultation }: ScrollB
               fontWeight: "700",
               fontSize: "14px",
               padding: "8px 18px",
-              borderRadius: "9999px",
+              borderRadius: "var(--radius-pill)",
               border: "1px solid rgba(255,255,255,0.2)",
             }}
           >
@@ -247,7 +247,7 @@ export default function ScrollBeforeAfterSection({ onOpenConsultation }: ScrollB
               bottom: 0,
               left: `${currentPos}%`,
               width: "2px",
-              background: "#7A9E00",
+              background: "var(--brand-primary, #ff6364)",
               zIndex: 10,
               transform: "translateX(-50%)",
               boxShadow: "none",
@@ -261,8 +261,8 @@ export default function ScrollBeforeAfterSection({ onOpenConsultation }: ScrollB
                 transform: "translate(-50%, -50%)",
                 width: "44px",
                 height: "44px",
-                borderRadius: "9999px",
-                background: "#7A9E00",
+                borderRadius: "var(--radius-pill)",
+                background: "var(--brand-primary, #ff6364)",
                 border: "2px solid #FFFFFF",
                 boxShadow: "none",
                 display: "flex",

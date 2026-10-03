@@ -120,7 +120,13 @@ export const ClockIcon = wrapIcon(UntitledClockIcon);
 export const CalendarIcon = wrapIcon(UntitledCalendarIcon);
 export const LockIcon = wrapIcon(Lock01Icon);
 export const XCloseIcon = wrapIcon(UntitledXCloseIcon);
-export const MenuIcon = wrapIcon(Menu01Icon);
+export function MenuIcon({ size = 24, color = "currentColor", strokeWidth = 2, className, style, ...props }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} style={style} {...props}>
+      <path d="M3 8.5H21M3 15.5H21" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
 export const ChevronDownIcon = wrapIcon(UntitledChevronDownIcon);
 export const ChevronRightIcon = wrapIcon(UntitledChevronRightIcon);
 export const ChevronLeftIcon = wrapIcon(UntitledChevronLeftIcon);
@@ -132,7 +138,7 @@ export function CheckCircleFilledIcon({ size = 24, className, style, ...props }:
     <SolidCheckCircleIcon
       width={size}
       height={size}
-      color="var(--brand-primary, #7A9E00)"
+      color="var(--brand-primary, #ff6364)"
       className={className}
       style={style}
       {...props}

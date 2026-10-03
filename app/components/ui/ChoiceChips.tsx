@@ -100,7 +100,7 @@ export default function ChoiceChips({
                 justifyContent: "center",
                 height: compact ? "32px" : "40px",
                 padding: compact ? "0 12px" : "0 16px",
-                borderRadius: "9999px",
+                borderRadius: "var(--radius-pill)",
                 fontSize: compact ? "12px" : "14px",
                 fontWeight: "500",
                 cursor: "pointer",
