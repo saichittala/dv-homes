@@ -2140,7 +2140,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 14px;
+  gap: 20px !important;
   flex-wrap: wrap;
 }
 
@@ -3387,7 +3387,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 14px;
+  gap: 20px !important;
   width: auto;
   margin-bottom: 20px;
   flex-wrap: wrap;
@@ -4284,7 +4284,7 @@ main {
     flex-direction: column !important;
     width: 100% !important;
     max-width: 100% !important;
-    gap: 12px !important;
+    gap: 20px !important;
   }
 
   .cta-actions .btn,
@@ -5195,7 +5195,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 14px;
+  gap: 20px !important;
   width: auto;
   flex-wrap: wrap;
 }
