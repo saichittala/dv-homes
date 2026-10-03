@@ -27,7 +27,7 @@ export default function CategoryTabs({ categories, activeId, activeLabel }: Cate
     <section className="services-tabs-section">
       <div className="container">
         {/* Horizontal Scrollable Category Navigation Pills */}
-        <div className="services-tabs-bar" style={{ justifyContent: "center" }}>
+        <div className="services-tabs-bar">
           {categories.map((cat) => {
             const isActive = cat.id === activeId;
             return (
